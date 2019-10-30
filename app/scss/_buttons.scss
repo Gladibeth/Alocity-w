@@ -51,7 +51,7 @@
 
   &:hover {
     text-decoration: none;
-    background-color: $alocity;
+    background-color: $white;
     color: $alocity;
     transition: 0.3s ease-in-out;
     border: 1px solid $alocity;
@@ -64,6 +64,7 @@
   border: 1px solid transparent;
   transition: 0.3s ease-in-out;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
     text-decoration: none;
@@ -71,5 +72,23 @@
     color: $text;
     transition: 0.3s ease-in-out;
     border: 1px solid $white;
+  }
+}
+
+.btn--filled--yellow {
+  color: $text;
+  // background-image: linear-gradient(245deg, #f5ac1b 75%, #fcc862 28%);
+  background-color: #f5ac1b;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    // background-image: linear-gradient(245deg, #fff 75%, #fff 28%);
+    background-color: $white;
+    color: $text;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #f5ac1b;
   }
 }

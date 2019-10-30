@@ -1,0 +1,161 @@
+.modal-dialog {
+  max-width: 1203px;
+
+  @include respond-to(md) {
+    max-width: 900px;
+  }
+
+  @include respond-to(sm) {
+    max-width: 640px;
+
+  }
+
+  &.modal-dialog-soft {
+    max-width: 1098px;
+
+    @include respond-to(md) {
+      max-width: 900px;
+    }
+
+    @include respond-to(sm) {
+      max-width: 640px;
+
+    }
+  }
+}
+
+
+
+.main-modal__title {
+  h2 {
+    font-family: $Poppins;
+    @include font(28px, $bold);
+    color: $text;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+}
+
+.modal-content--soft {
+  width: 1098px;
+  height: 706.1px;
+  border-radius: 10px;
+  box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+
+  @include respond-to(md) {
+    width: 100%;
+    height: 500px;
+  }
+
+  @include respond-to(sm) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include respond-to(xs) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.modal-body {
+  position: relative;
+
+  &.modal-body--pg {
+    padding: 0px 10px;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 9;
+
+  img {
+    width: 16px;
+    height: 18px;
+    object-fit: contain;
+  }
+}
+
+
+.main-modal__boximg {
+  width: 539px;
+  height: 720px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  background-color: $alocity;
+  display: flex;
+  align-items: center;
+
+  @include respond-to(md) {
+    width: 400px;
+  }
+
+  @include respond-to(sm) {
+    width: 300px;
+  }
+}
+
+.main-modal__img {
+  width: 508px;
+  height: 562px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.main-modal__boxerimg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-modal__softwareimg {
+    width: 1028px;
+    height: 625px;
+
+    @include respond-to(md) {
+      width: 580px;
+      height: 500px;
+    }
+
+    @include respond-to(sm) {
+      width: 580px;
+      height: 500px;
+    }
+
+    @include respond-to(xs) {
+      height: 300px;
+      width: 100%;
+    }
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+
+}
+
+.main-modal__form {
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include respond-to(xs) {
+    padding: 20px;
+  }
+}

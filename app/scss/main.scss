@@ -1,9 +1,10 @@
 @import "variables";
 @import "mixins";
 @import "body";
+@import "buttons";
 @import "offcanvas";
 @import "setting-slick";
-@import "buttons";
+@import "modal";
 
 section {
   padding-top: 50px;
@@ -11,6 +12,18 @@ section {
 
 .main-content {
   margin-top: 100px;
+
+  @include respond-to(md) {
+    margin-top: 60px;
+  }
+
+  @include respond-to(sm) {
+    margin-top: 70px;
+  }
+
+  @include respond-to(xs) {
+    margin-top: 40px;
+  }
 }
 
 /** Banner */
@@ -31,74 +44,7 @@ section {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
 
-    .main-banner__text {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
 
-      @include respond-to(xs) {
-        width: 80%;
-        left: 10%;
-      }
-
-      @include respond-to(sm) {
-        top: 35%;
-      }
-
-      .main-banner__title {
-        text-align: center;
-
-        h1 {
-          color: $alocity;
-          font-size: 40px;
-          font-family: $Poppins;
-          margin: 0;
-          @include font(40px, $medium);
-        }
-
-        span {
-          font-family: $Poppins;
-          color: $text;
-          @include font(40px, $semibold);
-        }
-
-        p {
-          font-family: $Poppins;
-          color: $text;
-          @include font(28px, $semibold);
-          line-height: 1;
-          margin: 0;
-
-          @include respond-to(md) {
-            font-size: 55px;
-          }
-
-          @include respond-to(xs) {
-            font-size: 30px;
-            padding: 0;
-          }
-        }
-      }
-
-      .main-banner__description {
-        padding: 0 25px;
-        color: $white;
-        font-size: 20px;
-        line-height: 2rem;
-        margin: 50px 0 0 0;
-
-        @include respond-to(md) {
-          font-size: 18px;
-        }
-
-        @include respond-to(xs) {
-          font-size: 18px;
-          padding: 0;
-        }
-      }
-    }
   }
 
   .main-banner__img {
@@ -113,6 +59,152 @@ section {
   }
 }
 
+.main-banner__boxtext {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-banner__text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.main-banner__text--company {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  @include respond-to(xs) {
+    width: 100%;
+  }
+
+  .main-banner__title {
+    text-align: center;
+
+    &.main-banner__title--company {
+      text-align: left;
+    }
+
+    h1 {
+      color: $alocity;
+      font-size: 40px;
+      font-family: $Poppins;
+      margin: 0;
+      @include font(40px, $medium);
+
+      @include respond-to(md) {
+        @include font(30px, $medium);
+      }
+
+      @include respond-to(xs) {
+        @include font(25px, $medium);
+      }
+
+      &.title-company {
+        color: $text;
+        @include font(45px, $semibold);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        @include respond-to(xs) {
+          @include font(35px, $semibold);
+        }
+      }
+    }
+
+    span {
+      font-family: $Poppins;
+      color: $text;
+      @include font(40px, $semibold);
+
+      @include respond-to(md) {
+        @include font(30px, $semibold);
+      }
+
+      @include respond-to(xs) {
+        @include font(20px, $semibold);
+      }
+
+      &.subtitle-company {
+        @include font(20px, $medium);
+
+        @include respond-to(xs) {
+          @include font(16px, $medium);
+        }
+      }
+    }
+
+    p {
+      font-family: $Poppins;
+      color: $text;
+      @include font(28px, $semibold);
+      line-height: 1;
+      margin: 0;
+
+      @include respond-to(md) {
+        @include font(20px, $semibold);
+      }
+
+      @include respond-to(xs) {
+        @include font(14px, $semibold);
+      }
+    }
+  }
+
+  .main-banner__description {
+    p {
+      color: $white;
+      font-size: 20px;
+      line-height: 2rem;
+      font-family: $Poppins;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+
+      @include respond-to(md) {
+        font-size: 18px;
+      }
+
+      @include respond-to(xs) {
+        font-size: 18px;
+        padding: 0;
+      }
+    }
+
+    &.main-banner__description--company {
+      margin-top: 35px;
+      width: 510px;
+
+      @include respond-to(md) {
+        width: 100%;
+      }
+
+      @include respond-to(sm) {
+        width: 100%;
+      }
+
+      @include respond-to(xs) {
+        width: 100%;
+      }
+
+      p {
+        color: $description;
+        @include font(16px, $medium);
+
+        @include respond-to(xs) {
+          @include font(16px, $medium);
+        }
+
+      }
+    }
+  }
+}
 
 .main-title__general {
   width: 100%;
@@ -139,6 +231,14 @@ section {
   &.main-title__general--left {
     width: 45%;
 
+    @include respond-to(md) {
+      width: 70%;
+    }
+
+    @include respond-to(xs) {
+      width: 100%;
+    }
+
     h2 {
       &:before {
         left: 0;
@@ -157,6 +257,24 @@ section {
       }
     }
   }
+
+  &.main-title__general--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      &:before {
+        display: none;
+      }
+    }
+
+    h3 {
+      @include font(28px, $medium);
+      color: $alocity;
+      font-family: $Poppins;
+    }
+  }
 }
 
 
@@ -165,6 +283,19 @@ section {
   grid-template-columns: 20% 80%;
   margin-bottom: 50px;
   width: 90%;
+
+  @include respond-to(md) {
+    grid-template-columns: 25% 75%;
+  }
+
+  @include respond-to(sm) {
+    grid-template-columns: 25% 75%;
+    margin-bottom: 30px;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 25% 75%;
+  }
 
 }
 
@@ -220,6 +351,14 @@ section {
   width: 100%;
   background-image: linear-gradient(247deg, rgba(206, 205, 205, 0.33) 96%, #fafafa 5%);
   padding: 60px;
+
+  @include respond-to(md) {
+    padding: 45px;
+  }
+
+  @include respond-to(xs) {
+    padding: 0;
+  }
 }
 
 .main-dashboard__content {
@@ -232,26 +371,47 @@ section {
   border-radius: 6px;
   box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.09);
   background-color: $white;
+  padding: 20px;
+
+  @include respond-to(md) {
+    width: 310px;
+  }
+
+  @include respond-to(xs) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
   &.active {
     height: 500px;
     margin-top: -25px;
+
+    @include respond-to(xs) {
+      margin-top: 0;
+    }
   }
 }
 
-.main-dashboard__img {
+.main-dashboard__boximg {
   width: 100%;
   height: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.main-dashboard__img {
+  width: 299.1px;
+  height: 182.8px;
+  object-fit: contain;
+  opacity: 0.65;
 
   img {
-    width: 299.1px;
-    height: 182.8px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    opacity: 0.65;
   }
 
   .img__two {
@@ -259,6 +419,8 @@ section {
     width: 47px;
     height: 45px;
     object-fit: contain;
+    top: 25%;
+    left: 43%;
   }
 }
 
@@ -266,10 +428,18 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
+
+  img {
+    width: 100%;
+  }
 }
 
 .main-dashboard__text {
   text-align: center;
+
+  @include respond-to(xs) {
+    padding: 0 20px 20px 20px;
+  }
 }
 
 .main-dashboard__title {
@@ -281,10 +451,47 @@ section {
 
 
 .main-control__img {
+  height: 712px;
+
+  @include respond-to(md) {
+    height: 648px;
+  }
+
+  @include respond-to(sm) {
+    width: 100%;
+    height: 590px;
+  }
+
   img {
     width: 100%;
-    height: 712px;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.main-control__img--two {
+  width: 554px;
+  height: 337px;
+
+  @include respond-to(md) {
+    width: 430px;
+    height: 260px;
+  }
+
+  @include respond-to(sm) {
+    width: 420px;
+    height: 260px;
+  }
+
+  @include respond-to(xs) {
+    width: 255px;
+    height: 170px;
+    margin-left: -45px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -293,11 +500,41 @@ section {
   height: 712px;
   background-color: $alocity;
   padding: 40px;
+
+  @include respond-to(md) {
+    height: auto;
+  }
+
+  @include respond-to(sm) {
+    height: auto;
+  }
+
+  @include respond-to(xs) {
+    height: auto;
+  }
+}
+
+.main-control__subbox {
+  margin-bottom: 50px;
 }
 
 .main-control__text {
   display: grid;
   grid-template-columns: 10% 90%;
+
+  @include respond-to(md) {
+    grid-template-columns: 20% 80%;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 15% 85%;
+  }
+}
+
+.main-check {
+  @include respond-to(sm) {
+    padding-top: 60px;
+  }
 }
 
 .main-check__content {
@@ -305,18 +542,208 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include respond-to(xs) {
+    height: 530px;
+  }
+
+  @include respond-to(sm) {
+    height: auto;
+  }
 }
 
 .main-check__btn {
   margin-top: 50px;
 }
 
+.main-check__box {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond-to(sm) {
+    height: 600px;
+  }
+
+  @include respond-to(xs) {
+    height: 300px;
+  }
+
+}
+
+.main-check__boxlarge {
+  position: absolute;
+  top: 35px;
+  right: -100px;
+  z-index: -1;
+
+  @include respond-to(md) {
+    top: 35px;
+    right: -5px;
+  }
+
+  @include respond-to(sm) {
+    right: 20px;
+  }
+
+  @include respond-to(xs) {
+    top: -40px;
+    right: 18px;
+  }
+}
+
+.main-check__boxmedium {
+  width: 404px;
+  height: 395px;
+  border: solid 1px #dee2e6;
+  border-radius: 50%;
+
+  @include respond-to(md) {
+    width: 345px;
+    height: 345px;
+  }
+
+  @include respond-to(xs) {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.main-check__boxsmall {
+  width: 56px;
+  height: 55px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-child(1) {
+    top: 25px;
+    left: 30px;
+
+    @include respond-to(md) {
+      top: 75px;
+      left: -8px;
+    }
+
+    @include respond-to(xs) {
+      top: 42px;
+      left: -12px;
+
+    }
+  }
+
+  &:nth-child(2) {
+    top: -15px;
+    left: 140px;
+
+    @include respond-to(md) {
+      top: 10px;
+      left: 25px;
+    }
+
+    @include respond-to(xs) {
+      top: -8px;
+      left: 30px;
+
+    }
+  }
+
+  &:nth-child(3) {
+    top: 0;
+    right: 60px;
+
+    @include respond-to(md) {
+      top: -25px;
+      right: 170px;
+    }
+
+    @include respond-to(xs) {
+      top: -36px;
+      right: 100px;
+    }
+  }
+
+  &:nth-child(4) {
+    top: 109px;
+    right: -20px;
+
+    @include respond-to(md) {
+      top: 0px;
+      right: 60px;
+
+    }
+
+    @include respond-to(xs) {
+      top: -15px;
+      right: 35px;
+    }
+  }
+
+  &:nth-child(5) {
+    bottom: 100px;
+    right: -10px;
+
+    @include respond-to(md) {
+      top: 80px;
+    }
+
+    @include respond-to(xs) {
+      right: -10px;
+      top: 35px;
+    }
+  }
+
+  &:nth-child(6) {
+    bottom: 0;
+    right: 65px;
+
+    @include respond-to(md) {
+      bottom: 70px;
+      right: -15px;
+    }
+
+    @include respond-to(xs) {
+      bottom: 70px;
+      right: -18px;
+    }
+  }
+}
+
+.main-check__img {
+  img {
+    width: 46px;
+    height: 34px;
+    object-fit: contain;
+  }
+
+  p {
+    margin: 0;
+    color: gray;
+    @include font(20px, $semibold);
+    font-family: $Poppins;
+  }
+}
 
 .main-infomation {
   width: 100%;
-  height: 527px;
+  height: 530px;
   background-color: $alocity;
   padding: 35px;
+
+  @include respond-to(sm) {
+    height: auto;
+  }
+
+  @include respond-to(xs) {
+    height: auto;
+    padding: 0;
+  }
 }
 
 .main-information__content {
@@ -327,19 +754,41 @@ section {
 }
 
 .main-infomation__img {
+  width: 100%;
+  height: 493px;
+
+  @include respond-to(sm) {
+    height: 300px;
+  }
+
+  @include respond-to(xs) {
+    height: 100%;
+    padding: 20px;
+  }
+
+
   img {
-    width: 434px;
-    height: 493px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
   }
 }
 
 .main-information__title {
+  @include respond-to(xs) {
+    margin-top: 20px;
+  }
+
   p {
     font-family: $Poppins;
     @include font(48px, $semibold);
     text-align: center;
     color: $text;
+    line-height: 1.15;
+
+    @include respond-to(xs) {
+      @include font(40px, $semibold);
+    }
   }
 }
 
@@ -355,4 +804,320 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 20px 0;
+}
+
+// .main-client {
+//   padding: 50px;
+// }
+
+// .main-client__content {
+//   padding: 80px 50px;
+// }
+
+
+
+/* -------------------------
+   -- -- Contact -----
+   ------------------------- */
+
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+input[type="number"] {
+  width: 480px;
+  height: 42px;
+  border-radius: 3px;
+  border: solid 1px #aeb5bd;
+
+  @include respond-to(md) {
+    width: 85%;
+  }
+
+  @include respond-to(sm) {
+    width: 85%;
+  }
+
+  @include respond-to(xs) {
+    width: 100%;
+  }
+
+  &:focus {
+    background: #e8f0fe;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem transparent;
+
+  }
+
+  &::placeholder {
+    color: #898989;
+  }
+}
+
+textarea {
+  width: 480px;
+  height: 42px;
+  border-radius: 3px;
+  border: solid 1px #aeb5bd;
+  height: 123px;
+  padding: 10px;
+  resize: none;
+
+  @include respond-to(md) {
+    width: 85%;
+  }
+
+  @include respond-to(sm) {
+    width: 85%;
+  }
+
+  @include respond-to(xs) {
+    width: 100%;
+  }
+
+  &:focus {
+    background: #e8f0fe;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem transparent;
+  }
+
+  &::placeholder {
+    color: #898989;
+  }
+}
+
+
+// VIsta d company
+.main-banner__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-banner__container {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-banner__imags {
+  display: flex;
+
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
+.main-banner__imags--one {
+  width: 211px;
+  height: 555px;
+
+  @include respond-to(md) {
+    width: 211px;
+    height: 400px;
+  }
+
+  @include respond-to(sm) {
+
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.main-banner__imags--two {
+  width: 490px;
+  height: 713px;
+  position: absolute;
+  right: 140px;
+  top: 0;
+
+  @include respond-to(md) {
+    width: 490px;
+    height: 500px;
+    right: -44px;
+  }
+
+  @include respond-to(sm) {
+    width: 490px;
+    height: 500px;
+    right: -44px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+  }
+}
+
+
+
+.col-order {
+  &:nth-child(1) {
+    @include respond-to(sm) {
+      order: -1;
+    }
+
+    @include respond-to(xs) {
+      order: -1;
+    }
+  }
+
+  &:nth-child(2) {
+    @include respond-to(sm) {
+      order: 0;
+    }
+
+    @include respond-to(xs) {
+      order: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    @include respond-to(sm) {
+      order: 2;
+    }
+
+    @include respond-to(xs) {
+      order: 2;
+    }
+  }
+
+  &:nth-child(5) {
+    @include respond-to(sm) {
+      order: 3;
+    }
+
+    @include respond-to(xs) {
+      order: 3;
+    }
+  }
+
+  &:nth-child(6) {
+    @include respond-to(sm) {
+      order: 3;
+    }
+
+    @include respond-to(xs) {
+      order: 4;
+    }
+  }
+}
+
+.main-company__content {
+  height: 468px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+
+.main-company__item {
+  display: flex;
+  justify-content: center;
+}
+
+.main-company__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.main-company__title {
+  p {
+    @include font(28px, $bold);
+    color: $text;
+    font-family: $Poppins;
+    position: relative;
+    text-align: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 1px;
+      border: solid 2px $orange;
+      left: 45%;
+      bottom: -25px;
+    }
+  }
+}
+
+.main-company__description {
+  margin-top: 35px;
+
+  p {
+    color: $description;
+    @include font(16px, $medium);
+    text-align: center;
+    font-family: $Poppins;
+  }
+}
+
+.main-company__boximg {
+  position: relative;
+}
+
+.main-company__img {
+  width: 100%;
+  height: 468px;
+  object-fit: contain;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main-company__imgs {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.main-company__imgs--one {
+
+  // width: 105px;
+  // height: 300px;
+  &.main-company__imgs--pad {
+    padding-top: 20px;
+  }
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main-company__imgs--two {
+  // width: 340.8px;
+  // height: 480px;
+
+  @include respond-to(xs) {
+    display: none;
+  }
+
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
 }

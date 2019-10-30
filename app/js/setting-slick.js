@@ -27,7 +27,7 @@ $('.main-banner__content').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         autoplaySpeed: 1000
       }
@@ -35,17 +35,17 @@ $('.main-banner__content').slick({
   ]
 });
 
-$('.main-about__block').slick({
+$('.main-client__content').slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 5,
   slidesToScroll: 1,
   dots: false,
   arrows: true,
   responsive: [{
       breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         infinite: true,
         dots: false
       }
