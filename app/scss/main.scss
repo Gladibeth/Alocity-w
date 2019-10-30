@@ -888,8 +888,9 @@ textarea {
   }
 }
 
-
-// VIsta d company
+//*********************///
+//****** Company ****////
+//*********************///
 .main-banner__box {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1092,9 +1093,6 @@ textarea {
 }
 
 .main-company__imgs--one {
-
-  // width: 105px;
-  // height: 300px;
   &.main-company__imgs--pad {
     padding-top: 20px;
   }
@@ -1107,9 +1105,6 @@ textarea {
 }
 
 .main-company__imgs--two {
-  // width: 340.8px;
-  // height: 480px;
-
   @include respond-to(xs) {
     display: none;
   }
