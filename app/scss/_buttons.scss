@@ -49,6 +49,10 @@
   transition: 0.3s ease-in-out;
   text-decoration: none;
 
+  &.btn--filled--upper {
+    text-transform: uppercase;
+  }
+
   &:hover {
     text-decoration: none;
     background-color: $white;

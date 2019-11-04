@@ -1,0 +1,797 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Alocity 
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+  %body
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .container
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              %img{ :src => "assets/img/footer/logo@3x.png"}/
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item.active
+                %a.nav-link.active{:href => "#Products"} Products
+              %li.nav-item
+                %a.nav-link{:href => "# Pricing"}  Pricing
+              %li.nav-item
+                %a.nav-link{:href => "#Company"}  Company
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "#Support"} Support
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "#Login"}  Login
+              %li.nav-item
+                %a.btn_custom.btn--small.btn--filled--yellow{ :href => ''} GET QUOTE
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "tel:888-512-2115"}  888-512-2115
+  
+
+
+    .main-banner
+      .main-banner__content
+        .main-banner__item
+          .main-banner__img
+            %img{ :src => "assets/img/hardware/image_7.png"}/
+          .main-banner__container
+            .row
+              .col-lg-6.col-md-6.col-12
+                .main-banner__boxtext.main-banner__boxtext--princing
+                  .main-banner__text
+                    .main-banner__title
+                      %h1 Simply Smart Security!
+                      %p All-in-one 
+                      %span Smart Access Control Readers
+              -# .col-lg-6.col-md-6.col-12
+              -#   .main-banner__imags
+              -#     .main-banner__imags--two
+              -#       %img{ :src => "assets/img/princing/image@3x.png"}/
+    %section.main-users
+      .container
+        .row.main-content
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg.active
+                  .main-users__img
+                    %img{ :src => "assets/img/hardware/settings.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Installs in Minutes
+                  .main-general__description
+                    %p No configuration or cumbersome wiring required. Syncs with cloud software in seconds.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/hardware/volume-control.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p No Controller Panels Required
+
+                  .main-general__description
+                    %p All-in-one smart readers eliminate the need to connect to clunky and costly access controller panels.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/hardware/locked.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Secure & Encrypted
+                  .main-general__description
+                    %p All communication and data transfer/storage is encrypted and uses the latest TLS 2.0, SSL certificate standards.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/hardware/turn-off.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Not to Worry - It Works Offline
+                  .main-general__description
+                    %p Alocity® readers function even when the internet goes down.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/hardware/settings_2.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Simple to Configure
+                  .main-general__description
+                    %p Easily configure the Alocity® readers directly from the cloud software.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/hardware/cloud-computing.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Syncs Instantly with Cloud
+                  .main-general__description
+                    %p No configuration required, all data from reader to software happens seamlessly in real-time.
+          
+    
+    .main-control.main-control--hard{ :style=>"background-image:url(assets/img/hardware/bg.png)"}
+      .container
+        .row
+          .col-lg-7.col-12.p-0
+            .main-control__box
+              .main-title__general.main-title__general--fullwidth
+                %h2 World’s #1 Fingerprint Technology
+                %p works with anyone, anytime, anywhere!
+              
+              .row.main-content
+                .col-lg-6.col-sm-6
+                  .main-users__content.main-users__content--hard
+                    .main-users__item
+                      .main-users__boximg.active
+                        .main-users__img
+                          %img{ :src => "assets/img/hardware/light-bulb-1.png"}/
+                    .main-users__item
+                      .main-users__boxtext
+                        .main-users__title
+                          %p Secure & Encrypted
+                        .main-general__description
+                          %p All communication and data transfer/storage is encrypted and uses the latest TLS 2.0, SSL certificate standards.
+                .col-lg-6.col-sm-6
+                  .main-users__content.main-users__content--hard
+                    .main-users__item
+                      .main-users__boximg.active
+                        .main-users__img
+                          %img{ :src => "assets/img/hardware/balaclava.png"}/
+                    .main-users__item
+                      .main-users__boxtext
+                        .main-users__title
+                          %p Not to Worry - It Works Offline
+                        .main-general__description
+                          %p Alocity® readers function even when the internet goes down.
+                .col-lg-6.col-sm-6
+                  .main-users__content.main-users__content--hard
+                    .main-users__item
+                      .main-users__boximg.active
+                        .main-users__img
+                          %img{ :src => "assets/img/hardware/collaboration.png"}/
+                    .main-users__item
+                      .main-users__boxtext
+                        .main-users__title
+                          %p Simple to Configure
+                        .main-general__description
+                          %p Easily configure the Alocity® readers directly from the cloud software.
+                .col-lg-6.col-sm-6
+                  .main-users__content.main-users__content--hard
+                    .main-users__item
+                      .main-users__boximg.active
+                        .main-users__img
+                          %img{ :src => "assets/img/hardware/drizzle.png"}/
+                    .main-users__item
+                      .main-users__boxtext
+                        .main-users__title
+                          %p Syncs Instantly with Cloud
+                        .main-general__description
+                          %p No configuration required, all data from reader to software happens seamlessly in real-time.
+          .col-lg-5.col-12.p-0
+            .content-control__img
+              .main-control__img.main-control__img--hard
+                %img{ :src => "assets/img/hardware/image_6.png"}/
+
+    .main-infomation
+      .container
+        .row
+          .col-lg-6.col-xs-12.col-sm-6
+            .main-infomation__img.main-infomation__img--hard
+              %img{ :src => "assets/img/hardware/image_5.png"}/
+          .col-lg-6.col-xs-12.col-sm-6
+            .main-information__content
+              .main-information__title.main-information__title--left
+                %p Waterproof IP67
+              .main-information__description.main-information__description--left
+                %p The AW series was designed with an IP-67 rated housing ideal for extreme outdoor environments, working even under water, snow, dust, and humid conditions without compromising it’s efficiency and reliability.
+
+
+    .main-access
+      .container
+        .main-title__general
+          %h2 Access Control Readers Specifications
+        .main-access__content
+          .main-access__item
+            .main-access__box
+              .main-access__box--small
+                %p A55
+            .main-access__boximg
+              .main-access__img
+                %img{ :src => "assets/img/hardware/image.png"}/
+            .main-access__check
+              .main-access__boxcheck.active
+                .main-access__smallcheck
+              .main-access__boxcheck
+                .main-access__smallcheck.main-access__smallcheck--black
+
+          .main-access__item
+            .main-access__box
+              .main-access__box--small
+                %p A250
+            .main-access__boximg
+              .main-access__img
+                %img{ :src => "assets/img/hardware/image_2.png"}/
+            .main-access__check
+              .main-access__boxcheck.active
+                .main-access__smallcheck
+              .main-access__boxcheck
+                .main-access__smallcheck.main-access__smallcheck--black
+          .main-access__item
+            .main-access__box
+              .main-access__box--small
+                %p AW50
+            .main-access__boximg
+              .main-access__img
+                %img{ :src => "assets/img/hardware/image_3.png"}/
+            .main-access__check
+              .main-access__boxcheck.active
+                .main-access__smallcheck
+              .main-access__boxcheck
+                .main-access__smallcheck.main-access__smallcheck--black   
+          .main-access__item
+            .main-access__box
+              .main-access__box--small
+                %p AW500
+            .main-access__boximg
+              .main-access__img
+                %img{ :src => "assets/img/hardware/image_4.png"}/
+            .main-access__check
+              .main-access__boxcheck.active
+                .main-access__smallcheck
+              .main-access__boxcheck
+                .main-access__smallcheck.main-access__smallcheck--black
+        .main-access__boxcontent
+          .main-access__general
+            %p Access Methods
+          %hr/
+          .main-access__content
+            .main-access__item.main-access__item--center
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Card
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/icon.png"}/
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Mobile
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/icon_3.png"}/
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Cloud-Key
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/1.png"}/
+            .main-access__item.main-access__item--center
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Fingerprint
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/fingerprint.png"}/
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Card
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/icon.png"}/
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Mobile
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/icon_3.png"}/
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Cloud-Key
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/1.png"}/
+            .main-access__item.main-access__item--center
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Card
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/icon.png"}/
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Mobile
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/icon_3.png"}/
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Cloud-Key
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/1.png"}/
+            .main-access__item.main-access__item--center
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Fingerprint
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/fingerprint.png"}/
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Card
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/icon.png"}/
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Mobile
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/icon_3.png"}/
+              .main-access__boxmethod
+                .main-access__methodtitle
+                  %p Cloud-Key
+                .main-access__methodimg
+                  %img{ :src => "assets/img/hardware/1.png"}/
+        .main-access__boxcontent
+          .main-access__general
+            %p Works Outdoors
+          %hr/
+          .main-access__content
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Under Covered Area
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Under Covered Area
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Yes
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Yes
+              
+
+
+        .main-access__boxcontent
+          .main-access__general
+            %p Communication Interface
+          %hr/
+          .main-access__content
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p PoE (Power over Ethernet)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Wi-Fi
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Ethernet 10/100 Mbps
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Bluetooth Smart
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p RS-485
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Wiegand
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p OSDP
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p PoE (Power over Ethernet)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Wi-Fi
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Ethernet 10/100 Mbps
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Bluetooth Smart
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p RS-485
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Wiegand
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p OSDP
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p PoE (Power over Ethernet)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Wi-Fi
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Ethernet 10/100 Mbps
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Bluetooth Smart
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p RS-485
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Wiegand
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p OSDP
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p PoE (Power over Ethernet)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Wi-Fi
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Ethernet 10/100 Mbps
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Bluetooth Smart
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p RS-485
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Wiegand
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p OSDP
+
+        .main-access__boxcontent
+          .main-access__general
+            %p Door Control
+          %hr/
+          .main-access__content
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Form C Relay
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Door Contact Input
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Exit Button Input
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p TTL Output
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Form C Relay
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Door Contact Input
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Exit Button Input
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p TTL Output
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Form C Relay
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Door Contact Input
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Exit Button Input
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p TTL Output
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Form C Relay
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Door Contact Input
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p Exit Button Input
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p TTL Output
+        .main-access__boxcontent
+          .main-access__general
+            %p User Credentials Capacity
+          %hr/
+          .main-access__content
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Fingerprint Users
+                    %span None
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Card / Pin Users
+                    %span 20,000
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Mobile Credentials
+                    %span 20,000
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Fingerprint Users
+                    %span 1,000 / 10,000 Optional
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Card / Pin Users
+                    %span 20,000
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Mobile Credentials
+                    %span 20,000
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Fingerprint Users
+                    %span 1,000 / 10,000 Optional
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Card / Pin Users
+                    %span 20,000
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Mobile Credentials
+                    %span 20,000
+            
+        .main-access__boxcontent
+          .main-access__general
+            %p Size & Dimensions
+          %hr/
+          .main-access__content
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Height
+                    %span 7” inches (177.8 mm)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Width
+                    %span 2.50” inches (63.50 mm)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Depth
+                    %span 2” inches (50.8 mm)   
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Height
+                    %span 7” inches (177.8 mm)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Width
+                    %span 2.50” inches (63.50 mm)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Depth
+                    %span 2” inches (50.8 mm)   
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Height
+                    %span 7” inches (177.8 mm)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Width
+                    %span 2.50” inches (63.50 mm)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Depth
+                    %span 2” inches (50.8 mm)   
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Height
+                    %span 7” inches (177.8 mm)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Width
+                    %span 2.50” inches (63.50 mm)
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Depth
+                    %span 2” inches (50.8 mm)     
+        .main-access__boxcontent
+          .main-access__general
+            %p Power
+          %hr/
+          .main-access__content
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Power
+                    %span DC 12 volts
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Current
+                    %span Operatinals Amp
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Power
+                    %span DC 12 volts
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Current
+                    %span Operatinals Amp
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Power
+                    %span DC 12 volts
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Current
+                    %span Operatinals Amp
+            .main-access__item
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold 
+                    Power
+                    %span DC 12 volts
+              .main-access__boxmethod
+                .main-access__methodtitle.main-access__methodtitle--left
+                  %p.title__bold
+                    Current
+                    %span Operatinals Amp
+              
+    .main-testimonials{ :style=>"background-image:url(assets/img/princing/image-bg.png)"}
+      .container
+        .main-title__general.main-title__general--white
+          %h2 What clients say?
+        .main-testimonials__content
+          .main-testimonials__box
+            .main-testimonials__item
+              .main-testimonials__img
+                %img{ :src => "assets/img/princing/image_2.png"}/
+              .main-testimonials__description
+                %p “Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500”
+              
+              .main-testimonials__name
+                %p - Steve Jordan
+                %p Redblue Company
+          .main-testimonials__box
+            .main-testimonials__item
+              .main-testimonials__img
+                %img{ :src => "assets/img/princing/image_2.png"}/
+              .main-testimonials__description
+                %p “Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500”
+              
+              .main-testimonials__name
+                %p - Steve Jordan
+                %p Redblue Company
+                
+    .main-client
+      .container
+        .main-title__general.main-title__general--flex
+          %h2 Some of Our Customers
+          %h3 You’re in good hands   
+        .main-client__content
+          .main-client__item
+            .main-client__img
+              %img{ :src => "assets/img/software/10.png"}/
+          .main-client__item
+            .main-client__img
+              %img{ :src => "assets/img/software/8.png"}/
+          .main-client__item
+            .main-client__img
+              %img{ :src => "assets/img/software/2.png"}/
+          .main-client__item
+            .main-client__img
+              %img{ :src => "assets/img/software/7.png"}/
+          .main-client__item
+            .main-client__img
+              %img{ :src => "assets/img/software/3.png"}/
+    .main-infomation
+      .container
+        .row
+          .col-lg-6.col-xs-12.col-sm-6
+            .main-infomation__img
+              %img{ :src => "assets/img/software/phone.png"}/
+          .col-lg-6.col-xs-12.col-sm-6
+            .main-information__content
+              .main-information__title
+                %p Need more information?
+              .main-information__description
+                %p Let one of our specialist show you around
+              .main-information__btn
+                %a.btn_custom.btn--medium.btn--filled--white{ :href => ''} get quote
+              .main-information__description
+                %p Speak to us  888-512-2115
+  
+    %footer
+      .container
+        .main-footer__content
+          .main-footer__item
+            .main-footer__logo
+              %img{ :src => "assets/img/footer/logo@3x.png"}/
+            .main-footer__copy
+              %p 
+                Copyright 2019  - Dreamed by Branch, developed by 
+                %a{} SIGMA STUDIOS
+          .main-footer__item
+            .main-footer__boxredes
+              .main-footer__redes
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/instagram.png"}/
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/facebook.png"}/
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/linkein.png"}/
+
+            .main-footer__boxubications
+              .main-footer__ubications
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/paper-plane.png"}/
+                  marveltorres@alocity.com -
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/telephone-handle-silhouette.png"}/
+                  888-512-2115 -
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/map-marker.png"}/
+                  Calle 23 Green Tower, Street Balsos
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}

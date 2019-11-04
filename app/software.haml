@@ -1,0 +1,428 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Alocity 
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+  %body
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .container
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              %img{ :src => "assets/img/footer/logo@3x.png"}/
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item.active
+                %a.nav-link.active{:href => "#Products"} Products
+              %li.nav-item
+                %a.nav-link{:href => "# Pricing"}  Pricing
+              %li.nav-item
+                %a.nav-link{:href => "#Company"}  Company
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "#Support"} Support
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "#Login"}  Login
+              %li.nav-item
+                %a.btn_custom.btn--small.btn--filled--yellow{ :href => ''} GET QUOTE
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "tel:888-512-2115"}  888-512-2115
+    .main-banner
+      .main-banner__content
+        .main-banner__item
+          .mask
+            .main-banner__text
+              .main-banner__title
+                %h1 Simply Smart Segurity
+                %span Cloud Access Control Software
+                %p Manage Alocity anytime, from anywhere
+            
+          .main-banner__img
+            %img{ :src => "assets/img/software/image-banner.png"}/
+        .main-banner__item
+          .mask
+            .main-banner__text
+              .main-banner__title
+                %h1 Simply Smart Segurity
+                %span Cloud Access Control Software
+                %p Manage Alocity anytime, from anywhere
+          .main-banner__img
+            %img{ :src => "assets/img/software/image-banner.png"}/
+    %section.main-users
+      .container
+        .main-title__general
+          %h2 built for today´s moderb users
+        .row.main-content
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg.active
+                  .main-users__img
+                    %img{ :src => "assets/img/software/tap.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Easy To Implement
+                  .main-general__description
+                    %p No software to install or maintain, Setup is done in minutes.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/software/expand.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Scalable
+                  .main-general__description
+                    %p Manage one or hundreds of sites and doors.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/software/padlock.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Vaul like Security
+                  .main-general__description
+                    %p Desinged with the most advanced cloud security encrytion strategies.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/software/clock.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p See Everything in Real Time
+                  .main-general__description
+                    %p Get instant visibility on users activity, door states, and critical events.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/software/turn-off.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Powerful Reporting
+                  .main-general__description
+                    %p Easilly gather real-time events data from yours system with a single click.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/software/intersection.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Integrations
+                  .main-general__description
+                    %p Buelt-in integrations with G-Suite, Microsoft. Okta, Slack and more.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/software/icon.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Automation
+                  .main-general__description
+                    %p Set event-based automation rules.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/software/key-2.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Intuitive Access Schedule
+                  .main-general__description
+                    %p Easilly add schedules based on who, is allowed where, and when.
+          .col-lg-4.col-sm-6
+            .main-users__content
+              .main-users__item
+                .main-users__boximg
+                  .main-users__img
+                    %img{ :src => "assets/img/software/network.png"}/
+              .main-users__item
+                .main-users__boxtext
+                  .main-users__title
+                    %p Access Groups
+                  .main-general__description
+                    %p Easilly set access levels for users by groups.
+    .main-dashboard
+      .container
+        .row.main-dashboard__content
+          .col-lg-4.col-md-4.col-sm-4.col-12.p-0
+            .main-dashboard__cards
+              .main-dashboard__boximg
+                .main-dashboard__img
+                  %img{ :src => "assets/img/software/image_6.png"}/
+                  %img.img__two{ :src => "assets/img/software/plus.png"}/
+                .main-dashboard__img--two
+                  %img{ :src => "assets/img/software/image.png"}/
+              .main-dashboard__text
+                .main-dashboard__title
+                  %p User Management
+                .main-general__description
+                  %p Easily add users with access levels and sync their biometric, mobile, card, and pin credentials instantly to the door readers.
+
+          .col-lg-4.col-md-4.col-sm-4.col-12.p-0
+            .main-dashboard__cards.active
+              .main-dashboard__boximg
+                .main-dashboard__img
+                  %img{ :src => "assets/img/software/image_3.png"}/
+                  %img.img__two{ :src => "assets/img/software/plus.png"}/
+                .main-dashboard__img--two
+                  %img{ :src => "assets/img/software/image.png"}/
+              .main-dashboard__text
+                .main-dashboard__title
+                  %p Real Time Dashboard
+                .main-general__description
+                  %p Our modern dashboard gives you instant visibility on user activity, door states, and critical events.
+          .col-lg-4.col-md-4.col-sm-4.col-12.p-0
+            .main-dashboard__cards
+              .main-dashboard__boximg
+                .main-dashboard__img
+                  %img{ :src => "assets/img/software/image_8.png"}/
+                  %img.img__two{ :src => "assets/img/software/plus.png"}/
+                .main-dashboard__img--two
+                  %img{ :src => "assets/img/software/image.png"}/
+              .main-dashboard__text
+                .main-dashboard__title
+                  %p Cloud Reader Management
+                .main-general__description
+                  %p Configure and manage alocity smart door readers instantly from the cloud.
+    .main-control
+      .row
+        .col-lg-6.col-12.p-0
+          .main-control__img
+            %img{ :src => "assets/img/software/image_4.png"}/
+        .col-lg-6.col-12.p-0
+          .main-control__box.main-control__box--bg
+            .main-title__general.main-title__general--left
+              %h2 Total control from anywhere
+            .row.main-content
+              .col-lg-6.col-sm-6
+                .main-control__subbox
+                  .main-control__text
+                    .main-control__icon
+                      %img{ :src => "assets/img/software/calendar-2.png"}/
+                    .main-users__title
+                      %p Multi-Spectral Technology
+                  .main-general__description
+                    %p Reads the inner layer fingerprint, resulting in superior images and results.
+              .col-lg-6.col-sm-6
+                .main-control__subbox
+                  .main-control__text
+                    .main-control__icon
+                      %img{ :src => "assets/img/software/notification.png"}/
+                    .main-users__title
+                      %p Liveness Detection
+                  .main-general__description
+                    %p Uses the best liveness detection technology to protect against fake and spoof fingerprints.
+              .col-lg-6.col-sm-6
+                .main-control__subbox
+                  .main-control__text
+                    .main-control__icon
+                      %img{ :src => "assets/img/software/user-3.png"}/
+                    .main-users__title
+                      %p Works on All People
+                  .main-general__description
+                    %p Our readers work on ALL people - including that 2-5% of the population with “problem fingerprints”  that fail to enroll on conventional sensors.
+
+              .col-lg-6.col-sm-6
+                .main-control__subbox
+                  .main-control__text
+                    .main-control__icon
+                      %img{ :src => "assets/img/software/exit.png"}/
+                    .main-users__title
+                      %p Works in All Conditions
+                  .main-general__description
+                    %p Maintains superior performance even in rain, cold, dry and hot environments.
+    .main-check
+      .container
+        .row
+          .col-lg-5.col-sm-12
+            .main-check__content
+              .main-title__general.main-title__general--width
+                %h2 Integrated with the tools you use
+              .main-general__description.main-general__description--color
+                %p Alocity® is fully integrated with your favorite apps, so you can spend less time juggling tabs and more time focusing on meaningful work.
+              .main-check__btn
+                %a.btn_custom.btn--small.btn--filled{ :href => ''} Check out the integrations
+          .col-lg-7.col-sm-12.p-0
+            .main-check__box
+              .main-control__img.main-control__img--two
+                %img{ :src => "assets/img/software/check.png"}/
+              -# .main-check__boxlarge
+              -#   .main-check__boxmedium
+              -#     .main-check__boxsmall
+              -#       .main-check__img
+              -#         %img{ :src => "assets/img/software/bitmap_3.png"}/
+              -#     .main-check__boxsmall
+              -#       .main-check__img
+              -#         %img{ :src => "assets/img/software/search-1.png"}/
+              -#     .main-check__boxsmall
+              -#       .main-check__img
+              -#         %img{ :src => "assets/img/software/bitmap_2.png"}/
+              -#     .main-check__boxsmall
+              -#       .main-check__img
+              -#         %img{ :src => "assets/img/software/slack.png"}/
+              -#     .main-check__boxsmall
+              -#       .main-check__img
+              -#         %img{ :src => "assets/img/software/bitmap.png"}/
+              -#     .main-check__boxsmall
+              -#       .main-check__img
+              -#         %p nest
+    .main-infomation
+      .container
+        .row
+          .col-lg-6.col-xs-12.col-sm-6
+            .main-infomation__img
+              %img{ :src => "assets/img/software/phone.png"}/
+          .col-lg-6.col-xs-12.col-sm-6
+            .main-information__content
+              .main-information__title
+                %p Need more information?
+              .main-information__description
+                %p Let one of our specialist show you around
+              .main-information__btn
+                %a.btn_custom.btn--medium.btn--filled--white{ :href => ''} get quote
+              .main-information__description
+                %p Speak to us  888-512-2115
+
+    
+    / Button trigger modal
+    %button.btn.btn-primary{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
+      Home Popup
+    / Modal
+    #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-body.modal-body--pg 
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %img{ :src => "assets/img/software/close.png"}/
+            .row
+              .col-lg-6.col-md-6.p-0.d-sm-flex.d-none
+                .main-modal__boximg
+                  .main-modal__img
+                    %img{ :src => "assets/img/software/phone-modal.png"}/
+              .col-lg-6.col-md-6.p-0
+                .main-modal__form
+                  .main-modal__title
+                    %h2 Get In Touch
+                  %form
+                    .form-group
+                      %input#formGroupExampleInput.form-control{:placeholder => "First Name*", :type => "text"}/
+                    .form-group
+                      %input#formGroupExampleInput.form-control{:placeholder => "Last Name*", :type => "text"}
+                    .form-group
+                      %input#formGroupExampleInput.form-control{:placeholder => "Company", :type => "text"}
+                    .form-group
+                      %input#formGroupExampleInput2.form-control{:placeholder => "Email*", :type => "text"}/
+                    .form-group
+                      %input#formGroupExampleInput2.form-control{:placeholder => "Phone*", :type => "phone"}/
+                    .form-group
+                      %input#formGroupExampleInput2.form-control{:placeholder => "Country*", :type => "text"}/
+                    .form-group
+                      %textarea{:placeholder => "Comments",:rows => "8"}
+                    .main-check__btn
+                      %a.btn_custom.btn--large.btn--filled--yellow{ :href => ''} send message
+    / Button trigger modal
+    %button.btn.btn-primary{"data-target" => "#one-modal", "data-toggle" => "modal", :type => "button"}
+      Software popup 1
+    / Modal
+    #one-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog.modal-dialog-soft{:role => "document"}
+        .modal-content.modal-content--soft 
+          .modal-body.modal-body--pg 
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %img{ :src => "assets/img/software/close.png"}/
+            .main-modal__boxerimg
+              .main-modal__img.main-modal__softwareimg
+                %img{ :src => "assets/img/software/image-1.png"}/
+    / Button trigger modal
+    %button.btn.btn-primary{"data-target" => "#two-modal", "data-toggle" => "modal", :type => "button"}
+      Software popup 2
+    / Modal
+    #two-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog.modal-dialog-soft{:role => "document"}
+        .modal-content.modal-content--soft 
+          .modal-body.modal-body--pg 
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %img{ :src => "assets/img/software/close.png"}/
+            .main-modal__boxerimg
+              .main-modal__img.main-modal__softwareimg
+                %img{ :src => "assets/img/software/image-2.png"}/
+    / Button trigger modal
+    %button.btn.btn-primary{"data-target" => "#three-modal", "data-toggle" => "modal", :type => "button"}
+      Software popup 3
+    / Modal
+    #three-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog.modal-dialog-soft{:role => "document"}
+        .modal-content.modal-content--soft 
+          .modal-body.modal-body--pg 
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %img{ :src => "assets/img/software/close.png"}/
+            .main-modal__boxerimg
+              .main-modal__img.main-modal__softwareimg
+                %img{ :src => "assets/img/software/image-3.png"}/
+    %footer
+      .container
+        .main-footer__content
+          .main-footer__item
+            .main-footer__logo
+              %img{ :src => "assets/img/footer/logo@3x.png"}/
+            .main-footer__copy
+              %p 
+                Copyright 2019  - Dreamed by Branch, developed by 
+                %a{} SIGMA STUDIOS
+          .main-footer__item
+            .main-footer__boxredes
+              .main-footer__redes
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/instagram.png"}/
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/facebook.png"}/
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/linkein.png"}/
+
+            .main-footer__boxubications
+              .main-footer__ubications
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/paper-plane.png"}/
+                  marveltorres@alocity.com -
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/telephone-handle-silhouette.png"}/
+                  888-512-2115 -
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/map-marker.png"}/
+                  Calle 23 Green Tower, Street Balsos
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}

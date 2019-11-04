@@ -1,0 +1,157 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Alocity 
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+  %body
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .container
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              %img{ :src => "assets/img/footer/logo@3x.png"}/
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item.active
+                %a.nav-link.active{:href => "#Products"} Products
+              %li.nav-item
+                %a.nav-link{:href => "# Pricing"}  Pricing
+              %li.nav-item
+                %a.nav-link{:href => "#Company"}  Company
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "#Support"} Support
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "#Login"}  Login
+              %li.nav-item
+                %a.btn_custom.btn--small.btn--filled--yellow{ :href => ''} GET QUOTE
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "tel:888-512-2115"}  888-512-2115
+    .main-contact
+      .container
+        .main-contact__content
+          .main-contact__item
+            .main-contact__title
+              %p How can we help?
+              %span We can’t wait to hear from you
+            %form#search-input.input-group{}
+              %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+              %input.form-control.form-search{:name => "", :placeholder => "Búsqueda", :type => "text"}/
+              %span.input-group-btn
+                %button.btn.btn-default.btn-search{:type => "submit"}
+                  Search
+    .main-form
+      .container
+        .main-form__content
+          .main-form__item
+            %form
+              .form-group
+                %label Your email address*
+                %input#formGroupExampleInput.form-control{:placeholder => "Your email address*", :type => "text"}/
+              .form-group
+                %label Subject*
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Subject*", :type => "text"}/
+              .form-group
+                %label Telephone number*
+                %input#formGroupExampleInput2.form-control{:placeholder => "Telephone number*", :type => "phone"}/
+              .form-group
+                %label Description*
+                %textarea{:placeholder => "Description*",:rows => "8"}
+              .float-left.btn-box
+                %button.btn_custom.btn--medium.btn--filled
+                  SUBMIT
+          .main-form__item
+            .main-form__title
+              %p Our information
+            .main-form__box
+              .main-form__boxitem
+                .main-users__boximg.active
+                  .main-users__img
+                    %img{ :src => "assets/img/hardware/light-bulb-1.png"}/
+                .main-form__boxtitle
+                  %p Email
+                  %span marveltorres@alocity.com
+              .main-form__boxitem
+                .main-users__boximg.active
+                  .main-users__img
+                    %img{ :src => "assets/img/hardware/light-bulb-1.png"}/
+                .main-form__boxtitle
+                  %p Telephone
+                  %span  888-512-2115
+              .main-form__boxitem
+                .main-users__boximg.active
+                  .main-users__img
+                    %img{ :src => "assets/img/hardware/light-bulb-1.png"}/
+                .main-form__boxtitle
+                  %p Local
+                  %span Calle 23 Green Tower, Street Balsos
+
+              .main-form__boxitem
+                .main-users__boximg.active
+                  .main-users__img
+                    %img{ :src => "assets/img/hardware/light-bulb-1.png"}/
+                .main-form__boxtitle
+                  %p Social media
+                  .main-footer__redes.main-form__redes
+                    %a{:href=>""}
+                      .main-footer__img
+                        %img{ :src => "assets/img/hardware/instagram.png"}/
+                    %a{:href=>""}
+                      .main-footer__img
+                        %img{ :src => "assets/img/hardware/facebook.png"}/
+                    %a{:href=>""}
+                      .main-footer__img
+                        %img{ :src => "assets/img/hardware/linkein.png"}/
+
+                
+    .main-maps
+      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3916.4357258141454!2d-74.8052848857929!3d11.005898492166052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1572684666411!5m2!1ses-419!2sve", :style => "border:0;", :width => "600"}
+
+    %footer
+      .container
+        .main-footer__content
+          .main-footer__item
+            .main-footer__logo
+              %img{ :src => "assets/img/footer/logo@3x.png"}/
+            .main-footer__copy
+              %p 
+                Copyright 2019  - Dreamed by Branch, developed by 
+                %a{} SIGMA STUDIOS
+          .main-footer__item
+            .main-footer__boxredes
+              .main-footer__redes
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/instagram.png"}/
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/facebook.png"}/
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/linkein.png"}/
+
+            .main-footer__boxubications
+              .main-footer__ubications
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/paper-plane.png"}/
+                  marveltorres@alocity.com -
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/telephone-handle-silhouette.png"}/
+                  888-512-2115 -
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/map-marker.png"}/
+                  Calle 23 Green Tower, Street Balsos
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}

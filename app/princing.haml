@@ -1,0 +1,323 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Alocity 
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/company.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+  %body
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .container
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              %img{ :src => "assets/img/footer/logo@3x.png"}/
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item.active
+                %a.nav-link.active{:href => "#Products"} Products
+              %li.nav-item
+                %a.nav-link{:href => "# Pricing"}  Pricing
+              %li.nav-item
+                %a.nav-link{:href => "#Company"}  Company
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "#Support"} Support
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "#Login"}  Login
+              %li.nav-item
+                %a.btn_custom.btn--small.btn--filled--yellow{ :href => ''} GET QUOTE
+              %li.nav-item
+                %a.nav-link.nav-link--light{:href => "tel:888-512-2115"}  888-512-2115
+    .main-banner
+      .main-banner__content
+        .main-banner__item
+          .main-banner__img
+            %img{ :src => "assets/img/company/bg.png"}/
+          .main-banner__container
+            .row
+              .col-lg-6.col-md-6.col-12
+                .main-banner__boxtext.main-banner__boxtext--princing
+                  .main-banner__text
+                    .main-banner__title
+                      %h1 Simply Smart Security!
+                      %p Transparent pricing
+              .col-lg-6.col-md-6.col-12
+                .main-banner__imags
+                  .main-banner__imags--two
+                    %img{ :src => "assets/img/princing/image@3x.png"}/
+    .main-princing
+      .container
+        .main-princing__content
+          .main-princing__item
+            .main-princing__box
+              .main-princing__text
+                .main-princing__title
+                  %p Free
+                  %span $0
+              .main-princing__list
+                %ul
+                  %li 
+                    Number of Users
+                    %span 100
+                  %li
+                    Portal Administrators
+                    %span 1
+
+                  %li  
+                    Access Schedules
+                    %span  3
+
+                  %li 
+                    Biometric Credentials
+                    %span Unlimited
+
+                  %li  
+                    Events Storage
+                    %span 10 Days
+
+                  %li  
+                    Reports
+                    %span   1
+
+                  %li 
+                    Number of Sites
+                    %span  1
+
+                  %li  
+                    Number of Readers
+                    %span  Unlimited
+
+
+          .main-princing__item
+            .main-princing__box
+              .main-princing__text
+                .main-princing__title
+                  %p Basic
+                  %span $10
+                .main-princing__description
+                  %p Per door, per month, billed annually.
+                  %span $12 billed monthly
+              .main-princing__list
+                %ul
+                  %li
+                    Number of Users
+                    %span 500
+                  %li
+                    Portal Administrators
+                    %span 5
+                  %li
+                    Access Schedules
+                    %span 5
+                  %li
+                    Mobile Credentials
+                    %span 100
+                  %li
+                    Biometric Credentials
+                    %span Unlimited
+                  %li
+                    Events Storage
+                    %span 60 Days
+                  %li
+
+                    Reports
+                    %span All
+                  %li
+
+                    Real-Time Notifications
+                    %span Yes
+                  %li
+                    Remote Unlock
+                    %span Yes
+                  %li
+                    Lockdown Doors
+                    %span Yes
+                  %li
+                    Number of Sites
+                    %span 5
+                  %li
+
+                    Number of Readers
+                    %span Unlimited
+                  %li
+
+                    Integrations
+                    %span Yes
+                  %li
+                    Active Directory User Sync
+                    %span Yes
+
+          .main-princing__item
+            .main-princing__box
+              .main-princing__text
+                .main-princing__title
+                  %p Pro
+                  %span $15
+                .main-princing__description
+                  %p Per door, per month, billed annually.
+                  %span $18 billed monthly
+              .main-princing__list
+                %ul
+                  %li
+                    Number of Users
+                    %span Unlimited
+                  %li
+                    Portal Administrators
+                    %span Unlimited
+                  %li
+                    Access Schedules
+                    %span Unlimited
+                  %li
+                    Mobile Credentials
+                    %span Unlimited
+                  %li
+                    Biometric Credentials
+                    %span Unlimited
+                  %li
+                    Events Storage
+                    %span Unlimited
+                  %li
+                    Reports
+                    %span All
+                  %li
+                    Real-Time Notifications
+                    %span Yes
+                  %li
+                    Remote Unlock
+                    %span Yes
+                  %li
+                    Lockdown Doors
+                    %span Yes
+                  %li
+                    Number of Sites
+                    %span Unlimited
+                  %li
+                    Number of Readers
+                    Unlimited
+                  %li
+                    Integrations
+                    %span  Yes
+                  %li
+                    Active Directory User Sync
+                    %span Yes
+                  %li
+                    SAML Based SSO
+                    %span Yes
+                  %li
+                    Workflow Automation
+                    %span Yes
+                  %li
+                    API
+                    %span Yes
+                  %li
+                    Two Factor Authentication
+                    %span Yes
+    .main-testimonials{ :style=>"background-image:url(assets/img/princing/image-bg.png)"}
+      .container
+        .main-title__general.main-title__general--white
+          %h2 What clients say?
+        .main-testimonials__content
+          .main-testimonials__box
+            .main-testimonials__item
+              .main-testimonials__img
+                %img{ :src => "assets/img/princing/image_2.png"}/
+              .main-testimonials__description
+                %p “Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500”
+              
+              .main-testimonials__name
+                %p - Steve Jordan
+                %p Redblue Company
+          .main-testimonials__box
+            .main-testimonials__item
+              .main-testimonials__img
+                %img{ :src => "assets/img/princing/image_2.png"}/
+              .main-testimonials__description
+                %p “Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500”
+              
+              .main-testimonials__name
+                %p - Steve Jordan
+                %p Redblue Company
+                
+    .main-client
+      .container
+        .main-title__general.main-title__general--flex
+          %h2 Some of Our Customers
+          %h3 You’re in good hands   
+        .main-client__content
+          .main-client__item
+            .main-client__img
+              %img{ :src => "assets/img/software/10.png"}/
+          .main-client__item
+            .main-client__img
+              %img{ :src => "assets/img/software/8.png"}/
+          .main-client__item
+            .main-client__img
+              %img{ :src => "assets/img/software/2.png"}/
+          .main-client__item
+            .main-client__img
+              %img{ :src => "assets/img/software/7.png"}/
+          .main-client__item
+            .main-client__img
+              %img{ :src => "assets/img/software/3.png"}/
+    .main-infomation
+      .container
+        .row
+          .col-lg-6.col-xs-12.col-sm-6
+            .main-infomation__img
+              %img{ :src => "assets/img/software/phone.png"}/
+          .col-lg-6.col-xs-12.col-sm-6
+            .main-information__content
+              .main-information__title
+                %p Need more information?
+              .main-information__description
+                %p Let one of our specialist show you around
+              .main-information__btn
+                %a.btn_custom.btn--medium.btn--filled--white{ :href => ''} get quote
+              .main-information__description
+                %p Speak to us  888-512-2115
+    %footer
+      .container
+        .main-footer__content
+          .main-footer__item
+            .main-footer__logo
+              %img{ :src => "assets/img/footer/logo@3x.png"}/
+            .main-footer__copy
+              %p 
+                Copyright 2019  - Dreamed by Branch, developed by 
+                %a{} SIGMA STUDIOS
+          .main-footer__item
+            .main-footer__boxredes
+              .main-footer__redes
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/instagram.png"}/
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/facebook.png"}/
+                %a{:href=>""}
+                  .main-footer__img
+                    %img{ :src => "assets/img/footer/linkein.png"}/
+
+            .main-footer__boxubications
+              .main-footer__ubications
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/paper-plane.png"}/
+                  marveltorres@alocity.com -
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/telephone-handle-silhouette.png"}/
+                  888-512-2115 -
+                %a{:href=>""}
+                  %img{ :src => "assets/img/footer/map-marker.png"}/
+                  Calle 23 Green Tower, Street Balsos
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}

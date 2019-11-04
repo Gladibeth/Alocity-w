@@ -4,7 +4,7 @@ $('.main-banner__content').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: false,
-  arrows: false,
+  arrows: true,
   responsive: [{
       breakpoint: 1200,
       settings: {
@@ -27,6 +27,45 @@ $('.main-banner__content').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000
+      }
+    }
+  ]
+});
+
+
+
+$('.main-testimonials__content').slick({
+  infinite: true,
+  autoplay: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  responsive: [{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
         autoplay: false,
         arrows: false,
         autoplaySpeed: 1000
