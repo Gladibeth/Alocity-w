@@ -1,0 +1,5 @@
+### WordPress ###
+*.log
+
+/.htaccess
+/wp-config.php

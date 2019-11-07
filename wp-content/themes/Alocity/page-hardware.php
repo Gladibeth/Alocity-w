@@ -288,13 +288,38 @@
       <div class="main-title__general">
         <h2>Access Control Readers Specifications</h2>
       </div>
-      <div class="main-access__content">
-        <div class="main-access__item">
+      <div id="main-access__nav" class="main-access__nav">
+        <div class="main-access__item main-access__item--center ">
           <div class="main-access__box">
             <div class="main-access__box--small">
               <p>A55</p>
             </div>
           </div>
+        </div>
+        <div class="main-access__box">
+          <div class="main-access__item main-access__item--center ">
+            <div class="main-access__box--small">
+              <p>A250</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-access__box">
+          <div class="main-access__item main-access__item--center ">
+            <div class="main-access__box--small">
+              <p>AW50</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-access__box">
+          <div class="main-access__item main-access__item--center ">
+            <div class="main-access__box--small">
+              <p>AW500</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-access__content">
+        <div class="main-access__item main-access__item--center ">
           <div class="main-access__boximg">
             <div class="main-access__img">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
@@ -309,12 +334,8 @@
             </div>
           </div>
         </div>
-        <div class="main-access__item">
-          <div class="main-access__box">
-            <div class="main-access__box--small">
-              <p>A250</p>
-            </div>
-          </div>
+        <div class="main-access__item main-access__item--center ">
+          
           <div class="main-access__boximg">
             <div class="main-access__img">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_2.png">
@@ -329,12 +350,8 @@
             </div>
           </div>
         </div>
-        <div class="main-access__item">
-          <div class="main-access__box">
-            <div class="main-access__box--small">
-              <p>AW50</p>
-            </div>
-          </div>
+        <div class="main-access__item main-access__item--center ">
+          
           <div class="main-access__boximg">
             <div class="main-access__img">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_3.png">
@@ -349,12 +366,8 @@
             </div>
           </div>
         </div>
-        <div class="main-access__item">
-          <div class="main-access__box">
-            <div class="main-access__box--small">
-              <p>AW500</p>
-            </div>
-          </div>
+        <div class="main-access__item main-access__item--center ">
+          
           <div class="main-access__boximg">
             <div class="main-access__img">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_4.png">
@@ -376,7 +389,7 @@
         </div>
         <hr>
         <div class="main-access__content">
-          <div class="main-access__item main-access__item--center">
+          <div class="main-access__item main-access__item--center main-access__item--top">
             <div class="main-access__boxmethod">
               <div class="main-access__methodtitle">
                 <p>Card</p>
@@ -402,7 +415,7 @@
               </div>
             </div>
           </div>
-          <div class="main-access__item main-access__item--center">
+          <div class="main-access__item main-access__item--center main-access__item--top">
             <div class="main-access__boxmethod">
               <div class="main-access__methodtitle">
                 <p>Fingerprint</p>
@@ -436,7 +449,7 @@
               </div>
             </div>
           </div>
-          <div class="main-access__item main-access__item--center">
+          <div class="main-access__item main-access__item--center main-access__item--top">
             <div class="main-access__boxmethod">
               <div class="main-access__methodtitle">
                 <p>Card</p>
@@ -462,7 +475,7 @@
               </div>
             </div>
           </div>
-          <div class="main-access__item main-access__item--center">
+          <div class="main-access__item main-access__item--center main-access__item--top">
             <div class="main-access__boxmethod">
               <div class="main-access__methodtitle">
                 <p>Fingerprint</p>

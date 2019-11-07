@@ -233,12 +233,12 @@
     <div class="container">
       <div class="row main-dashboard__content">
         <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
-          <div class="main-dashboard__cards">
+          <div class="main-dashboard__cards" >
             <div class="main-dashboard__boximg">
-              <div class="main-dashboard__img">
-                <img src="assets/img/software/image_6.png">
-                <img class="img__two" src="assets/img/software/plus.png">
-              </div>
+              <a class="main-dashboard__img" href="" data-target="#three-modal" data-toggle="modal">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image_6.png">
+                <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
+</a>
               <div class="main-dashboard__img--two">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
               </div>
@@ -251,17 +251,17 @@
                 <p>Easily add users with access levels and sync their biometric, mobile, card, and pin credentials instantly to the door readers.</p>
               </div>
             </div>
-          </div>
+</div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
-          <div class="main-dashboard__cards active">
+          <div class="main-dashboard__cards active" href="" data-target="#one-modal" data-toggle="modal">
             <div class="main-dashboard__boximg">
-              <div class="main-dashboard__img">
+              <a class="main-dashboard__img" href="" data-target="#three-modal" data-toggle="modal">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image_3.png">
-                <img class="img__two" src="assets/img/software/plus.png">
-              </div>
+                <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
+</a>
               <div class="main-dashboard__img--two">
-                <img src="assets/img/software/image.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
               </div>
             </div>
             <div class="main-dashboard__text">
@@ -272,15 +272,15 @@
                 <p>Our modern dashboard gives you instant visibility on user activity, door states, and critical events.</p>
               </div>
             </div>
-          </div>
+</div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
-          <div class="main-dashboard__cards">
+          <div class="main-dashboard__cards" href="" data-target="#two-modal" data-toggle="modal">
             <div class="main-dashboard__boximg">
-              <div class="main-dashboard__img">
+              <a class="main-dashboard__img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image_8.png">
                 <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
-              </div>
+</a>
               <div class="main-dashboard__img--two">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
               </div>
@@ -293,7 +293,7 @@
                 <p>Configure and manage alocity smart door readers instantly from the cloud.</p>
               </div>
             </div>
-          </div>
+</div>
         </div>
       </div>
     </div>
@@ -429,125 +429,5 @@
       </div>
     </div>
   </div>
-  <!-- Button trigger modal -->
-  <button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal" type="button">
-      Home Popup
-    </button>
-  <!-- Modal -->
-  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body modal-body--pg">
-          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
-            </button>
-          <div class="row">
-            <div class="col-lg-6 col-md-6 p-0 d-sm-flex d-none">
-              <div class="main-modal__boximg">
-                <div class="main-modal__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/phone-modal.png">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 p-0">
-              <div class="main-modal__form">
-                <div class="main-modal__title">
-                  <h2>Get In Touch</h2>
-                </div>
-                <form>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput" placeholder="First Name*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput" placeholder="Last Name*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput" placeholder="Company" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="Email*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="Phone*" type="phone">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="Country*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <textarea placeholder="Comments" rows="8"></textarea>
-                  </div>
-                  <div class="main-check__btn">
-                    <a class="btn_custom btn--large btn--filled--yellow" href="">send message</a>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Button trigger modal -->
-  <button class="btn btn-primary" data-target="#one-modal" data-toggle="modal" type="button">
-      Software popup 1
-    </button>
-  <!-- Modal -->
-  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="one-modal" role="dialog" tabindex="-1">
-    <div class="modal-dialog modal-dialog-soft" role="document">
-      <div class="modal-content modal-content--soft">
-        <div class="modal-body modal-body--pg">
-          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
-            </button>
-          <div class="main-modal__boxerimg">
-            <div class="main-modal__img main-modal__softwareimg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-1.png">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Button trigger modal -->
-  <button class="btn btn-primary" data-target="#two-modal" data-toggle="modal" type="button">
-      Software popup 2
-    </button>
-  <!-- Modal -->
-  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="two-modal" role="dialog" tabindex="-1">
-    <div class="modal-dialog modal-dialog-soft" role="document">
-      <div class="modal-content modal-content--soft">
-        <div class="modal-body modal-body--pg">
-          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
-            </button>
-          <div class="main-modal__boxerimg">
-            <div class="main-modal__img main-modal__softwareimg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-2.png">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Button trigger modal -->
-  <button class="btn btn-primary" data-target="#three-modal" data-toggle="modal" type="button">
-      Software popup 3
-    </button>
-  <!-- Modal -->
-  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="three-modal" role="dialog" tabindex="-1">
-    <div class="modal-dialog modal-dialog-soft" role="document">
-      <div class="modal-content modal-content--soft">
-        <div class="modal-body modal-body--pg">
-          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
-            </button>
-          <div class="main-modal__boxerimg">
-            <div class="main-modal__img main-modal__softwareimg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-3.png">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 <?php get_footer(); ?>
