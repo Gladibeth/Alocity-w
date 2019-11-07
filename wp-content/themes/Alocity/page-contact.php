@@ -9,7 +9,7 @@
           </div>
           <form class="input-group" id="search-input">
             <input name="utf8" type="hidden" value="✓">
-            <input class="form-control form-search" name="" placeholder="Búsqueda" type="text">
+            <input class="form-control form-search" name="" placeholder="Search" type="text">
             <span class="input-group-btn">
                 <button class="btn btn-default btn-search" type="submit">
                   Search
