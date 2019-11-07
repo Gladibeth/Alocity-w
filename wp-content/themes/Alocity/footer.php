@@ -1,3 +1,113 @@
+  <!-- Modal -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="get_quate" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body modal-body--pg">
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
+            </button>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 p-0 d-sm-flex d-none">
+              <div class="main-modal__boximg">
+                <div class="main-modal__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/phone-modal.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 p-0">
+              <div class="main-modal__form">
+                <div class="main-modal__title">
+                  <h2>Get In Touch</h2>
+                </div>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput" placeholder="First Name*" type="text">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput" placeholder="Last Name*" type="text">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput" placeholder="Company" type="text">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput2" placeholder="Email*" type="text">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput2" placeholder="Phone*" type="phone">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput2" placeholder="Country*" type="text">
+                  </div>
+                  <div class="form-group">
+                    <textarea placeholder="Comments" rows="8"></textarea>
+                  </div>
+                  <div class="main-check__btn">
+                    <a class="btn_custom btn--large btn--filled--yellow" href="">send message</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="one-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-soft" role="document">
+      <div class="modal-content modal-content--soft">
+        <div class="modal-body modal-body--pg">
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
+            </button>
+          <div class="main-modal__boxerimg">
+            <div class="main-modal__img main-modal__softwareimg">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-1.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="two-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-soft" role="document">
+      <div class="modal-content modal-content--soft">
+        <div class="modal-body modal-body--pg">
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
+            </button>
+          <div class="main-modal__boxerimg">
+            <div class="main-modal__img main-modal__softwareimg">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-2.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="three-modal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-soft" role="document">
+      <div class="modal-content modal-content--soft">
+        <div class="modal-body modal-body--pg">
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
+            </button>
+          <div class="main-modal__boxerimg">
+            <div class="main-modal__img main-modal__softwareimg">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-3.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer>
     <div class="container">
       <div class="main-footer__content">
