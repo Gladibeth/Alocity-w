@@ -428,10 +428,5 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- Button trigger modal -->
-  <button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal" type="button">
-      Home Popup
-    </button>
-  
+  </div>  
 <?php get_footer(); ?>
