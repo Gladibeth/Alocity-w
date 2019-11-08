@@ -1,8 +1,8 @@
   <div class="main-client">
     <div class="container">
       <div class="main-title__general main-title__general--flex">
-        <h2>Some of Our Customers</h2>
-        <h3>You’re in good hands</h3>
+        <h2>Simply Smart Segurity</h2>
+        <h3>Door to Cloud Access Control</h3>
       </div>
       <div class="main-client__content">
         <div class="main-client__item">

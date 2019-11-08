@@ -42,7 +42,7 @@
                     <textarea placeholder="Comments" rows="8"></textarea>
                   </div>
                   <div class="main-check__btn">
-                    <a class="btn_custom btn--large btn--filled--yellow" href="">send message</a>
+                    <a class="btn_custom btn--large btn--filled--yellowgradient" href="">send message</a>
                   </div>
                 </form>
               </div>
