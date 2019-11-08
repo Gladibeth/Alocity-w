@@ -1365,7 +1365,7 @@ section {
 }
 
 .main-control.main-control--hard {
-  padding-top: 50px;
+  padding-top: 50px 5px 0px 10px;
 }
 
 .main-control__imags--one img {
