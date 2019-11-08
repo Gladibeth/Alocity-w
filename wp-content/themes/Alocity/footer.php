@@ -4,8 +4,8 @@
       <div class="modal-content">
         <div class="modal-body modal-body--pg">
           <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
-            </button>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
+          </button>
           <div class="row">
             <div class="col-lg-6 col-md-6 p-0 d-sm-flex d-none">
               <div class="main-modal__boximg">
@@ -19,32 +19,7 @@
                 <div class="main-modal__title">
                   <h2>Get In Touch</h2>
                 </div>
-                <form>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput" placeholder="First Name*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput" placeholder="Last Name*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput" placeholder="Company" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="Email*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="Phone*" type="phone">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="Country*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <textarea placeholder="Comments" rows="8"></textarea>
-                  </div>
-                  <div class="main-check__btn">
-                    <a class="btn_custom btn--large btn--filled--yellow" href="">send message</a>
-                  </div>
-                </form>
+                <?php echo do_shortcode('[hubspot type=form portal=6692390 id=73da40c9-001f-4fb7-bedd-c13d5ea274af]'); ?>
               </div>
             </div>
           </div>
@@ -59,8 +34,8 @@
       <div class="modal-content modal-content--soft">
         <div class="modal-body modal-body--pg">
           <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
-            </button>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
+          </button>
           <div class="main-modal__boxerimg">
             <div class="main-modal__img main-modal__softwareimg">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-1.png">
@@ -78,8 +53,8 @@
       <div class="modal-content modal-content--soft">
         <div class="modal-body modal-body--pg">
           <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
-            </button>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
+          </button>
           <div class="main-modal__boxerimg">
             <div class="main-modal__img main-modal__softwareimg">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-2.png">
@@ -97,8 +72,8 @@
       <div class="modal-content modal-content--soft">
         <div class="modal-body modal-body--pg">
           <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
-            </button>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/close.png">
+          </button>
           <div class="main-modal__boxerimg">
             <div class="main-modal__img main-modal__softwareimg">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-3.png">
@@ -145,17 +120,17 @@
           <div class="main-footer__boxubications">
             <div class="main-footer__ubications">
               <a href="">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/paper-plane.png">
-                  marveltorres@alocity.com -
-                </a>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/paper-plane.png">
+                marveltorres@alocity.com -
+              </a>
               <a href="">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/telephone-handle-silhouette.png">
-                  888-512-2115 -
-                </a>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/telephone-handle-silhouette.png">
+                888-512-2115 -
+              </a>
               <a href="">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/map-marker.png">
-                  Calle 23 Green Tower, Street Balsos
-                </a>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/map-marker.png">
+                Calle 23 Green Tower, Street Balsos
+              </a>
             </div>
           </div>
         </div>
@@ -168,7 +143,7 @@
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/setting-slick.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 
-<?php wp_footer(); ?>
+  <?php wp_footer(); ?>
 </body>
 
 </html>
