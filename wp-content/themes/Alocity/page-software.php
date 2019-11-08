@@ -2,7 +2,7 @@
   <div class="main-banner">
     <div class="main-banner__content">
       <div class="main-banner__item">
-        <div class="mask">
+        <div class="mask mask--white">
           <div class="main-banner__text">
             <div class="main-banner__title">
               <h1>Simply Smart Segurity</h1>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="main-banner__item">
-        <div class="mask">
+        <div class="mask mask--white">
           <div class="main-banner__text">
             <div class="main-banner__title">
               <h1>Simply Smart Segurity</h1>
@@ -254,9 +254,9 @@
 </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
-          <div class="main-dashboard__cards active" href="" data-target="#one-modal" data-toggle="modal">
+          <div class="main-dashboard__cards active" >
             <div class="main-dashboard__boximg">
-              <a class="main-dashboard__img" href="" data-target="#three-modal" data-toggle="modal">
+              <a class="main-dashboard__img" href="" data-target="#one-modal" data-toggle="modal">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image_3.png">
                 <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
 </a>
@@ -318,11 +318,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/calendar-2.png">
                   </div>
                   <div class="main-users__title">
-                    <p>Multi-Spectral Technology</p>
+                    <p>Easily Schedule Users</p>
                   </div>
                 </div>
                 <div class="main-general__description">
-                  <p>Reads the inner layer fingerprint, resulting in superior images and results.</p>
+                  <p>Create schedules for complete door control of who can enter, at what time, and on which door.</p>
                 </div>
               </div>
             </div>
@@ -333,11 +333,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/notification.png">
                   </div>
                   <div class="main-users__title">
-                    <p>Liveness Detection</p>
+                    <p>Instant Alerts</p>
                   </div>
                 </div>
                 <div class="main-general__description">
-                  <p>Uses the best liveness detection technology to protect against fake and spoof fingerprints.</p>
+                  <p>Create schedules for complete door control of who can enter, at what time, and on which door.</p>
                 </div>
               </div>
             </div>
@@ -348,11 +348,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/user-3.png">
                   </div>
                   <div class="main-users__title">
-                    <p>Works on All People</p>
+                    <p>Manage User Credentials</p>
                   </div>
                 </div>
                 <div class="main-general__description">
-                  <p>Our readers work on ALL people - including that 2-5% of the population with “problem fingerprints” that fail to enroll on conventional sensors.</p>
+                  <p>Instantly assign/revoke user credentials. (biometric, mobile, cloud-keys, pin or card).</p>
                 </div>
               </div>
             </div>
@@ -363,11 +363,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/exit.png">
                   </div>
                   <div class="main-users__title">
-                    <p>Works in All Conditions</p>
+                    <p>Door Control</p>
                   </div>
                 </div>
                 <div class="main-general__description">
-                  <p>Maintains superior performance even in rain, cold, dry and hot environments.</p>
+                  <p>Total control to unlock or lockdown doors from anywhere, and see door states in real-time.</p>
                 </div>
               </div>
             </div>
@@ -384,7 +384,7 @@
             <div class="main-title__general main-title__general--width">
               <h2>Integrated with the tools you use</h2>
             </div>
-            <div class="main-general__description main-general__description--color">
+            <div class="main-general__description main-general__description--color main-general__description--soft">
               <p>Alocity® is fully integrated with your favorite apps, so you can spend less time juggling tabs and more time focusing on meaningful work.</p>
             </div>
             <div class="main-check__btn">
@@ -402,6 +402,8 @@
       </div>
     </div>
   </div>
+  <?php  get_template_part('sections/main-testimonials'); ?>
+  <?php  get_template_part('sections/main-client'); ?>
   <div class="main-infomation">
     <div class="container">
       <div class="row">

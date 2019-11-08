@@ -102,7 +102,7 @@ $('.main-client__content').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 1000,
         arrows: false
       }
@@ -145,29 +145,33 @@ $('.main-election__items').slick({
 });
 
 
-// $('.main-steps__content').slick({
+$('.main-dashboard__content').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: true,
+  responsive: [{
 
-//   responsive: [{
-
-//       breakpoint: 900,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1
-//       }
-//     },
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         dots: false,
-//         autoplay: true,
-//         arrows: false,
-//         autoplaySpeed: 1000
-//       }
-//     }
-//   ]
-// });
+      breakpoint: 997,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 1000
+      }
+    }
+  ]
+});
 
 $('.slider-for__team').slick({
   slidesToShow: 1,

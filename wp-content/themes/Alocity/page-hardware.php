@@ -2,12 +2,12 @@
   <div class="main-banner">
     <div class="main-banner__content">
       <div class="main-banner__item">
-        <div class="main-banner__img">
+        <div class="main-banner__img main-banner__img--hard">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_7.png">
         </div>
         <div class="main-banner__container">
           <div class="row">
-            <div class="col-lg-6 col-md-6 col-12">
+            <div class="col-lg-6 col-md-6 col-12  col-hard">
               <div class="main-banner__boxtext main-banner__boxtext--princing">
                 <div class="main-banner__text">
                   <div class="main-banner__title">
@@ -158,7 +158,7 @@
   <div class="main-control main-control--hard" style="background-image:url(assets/img/hardware/bg.png)">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 col-12 p-0">
+        <div class="col-lg-8 col-12 p-0">
           <div class="main-control__box">
             <div class="main-title__general main-title__general--fullwidth">
               <h2>World’s #1 Fingerprint Technology</h2>
@@ -177,10 +177,10 @@
                   <div class="main-users__item">
                     <div class="main-users__boxtext">
                       <div class="main-users__title">
-                        <p>Secure & Encrypted</p>
+                        <p>Multi-Spectral Technology</p>
                       </div>
-                      <div class="main-general__description">
-                        <p>All communication and data transfer/storage is encrypted and uses the latest TLS 2.0, SSL certificate standards.</p>
+                      <div class="main-general__description main-general__description--hard">
+                        <p>Reads the inner layer fingerprint, resulting in superior images and results.</p>
                       </div>
                     </div>
                   </div>
@@ -198,10 +198,10 @@
                   <div class="main-users__item">
                     <div class="main-users__boxtext">
                       <div class="main-users__title">
-                        <p>Not to Worry - It Works Offline</p>
+                        <p>Liveness Detection</p>
                       </div>
-                      <div class="main-general__description">
-                        <p>Alocity® readers function even when the internet goes down.</p>
+                      <div class="main-general__description main-general__description--hard">
+                        <p>Uses the best liveness detection technology to protect against fake and spoof fingerprints.</p>
                       </div>
                     </div>
                   </div>
@@ -219,10 +219,10 @@
                   <div class="main-users__item">
                     <div class="main-users__boxtext">
                       <div class="main-users__title">
-                        <p>Simple to Configure</p>
+                        <p>Works on All People</p>
                       </div>
-                      <div class="main-general__description">
-                        <p>Easily configure the Alocity® readers directly from the cloud software.</p>
+                      <div class="main-general__description main-general__description--hard">
+                        <p>Our readers work on ALL people - including that 2-5% of the population with “problem fingerprints”  that fail to enroll on conventional sensors.</p>
                       </div>
                     </div>
                   </div>
@@ -240,10 +240,10 @@
                   <div class="main-users__item">
                     <div class="main-users__boxtext">
                       <div class="main-users__title">
-                        <p>Syncs Instantly with Cloud</p>
+                        <p>Works in All Conditions</p>
                       </div>
-                      <div class="main-general__description">
-                        <p>No configuration required, all data from reader to software happens seamlessly in real-time.</p>
+                      <div class="main-general__description main-general__description--hard">
+                        <p>Maintains superior performance even in rain, cold, dry and hot environments.</p>
                       </div>
                     </div>
                   </div>
@@ -252,7 +252,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-12 p-0">
+        <div class="col-lg-4 col-12 p-0">
           <div class="content-control__img">
             <div class="main-control__img main-control__img--hard">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_6.png">
@@ -265,10 +265,10 @@
   <div class="main-infomation">
     <div class="container">
       <div class="row">
+        <div class="main-infomation__img main-infomation__img--hard">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_5.png">
+        </div>
         <div class="col-lg-6 col-xs-12 col-sm-6">
-          <div class="main-infomation__img main-infomation__img--hard">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_5.png">
-          </div>
         </div>
         <div class="col-lg-6 col-xs-12 col-sm-6">
           <div class="main-information__content">
@@ -333,6 +333,9 @@
               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
             </div>
           </div>
+          <div class="main-access__namecolor">
+            <p> White</p>
+          </div>
         </div>
         <div class="main-access__item main-access__item--center ">
           
@@ -349,6 +352,9 @@
               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
             </div>
           </div>
+          <div class="main-access__namecolor">
+            <p> White</p>
+          </div>
         </div>
         <div class="main-access__item main-access__item--center ">
           
@@ -359,11 +365,15 @@
           </div>
           <div class="main-access__check">
             <div class="main-access__boxcheck active">
-              <div class="main-access__smallcheck"></div>
+               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+              
             </div>
             <div class="main-access__boxcheck">
-              <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+             <div class="main-access__smallcheck"></div>
             </div>
+          </div>
+          <div class="main-access__namecolor">
+            <p> Black</p>
           </div>
         </div>
         <div class="main-access__item main-access__item--center ">
@@ -375,11 +385,15 @@
           </div>
           <div class="main-access__check">
             <div class="main-access__boxcheck active">
-              <div class="main-access__smallcheck"></div>
+               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+              
             </div>
             <div class="main-access__boxcheck">
-              <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+             <div class="main-access__smallcheck"></div>
             </div>
+          </div>
+          <div class="main-access__namecolor">
+            <p> Black</p>
           </div>
         </div>
       </div>
@@ -395,7 +409,7 @@
                 <p>Card</p>
               </div>
               <div class="main-access__methodimg">
-                <img src="assets/img/hardware/icon.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/icon.png">
               </div>
             </div>
             <div class="main-access__boxmethod">

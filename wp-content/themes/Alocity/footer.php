@@ -19,7 +19,36 @@
                 <div class="main-modal__title">
                   <h2>Get In Touch</h2>
                 </div>
+<<<<<<< HEAD
                 <?php echo do_shortcode('[hubspot type=form portal=6692390 id=73da40c9-001f-4fb7-bedd-c13d5ea274af]'); ?>
+=======
+                <form>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput" placeholder="First Name*" type="text">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput" placeholder="Last Name*" type="text">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput" placeholder="Company" type="text">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput2" placeholder="Email*" type="text">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput2" placeholder="Phone*" type="phone">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="formGroupExampleInput2" placeholder="Country*" type="text">
+                  </div>
+                  <div class="form-group">
+                    <textarea placeholder="Comments" rows="8"></textarea>
+                  </div>
+                  <div class="main-check__btn">
+                    <a class="btn_custom btn--large btn--filled--yellowgradient" href="">send message</a>
+                  </div>
+                </form>
+>>>>>>> 40032cd98f61b9f7811a9416e6cbd8a071ddaf46
               </div>
             </div>
           </div>
