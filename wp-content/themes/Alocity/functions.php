@@ -69,6 +69,7 @@ function theme_customize_register($wp_customize){
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_users.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_control.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_information.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_sections.php';
 
 /********** Pricing  ***************/ 
 
@@ -333,20 +334,64 @@ function access($position,$field){
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post(); $post_id = get_the_ID();
         if ($field == "title") {
-            $valor= array('title' => the_title());
-        }
-        if ($field == "image") {
-            $valor= array('image' => the_post_thumbnail_url('full'));
-        }    
+            the_title();
+        }   
         if ($field == "image_white") {
-            $valor= array('image_white' => the_field('image_white'));
+            the_field('image_white');
         } 
         if ($field == "image_black") {
-            $valor= array('image_black' => the_field('image_black'));
+            the_field('image_black');
+        }   
+        if ($field == "works_outdoors") {
+            the_field('works_outdoors');
+        } 
+        if ($field == "communication_interface") {
+            the_field('communication_interface');
+        }  
+        if ($field == "door_control") {
+            the_field('door_control');
+        } 
+        if ($field == "fingerprint_users") {
+            the_field('fingerprint_users');
+        }                                   
+        if ($field == "card_pin_users") {
+            the_field('card_pin_users');
         }
+        if ($field == "mobile_credentials") {
+            the_field('mobile_credentials');
+        } 
+        if ($field == "height") {
+            the_field('height');
+        }
+        if ($field == "width") {
+            the_field('width');
+        } 
+        if ($field == "depth") {
+            the_field('depth');
+        }  
+        if ($field == "power") {
+            the_field('power');
+        }   
+        if ($field == "current") {
+            the_field('current');
+        }                              
 
       endwhile; 
 }
 
+function access_methods($position,$field){
+      global $wpdb;  
+      $args = array( 'post_type' => 'access', 'posts_per_page' => 1, 'offset' => $position, );
+      $loop = new WP_Query( $args );
+      while ( $loop->have_posts() ) : $loop->the_post(); $post_id = get_the_ID();
+           $valor= get_field('access_methods');
+           for ($i=0; $i <=3 ; $i++) { 
+               if ($valor[$i] == $field) {
+                   $valor = $valor[$i];
+               }
+           }
+      endwhile; 
+      return $valor;
+}
 
 ?>
