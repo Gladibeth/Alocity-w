@@ -29,9 +29,9 @@
         <div class="col-lg-4 col-sm-6">
           <div class="main-users__content">
             <div class="main-users__item">
-              <div class="main-users__boximg active">
+              <div class="main-users__boximg">
                 <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/settings.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/index/settings.png">
                 </div>
               </div>
             </div>
@@ -262,16 +262,16 @@
       </div>
     </div>
   </div>
-  <div class="main-infomation">
+  <div class="main-infomation main-information--height">
     <div class="container">
       <div class="row">
-        <div class="main-infomation__img main-infomation__img--hard">
+        <div class="main-infomation__img main-information__img--hard">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_5.png">
         </div>
         <div class="col-lg-6 col-xs-12 col-sm-6">
         </div>
         <div class="col-lg-6 col-xs-12 col-sm-6">
-          <div class="main-information__content">
+          <div class="main-information__content  main-information__content--height">
             <div class="main-information__title main-information__title--left">
               <p>Waterproof IP67</p>
             </div>
@@ -288,7 +288,907 @@
       <div class="main-title__general">
         <h2>Access Control Readers Specifications</h2>
       </div>
+      <?php if(wp_is_mobile()): ?>
+
+
       <div id="main-access__nav" class="main-access__nav">
+        <div class="main-access__item main-access__item--center ">
+          <div class="main-access__box">
+            <div class="main-access__box--small">
+              <p>A55</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-access__box">
+          <div class="main-access__item main-access__item--center ">
+            <div class="main-access__box--small">
+              <p>A250</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-access__content">
+        <div class="main-access__item main-access__item--center ">
+          <div class="main-access__boximg">
+            <div class="main-access__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
+            </div>
+          </div>
+          <div class="main-access__check">
+            <div class="main-access__boxcheck active">
+              <div class="main-access__smallcheck"></div>
+            </div>
+            <div class="main-access__boxcheck">
+              <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+            </div>
+          </div>
+          <div class="main-access__namecolor">
+            <p> White</p>
+          </div>
+        </div>
+        <div class="main-access__item main-access__item--center ">
+          
+          <div class="main-access__boximg">
+            <div class="main-access__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_2.png">
+            </div>
+          </div>
+          <div class="main-access__check">
+            <div class="main-access__boxcheck active">
+              <div class="main-access__smallcheck"></div>
+            </div>
+            <div class="main-access__boxcheck">
+              <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+            </div>
+          </div>
+          <div class="main-access__namecolor">
+            <p> White</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Access Methods</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item main-access__item--center main-access__item--top">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Card</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/icon.png">
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Mobile</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/icon_3.png">
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Cloud-Key</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/1.png">
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item main-access__item--center main-access__item--top">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Fingerprint</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/fingerprint.png">
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Card</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/icon.png">
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Mobile</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/icon_3.png">
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Cloud-Key</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/1.png">
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+       <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Works Outdoors</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Under Covered Area</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Under Covered Area</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Communication Interface</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>PoE (Power over Ethernet)</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Wi-Fi</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Ethernet 10/100 Mbps</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Bluetooth Smart</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>RS-485</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Wiegand</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>OSDP</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>PoE (Power over Ethernet)</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Wi-Fi</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Ethernet 10/100 Mbps</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Bluetooth Smart</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>RS-485</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Wiegand</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>OSDP</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Door Control</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Form C Relay</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Door Contact Input</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Exit Button Input</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>TTL Output</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Form C Relay</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Door Contact Input</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Exit Button Input</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>TTL Output</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>User Credentials Capacity</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Fingerprint Users
+                  <span>None</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Card / Pin Users
+                  <span>20,000</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Mobile Credentials
+                  <span>20,000</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Fingerprint Users
+                  <span>1,000 / 10,000 Optional</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Card / Pin Users
+                  <span>20,000</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Mobile Credentials
+                  <span>20,000</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Size & Dimensions</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Height
+                  <span>7” inches (177.8 mm)</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Width
+                  <span>2.50” inches (63.50 mm)</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Depth
+                  <span>2” inches (50.8 mm)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Height
+                  <span>7” inches (177.8 mm)</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Width
+                  <span>2.50” inches (63.50 mm)</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Depth
+                  <span>2” inches (50.8 mm)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Power</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Power
+                  <span>DC 12 volts</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Current
+                  <span>Operatinals Amp</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Power
+                  <span>DC 12 volts</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Current
+                  <span>Operatinals Amp</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+
+
+      //// 2
+
+      <div class="main-access__nav">
+        <div class="main-access__box">
+          <div class="main-access__item main-access__item--center ">
+            <div class="main-access__box--small">
+              <p>AW50</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-access__box">
+          <div class="main-access__item main-access__item--center ">
+            <div class="main-access__box--small">
+              <p>AW500</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-access__content">   
+        <div class="main-access__item main-access__item--center ">
+          
+          <div class="main-access__boximg">
+            <div class="main-access__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_3.png">
+            </div>
+          </div>
+          <div class="main-access__check">
+            <div class="main-access__boxcheck active">
+               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+              
+            </div>
+            <div class="main-access__boxcheck">
+             <div class="main-access__smallcheck"></div>
+            </div>
+          </div>
+          <div class="main-access__namecolor">
+            <p> Black</p>
+          </div>
+        </div>
+        <div class="main-access__item main-access__item--center ">
+          
+          <div class="main-access__boximg">
+            <div class="main-access__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_4.png">
+            </div>
+          </div>
+          <div class="main-access__check">
+            <div class="main-access__boxcheck active">
+               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+              
+            </div>
+            <div class="main-access__boxcheck">
+             <div class="main-access__smallcheck"></div>
+            </div>
+          </div>
+          <div class="main-access__namecolor">
+            <p> Black</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Access Methods</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item main-access__item--center main-access__item--top">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Card</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/icon.png">
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Mobile</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/icon_3.png">
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Cloud-Key</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/1.png">
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item main-access__item--center main-access__item--top">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Fingerprint</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/fingerprint.png">
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Card</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/icon.png">
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Mobile</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/icon_3.png">
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle">
+                <p>Cloud-Key</p>
+              </div>
+              <div class="main-access__methodimg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/1.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Works Outdoors</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Yes</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Yes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Communication Interface</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>PoE (Power over Ethernet)</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Wi-Fi</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Ethernet 10/100 Mbps</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Bluetooth Smart</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>RS-485</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Wiegand</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>OSDP</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>PoE (Power over Ethernet)</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Wi-Fi</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Ethernet 10/100 Mbps</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Bluetooth Smart</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>RS-485</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Wiegand</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>OSDP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Door Control</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Form C Relay</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Door Contact Input</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Exit Button Input</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>TTL Output</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Form C Relay</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Door Contact Input</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>Exit Button Input</p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p>TTL Output</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>User Credentials Capacity</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Fingerprint Users
+                  <span>1,000 / 10,000 Optional</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Card / Pin Users
+                  <span>20,000</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Mobile Credentials
+                  <span>20,000</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Size & Dimensions</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Height
+                  <span>7” inches (177.8 mm)</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Width
+                  <span>2.50” inches (63.50 mm)</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Depth
+                  <span>2” inches (50.8 mm)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Height
+                  <span>7” inches (177.8 mm)</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Width
+                  <span>2.50” inches (63.50 mm)</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Depth
+                  <span>2” inches (50.8 mm)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-access__boxcontent">
+        <div class="main-access__general">
+          <p>Power</p>
+        </div>
+        <hr>
+        <div class="main-access__content">
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Power
+                  <span>DC 12 volts</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Current
+                  <span>Operatinals Amp</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main-access__item">
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Power
+                  <span>DC 12 volts</span>
+                </p>
+              </div>
+            </div>
+            <div class="main-access__boxmethod">
+              <div class="main-access__methodtitle main-access__methodtitle--left">
+                <p class="title__bold">
+                  Current
+                  <span>Operatinals Amp</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<?php else:?>
+<div id="main-access__nav" class="main-access__nav">
         <div class="main-access__item main-access__item--center ">
           <div class="main-access__box">
             <div class="main-access__box--small">
@@ -318,6 +1218,9 @@
           </div>
         </div>
       </div>
+
+
+
       <div class="main-access__content">
         <div class="main-access__item main-access__item--center ">
           <div class="main-access__boximg">
@@ -397,6 +1300,9 @@
           </div>
         </div>
       </div>
+
+
+
       <div class="main-access__boxcontent">
         <div class="main-access__general">
           <p>Access Methods</p>
@@ -525,6 +1431,9 @@
           </div>
         </div>
       </div>
+
+
+
       <div class="main-access__boxcontent">
         <div class="main-access__general">
           <p>Works Outdoors</p>
@@ -1093,6 +2002,10 @@
       </div>
     </div>
   </div>
+
+<?php endif;?>
+
+      
 <?php  get_template_part('sections/main-testimonials'); ?>
 <?php  get_template_part('sections/main-client'); ?>
 <?php  get_template_part('sections/main-infomation'); ?>
