@@ -78,6 +78,7 @@
               <div class="main-users__boximg active">
                 <div class="main-users__img">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/key-3.png">
+                                  
                 </div>
               </div>
               <div class="main-company__title">
@@ -99,6 +100,12 @@
             <div class="main-company__imgs--one">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/image.png">
             </div>
+            <div>
+              <div class="main-company__imgs--two">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/puerta-2.png">                  
+            </div>
+            </div>
+            
           </div>
         </div>
       </div>

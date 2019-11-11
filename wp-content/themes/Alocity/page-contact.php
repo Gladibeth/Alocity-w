@@ -27,21 +27,21 @@
           <form>
             <div class="form-group">
               <label>Your email address*</label>
-              <input class="form-control" id="formGroupExampleInput" placeholder="Your email address*" type="text">
+              <input class="form-control input-contact" id="formGroupExampleInput" placeholder="Your email address*" type="text">
             </div>
             <div class="form-group">
               <label>Subject*</label>
             </div>
             <div class="form-group">
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Subject*" type="text">
+              <input class="form-control input-contact" id="formGroupExampleInput2" placeholder="Subject*" type="text">
             </div>
             <div class="form-group">
               <label>Telephone number*</label>
-              <input class="form-control" id="formGroupExampleInput2" placeholder="Telephone number*" type="phone">
+              <input class="form-control input-contact" id="formGroupExampleInput2" placeholder="Telephone number*" type="phone">
             </div>
             <div class="form-group d-flex flex-column">
               <label>Description*</label>
-              <textarea placeholder="Description*" rows="8"></textarea>
+              <textarea class="input-contact" placeholder="Description*" rows="8"></textarea>
             </div>
             <div class="float-left btn-box">
               <button class="btn_custom btn--medium btn--filled">
@@ -58,7 +58,7 @@
             <div class="main-form__boxitem">
               <div class="main-users__boximg active">
                 <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/light-bulb-1.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/paper-plane.png">
                 </div>
               </div>
               <div class="main-form__boxtitle">
@@ -69,7 +69,7 @@
             <div class="main-form__boxitem">
               <div class="main-users__boximg active">
                 <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/light-bulb-1.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/telephone-handle-silhouette.png">
                 </div>
               </div>
               <div class="main-form__boxtitle">
@@ -80,7 +80,7 @@
             <div class="main-form__boxitem">
               <div class="main-users__boximg active">
                 <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/light-bulb-1.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/map-marker.png">
                 </div>
               </div>
               <div class="main-form__boxtitle">
@@ -91,7 +91,7 @@
             <div class="main-form__boxitem">
               <div class="main-users__boximg active">
                 <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/light-bulb-1.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/comments.png">
                 </div>
               </div>
               <div class="main-form__boxtitle">

@@ -7,7 +7,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-xs-12 col-sm-6">
-          <div class="main-information__content">
+          <div class="main-information__content ">
             <div class="main-information__title">
               <p>Need more information?</p>
             </div>

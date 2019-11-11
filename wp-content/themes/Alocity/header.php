@@ -53,7 +53,7 @@
             <li class="nav-item">
               <a class="nav-link nav-link--light" href="#Login">Login</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item--btn">
               <a class="btn_custom btn--small btn--filled--yellow" href="" data-target="#get_quate" data-toggle="modal">GET QUOTE</a>
             </li>
             <li class="nav-item">
