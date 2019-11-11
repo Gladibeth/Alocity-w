@@ -134,14 +134,14 @@
         <div class="main-access__item main-access__item--center ">
           <div class="main-access__box">
             <div class="main-access__box--small">
-              <p>A55</p>
+              <p><?php access(0,title); ?></p>
             </div>
           </div>
         </div>
         <div class="main-access__box">
           <div class="main-access__item main-access__item--center ">
             <div class="main-access__box--small">
-              <p>A250</p>
+              <p><?php access(1,title); ?></p>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
               <div class="main-access__boximg">
                 <div class="main-access__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_1.png">
+                  <img src="<?php access(0,image_white); ?>">
                 </div>
                 <div class="main-access__namecolor">
                   <p> White</p>
@@ -166,7 +166,7 @@
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div class="main-access__boximg">
                 <div class="main-access__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_1-1.png">
+                  <img src="<?php access(0,image_black); ?>">
                 </div>
                 <div class="main-access__namecolor">
                   <p>Black</p>

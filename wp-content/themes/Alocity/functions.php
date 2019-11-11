@@ -306,7 +306,7 @@ function custom_post_type_access() {
     'label'                 => __( 'Access', 'text_domain' ),
     'description'           => __( 'Access image', 'text_domain' ),
     'labels'                => $labels,
-    'supports'              => array( 'title', 'custom-fields', 'thumbnail' ),
+    'supports'              => array( 'title', 'custom-fields'),
     'taxonomies'            => array( '' ),
     'hierarchical'          => false,
     'public'                => true,
@@ -327,6 +327,26 @@ function custom_post_type_access() {
 }
 add_action( 'init', 'custom_post_type_access', 0 );
 
+function access($position,$field){
+      global $wpdb;  
+      $args = array( 'post_type' => 'access', 'posts_per_page' => 1, 'offset' => $position, );
+      $loop = new WP_Query( $args );
+      while ( $loop->have_posts() ) : $loop->the_post(); $post_id = get_the_ID();
+        if ($field == "title") {
+            $valor= array('title' => the_title());
+        }
+        if ($field == "image") {
+            $valor= array('image' => the_post_thumbnail_url('full'));
+        }    
+        if ($field == "image_white") {
+            $valor= array('image_white' => the_field('image_white'));
+        } 
+        if ($field == "image_black") {
+            $valor= array('image_black' => the_field('image_black'));
+        }
+
+      endwhile; 
+}
 
 
 ?>
