@@ -29,9 +29,9 @@
         <div class="col-lg-4 col-sm-6">
           <div class="main-users__content">
             <div class="main-users__item">
-              <div class="main-users__boximg active">
+              <div class="main-users__boximg">
                 <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/settings.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/index/settings.png">
                 </div>
               </div>
             </div>
