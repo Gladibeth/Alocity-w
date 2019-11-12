@@ -69,6 +69,7 @@ function theme_customize_register($wp_customize){
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_users.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_control.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_information.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_access.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_sections.php';
 
 /********** Pricing  ***************/ 
@@ -84,19 +85,29 @@ function theme_customize_register($wp_customize){
     require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_pricing.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_sections.php';
 
-  /********** Contact information  ***************/ 
+  /********** Company  ***************/ 
+
+  $wp_customize->add_panel('panel7',
+        array(
+            'title' => 'Company',
+            'priority' => 5,
+            )
+        );
+ 
+    require_once trailingslashit( get_template_directory() ) . 'inc/company/customizer_banner.php';
+
+
+ /********** Contact information  ***************/ 
 
   $wp_customize->add_panel('panel6',
         array(
             'title' => 'Contact information',
-            'priority' => 5,
+            'priority' => 6,
             )
         );
  
     require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_contact.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_social_networks.php';
-    require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_form_contact.php';
-
 
 } 
 add_action('customize_register','theme_customize_register');

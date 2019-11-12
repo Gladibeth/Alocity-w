@@ -2,7 +2,7 @@
 ////// Hardware Access
 
   $wp_customize->add_section('hardware_access', array (
-    'title' => 'Hardware access',
+    'title' => 'Hardware Access',
     'panel' => 'panel4'
   ));
 

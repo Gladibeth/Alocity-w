@@ -11,12 +11,11 @@
               <div class="main-banner__boxtext">
                 <div class="main-banner__text main-banner__text--company">
                   <div class="main-banner__title main-banner__title--company">
-                    <h1 class="title-company">Our Mission</h1>
-                    <span class="subtitle-company">A Smarter, Safer, Connected World</span>
+                    <h1 class="title-company"><?php echo get_theme_mod('company_banner_title'); ?></h1>
+                    <span class="subtitle-company"><?php echo get_theme_mod('company_banner_subtitle'); ?></span>
                   </div>
                   <div class="main-banner__description main-banner__description--company">
-                    <p>We are set out to make our customer's lives more simple and secure by offering unprecedented visibility and control over their doors and facilities. Our solutions are designed to efficiently manage door access control, video surveillance,
-                      sensors, lighting, climate, & any IoT device with artificial intelligence & automation all from one place.</p>
+                    <p><?php echo get_theme_mod('company_banner_content'); ?></p>
                   </div>
                 </div>
               </div>
@@ -24,10 +23,10 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="main-banner__imags">
                 <div class="main-banner__imags--one">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/image_3@3x.png">
+                  <img src="<?php echo get_theme_mod('company_banner_image1'); ?>">
                 </div>
                 <div class="main-banner__imags--two">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/image_4@3x.png">
+                  <img src="<?php echo get_theme_mod('company_banner_image2'); ?>">
                 </div>
               </div>
             </div>
