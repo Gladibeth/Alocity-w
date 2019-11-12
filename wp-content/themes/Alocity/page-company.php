@@ -1,6 +1,8 @@
 <?php get_header(); ?>
   <div class="main-banner">
     <div class="main-banner__content">
+     <?php for ($i=1; $i <= 3; $i++) { ?>
+     <?php if (get_theme_mod('company_banner'.$i.'_title')!= NULL ) { ?> 
       <div class="main-banner__item">
         <div class="main-banner__img">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/bg.png">
@@ -11,11 +13,11 @@
               <div class="main-banner__boxtext">
                 <div class="main-banner__text main-banner__text--company">
                   <div class="main-banner__title main-banner__title--company">
-                    <h1 class="title-company"><?php echo get_theme_mod('company_banner_title'); ?></h1>
-                    <span class="subtitle-company"><?php echo get_theme_mod('company_banner_subtitle'); ?></span>
+                    <h1 class="title-company"><?php echo get_theme_mod('company_banner'.$i.'_title'); ?></h1>
+                    <span class="subtitle-company"><?php echo get_theme_mod('company_banner'.$i.'_subtitle'); ?></span>
                   </div>
                   <div class="main-banner__description main-banner__description--company">
-                    <p><?php echo get_theme_mod('company_banner_content'); ?></p>
+                    <p><?php echo get_theme_mod('company_banner'.$i.'_content'); ?></p>
                   </div>
                 </div>
               </div>
@@ -23,49 +25,17 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="main-banner__imags">
                 <div class="main-banner__imags--one">
-                  <img src="<?php echo get_theme_mod('company_banner_image1'); ?>">
+                  <img src="<?php echo get_theme_mod('company_banner'.$i.'_image1'); ?>">
                 </div>
                 <div class="main-banner__imags--two">
-                  <img src="<?php echo get_theme_mod('company_banner_image2'); ?>">
+                  <img src="<?php echo get_theme_mod('company_banner'.$i.'_image2'); ?>">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="main-banner__item">
-        <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/bg.png">
-        </div>
-        <div class="main-banner__container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="main-banner__boxtext">
-                <div class="main-banner__text main-banner__text--company">
-                  <div class="main-banner__title main-banner__title--company">
-                    <h1 class="title-company">Our Mission</h1>
-                    <span class="subtitle-company">A Smarter, Safer, Connected World</span>
-                  </div>
-                  <div class="main-banner__description main-banner__description--company">
-                    <p>We are set out to make our customer's lives more simple and secure by offering unprecedented visibility and control over their doors and facilities. Our solutions are designed to efficiently manage door access control, video surveillance,
-                      sensors, lighting, climate, & any IoT device with artificial intelligence & automation all from one place.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="main-banner__imags">
-                <div class="main-banner__imags--one">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/image_3@3x.png">
-                </div>
-                <div class="main-banner__imags--two">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/image_4@3x.png">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php }} ?>      
       
     </div>
   </div>
@@ -82,10 +52,10 @@
                 </div>
               </div>
               <div class="main-company__title">
-                <p>It all starts at securing the door</p>
+                <p><?php echo get_theme_mod('company_box1_title'); ?></p>
               </div>
               <div class="main-company__description">
-                <p>At Alocity®, we believe that the door isn't just about keeping unauthorized people out. It's also about letting the right people in - at the right times, on the right terms, with the ability to manage anytime, from anywhere.</p>
+                <p><?php echo get_theme_mod('company_box1_content'); ?></p>
               </div>
             </div>
           </div>
@@ -100,13 +70,7 @@
             <div class="main-company__imgs--one">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/image.png">
             </div>
-            <div>
-              <div class="main-company__imgs--two">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/puerta-2.png">                  
-            </div>
-            </div>
-            
-          </div>
+          </div>            
         </div>
       </div>
       <div class="col-lg-6 p-0 col-order">
@@ -116,7 +80,7 @@
           </div>
           <div class="main-company__imgs">
             <div class="main-company__imgs--one main-company__imgs--pad">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/image_2.png">
+              <img src="<?php echo get_theme_mod('company_box2_image'); ?>">
             </div>
           </div>
         </div>
@@ -131,10 +95,10 @@
                 </div>
               </div>
               <div class="main-company__title">
-                <p>Frictionless entry</p>
+                <p><?php echo get_theme_mod('company_box2_title'); ?></p>
               </div>
               <div class="main-company__description">
-                <p>Goodbye keys and cards. A quick-touch of a finger, or a glance at the face recognition reader is all you need to gain secure & instant entry into the smart-office or smart-home.</p>
+                <p><?php echo get_theme_mod('company_box2_content'); ?></p>
               </div>
             </div>
           </div>
@@ -150,10 +114,10 @@
                 </div>
               </div>
               <div class="main-company__title">
-                <p>Smarter, Safer, Connected</p>
+                <p><?php echo get_theme_mod('company_box3_title'); ?></p>
               </div>
               <div class="main-company__description">
-                <p>We're on a mission to create a safer and connected world, with apps, systems, and devices all working together with artificial intelligence and automation all from one centralized platform.</p>
+                <p><?php echo get_theme_mod('company_box3_content'); ?></p>
               </div>
             </div>
           </div>
@@ -166,14 +130,30 @@
           </div>
           <div class="main-company__imgs">
             <div class="main-company__imgs--one">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/4.png">
+              <img src="<?php echo get_theme_mod('company_box3_image'); ?>">
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-<?php  get_template_part('sections/main-testimonials'); ?>
-<?php  get_template_part('sections/main-client'); ?>
-<?php  get_template_part('sections/main-infomation'); ?>
+  <?php if (get_theme_mod('company_sections_check') == 1) {?>
+     <?php  get_template_part('sections/main-check'); ?>
+  <?php } ?> 
+  <?php if (get_theme_mod('company_sections_users') == 1) {?>
+     <?php  get_template_part('sections/main-users'); ?>
+  <?php } ?>   
+  <?php if (get_theme_mod('company_sections_readers') == 1) {?>
+     <?php  get_template_part('sections/main-readers'); ?>
+  <?php } ?> 
+  <?php if (get_theme_mod('company_sections_testimonials') == 1) {?>
+     <?php  get_template_part('sections/main-testimonials'); ?>
+  <?php } ?>
+  <?php if (get_theme_mod('company_sections_clients') == 1) {?>
+     <?php  get_template_part('sections/main-client'); ?>
+  <?php } ?> 
+  <?php if (get_theme_mod('company_sections_information') == 1) {?>
+     <?php  get_template_part('sections/main-infomation'); ?>
+  <?php } ?>
+
 <?php get_footer(); ?>

@@ -89,13 +89,14 @@ function theme_customize_register($wp_customize){
 
   $wp_customize->add_panel('panel7',
         array(
-            'title' => 'Company',
+            'title' => 'Page Company',
             'priority' => 5,
             )
         );
  
     require_once trailingslashit( get_template_directory() ) . 'inc/company/customizer_banner.php';
-
+    require_once trailingslashit( get_template_directory() ) . 'inc/company/customizer_company.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/company/customizer_sections.php';
 
  /********** Contact information  ***************/ 
 
