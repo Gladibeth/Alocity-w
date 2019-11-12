@@ -145,8 +145,8 @@ body {
     bottom: 0;
     left: 100%;
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
     overflow-y: auto;
     visibility: hidden;
     background-color: #fff;
@@ -643,6 +643,8 @@ section {
   .navbar {
     height: 75px;
   }
+
+
 }
 
 .navbar.fixed {
@@ -664,8 +666,21 @@ section {
 @media (min-width: 0px) and (max-width: 767px) {
   .nav-item {
     padding: 0 15px;
+    padding: 0 15px;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
   }
+
+  .nav-item--phone {
+    border-bottom: 1px solid transparent;
+  }
+
+  .nav-item--btn {
+    border-bottom: 1px solid transparent;
+  }
+
 }
+
 
 @media (min-width: 768px) and (max-width: 991px) {
   .main-brand {
@@ -991,7 +1006,7 @@ section {
 
 @media (min-width: 0px) and (max-width: 767px) {
   .main-banner__text .main-banner__description.main-banner__description--company p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
   }
 }
@@ -2177,7 +2192,7 @@ textarea::placeholder {
 @media (min-width: 992px) and (max-width: 1199px) {
   .main-banner__imags--one {
     width: 211px;
-    height: 400px;
+    height: 370px;
   }
 }
 
@@ -2195,16 +2210,20 @@ textarea::placeholder {
 
 .main-banner__imags--two {
   width: 490px;
-  height: 713px;
+  height: 500px;
   position: absolute;
   right: 140px;
-  top: 0;
+  top: 70px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .main-banner__container {
+    top: 135px;
+  }
+
   .main-banner__imags--two {
     width: 490px;
-    height: 500px;
+    height: 470px;
     right: -44px;
   }
 }
@@ -3204,15 +3223,69 @@ textarea::placeholder {
   }
 
   .main-banner__boxtext.main-banner__boxtext--princing {
-    height: 355p;
-    ;
+    height: 355px;
+  }
+
+  textarea.input-contact {
+    width: 100%;
+  }
+
+  .main-form__content {
+    display: block;
+  }
+
+  .main-form__title {
+    margin-top: 100px;
+  }
+
+  .main-form {
+    padding: 70px 0;
+  }
+
+  .main-control__box.main-control__box--bg {
+    width: 100%;
+    background-color: #25c0dd;
+    padding: 40px 40px 0px 40px;
+    height: auto;
+  }
+
+  .main-banner__text .main-banner__description.main-banner__description--company {
+    margin-top: 20px;
   }
 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+  .main-check__content {
+    text-align: center;
+  }
+
+  .main-infomation__img.main-information__img--hard {
+    width: 100%;
+    height: 380px;
+    position: absolute;
+    left: -110px;
+    top: 65px;
+  }
+
+  input.input-contact[type="text"],
+  input.input-contact[type="phone"],
+  input.input-contact[type="email"],
+  input.input-contact[type="number"] {
+    width: 100%;
+  }
+
+  textarea.input-contact {
+    width: 100%;
+  }
+
   .main-banner__container {
-    top: 300px;
+    top: 150px;
+  }
+
+  .main-banner__text .main-banner__description.main-banner__description--company p {
+    font-size: 14px;
   }
 
   .main-princing__text {
@@ -3295,6 +3368,15 @@ textarea::placeholder {
 
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  input.input-contact[type="text"],
+  input.input-contact[type="phone"],
+  input.input-contact[type="email"],
+  input.input-contact[type="number"] {
+    width: 100%;
+  }
+}
 
 @media (min-width: 1601px) and (max-width: 2048px) {
   .main-banner .main-banner__img {

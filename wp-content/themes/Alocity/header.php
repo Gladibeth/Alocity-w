@@ -56,7 +56,7 @@
             <li class="nav-item nav-item--btn">
               <a class="btn_custom btn--small btn--filled--yellow" href="" data-target="#get_quate" data-toggle="modal">GET QUOTE</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item--phone">
               <a class="nav-link nav-link--light" href="tel:888-512-2115">888-512-2115</a>
             </li>
           </ul>
