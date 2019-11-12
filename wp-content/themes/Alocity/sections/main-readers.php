@@ -19,7 +19,7 @@
             </div>
             <div class="main-users__boximg active">
               <div class="main-users__img">
-                <img src="<?php echo get_theme_mod('users'.$i.'_icon'); ?>">
+                <img src="<?php echo get_theme_mod('readers'.$i.'_icon'); ?>">
               </div>
             </div>
           </div>
