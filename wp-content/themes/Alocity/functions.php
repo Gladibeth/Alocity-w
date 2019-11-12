@@ -134,14 +134,14 @@ function theme_customize_register($wp_customize){
     'panel' => 'panel1'
   ));
 
-  $wp_customize->add_setting('background', array(
+  $wp_customize->add_setting('background_check', array(
     'default' => '',
   ));
   
-  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'background_control', array (
+  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'background_check_control', array (
     'label' => 'Background Color',
     'section' => 'check',
-    'settings' => 'background',
+    'settings' => 'background_check',
   )));
 
   $wp_customize->add_setting('check_title', array(
@@ -193,16 +193,18 @@ function theme_customize_register($wp_customize){
     'settings' => 'check_urlbutton',
   )));
 
-  $wp_customize->add_setting('colorbutton', array(
-    'default' => '',
-  ));
-  
-  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'colorbutton_control', array (
-    'label' => 'color button',
-    'section' => 'check',
-    'settings' => 'colorbutton',
-  )));
-
 } 
 add_action('customize_register','theme_customize_register');
+
+
+// 
+function my_theme_background_sections($defaults) {
+ // unset($defaults['tags']);
+  $defaults="background_check";
+  if (get_theme_mod('background_check')!= NULL){ 
+    $defaults='<style type="text/css"> .main-check { background: #000 !important;} </style>';
+  }
+    return $defaults;
+}
+
 ?>

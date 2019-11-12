@@ -1,4 +1,4 @@
-  <div class="main-check">
+  <div class="main-check" style="background:<?php echo get_theme_mod('background_check'); ?>;">
     <div class="row">
       <div class="col-lg-5 col-sm-12">
         <div class="main-check__content main-check__content-pad">
