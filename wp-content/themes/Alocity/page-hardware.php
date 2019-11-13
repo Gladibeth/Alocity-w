@@ -1223,24 +1223,58 @@
 
       <div class="main-access__content">
         <div class="main-access__item main-access__item--center ">
-          <div class="main-access__boximg">
-            <div class="main-access__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
+
+
+
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
+                </div>
+              </div>
+            
             </div>
-          </div>
-          <div class="main-access__check">
-            <div class="main-access__boxcheck active">
-              <div class="main-access__smallcheck"></div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_2.png">
+                </div>
+              </div>
             </div>
-            <div class="main-access__boxcheck two">
-              <div class="main-access__smallcheck main-access__smallcheck--black"></div>
-            </div>
+            
           </div>
-          <div class="main-access__namecolor">
-            <p class="name-white"> White</p>
-            <p class="name-black p-opacity"> black</p>
-          </div>
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck active">
+                    <div class="main-access__smallcheck"></div>
+                  </div>
+                </div>
+                <div class="main-access__namecolor">
+                  <p class="name-white colors active"> White</p>
+                  <p class="name-black colors d-none"> black</p>
+                </div>
+              
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck ">
+                    <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+                  </div>
+                </div>
+                <div class="main-access__namecolor">
+                  
+                </div>
+              </a>
+            </li>
+          
+          </ul>
+          
         </div>
         <div class="main-access__item main-access__item--center ">
           

@@ -36,11 +36,11 @@
       </div>
       <div class="main-banner__item">
         <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/img/company/bg.png">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/bg.png">
         </div>
-        <div class="container main-banner__container">
+        <div class="main-banner__container">
           <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-12">
               <div class="main-banner__boxtext">
                 <div class="main-banner__text main-banner__text--company">
                   <div class="main-banner__title main-banner__title--company">
@@ -54,19 +54,20 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-12">
               <div class="main-banner__imags">
                 <div class="main-banner__imags--one">
-                  <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/img/company/image_3@3x.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/image_3@3x.png">
                 </div>
                 <div class="main-banner__imags--two">
-                  <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/img/company/image_4@3x.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/image_4@3x.png">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   </div>
   <div class="main-company">
