@@ -45,7 +45,6 @@
                     <a class="btn_custom btn--large btn--filled--yellowgradient" href="">send message</a>
                   </div>
                 </form>
->>>>>>> 40032cd98f61b9f7811a9416e6cbd8a071ddaf46
               </div>
             </div>
           </div>
