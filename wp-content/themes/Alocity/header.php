@@ -10,6 +10,8 @@
   <link href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri(); ?>/assets/css/slick-theme.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.css" rel="stylesheet">
+	
+	  <?php wp_head(); ?> 
 </head>
 
 <body>
@@ -63,5 +65,5 @@
         </div>
       </div>
     </nav>
-    <?php wp_head(); ?> 
+
   </header>
