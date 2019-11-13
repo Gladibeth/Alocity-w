@@ -126,36 +126,43 @@
         <div class="main-footer__item">
           <div class="main-footer__boxredes">
             <div class="main-footer__redes">
-              <a href="">
+             <?php if (get_theme_mod('instagram')!=NULL) {?> 
+              <a href="<?php echo get_theme_mod('instagram'); ?>">
                 <div class="main-footer__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/instagram.png">
+                  <img src="<?php echo get_theme_mod('instagram_image'); ?>">
                 </div>
               </a>
-              <a href="">
+             <?php } ?>   
+              <a href="<?php echo get_theme_mod('facebook'); ?>">
                 <div class="main-footer__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/facebook.png">
+                  <img src="<?php echo get_theme_mod('facebook_image'); ?>">
                 </div>
               </a>
-              <a href="">
+              <a href="<?php echo get_theme_mod('linkedin'); ?>">
                 <div class="main-footer__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/linkein.png">
+                  <img src="<?php echo get_theme_mod('linkedin_image'); ?>">
                 </div>
               </a>
+              <a href="<?php echo get_theme_mod('twitter'); ?>">
+                <div class="main-footer__img">
+                  <img src="<?php echo get_theme_mod('twitter_image'); ?>">
+                </div>
+              </a>              
             </div>
           </div>
           <div class="main-footer__boxubications">
             <div class="main-footer__ubications">
               <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/paper-plane.png">
-                marveltorres@alocity.com -
+                <?php echo get_theme_mod('email'); ?> -
               </a>
               <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/telephone-handle-silhouette.png">
-                888-512-2115 -
+                <?php echo get_theme_mod('phone'); ?> -
               </a>
               <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/map-marker.png">
-                Calle 23 Green Tower, Street Balsos
+                <?php echo get_theme_mod('direction'); ?>
               </a>
             </div>
           </div>
