@@ -499,12 +499,9 @@ function theme_customize_register($wp_customize){
     'section' => 'information',
     'settings' => 'information_urlbutton',
   )));
- 
+   
 
-  
-
-  /********** Contact information  ***************/
-     
+  /********** Contact information  ***************/    
 
   $wp_customize->add_panel('panel6',
         array(
@@ -631,9 +628,54 @@ function theme_customize_register($wp_customize){
     'section' => 'social',
     'settings' => 'twitter_image'
   )));
-  
+ 
+/********** Software  ***************/ 
 
+  $wp_customize->add_panel('panel3',
+        array(
+            'title' => 'Page Software',
+            'priority' => 3,
+            )
+        );
+
+
+  /////Software Banner
+  /*****************banner1 ******************/
+  $wp_customize->add_section('software_banner', array (
+    'title' => 'Software Banner',
+    'panel' => 'panel3'
+  ));
+
+  $wp_customize->add_setting('software_banner1_title', array(
+    'default' => ''
+  ));
   
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'software_banner1_title_control', array (
+    'label' => 'Banner 1',
+    'description' => 'Title',
+    'section' => 'software_banner',
+    'settings' => 'software_banner1_title',
+  )));
+
+  $wp_customize->add_setting('software_banner1_subtitle', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'software_banner1_subtitle_control', array (
+    'description' => 'Subtitle',
+    'section' => 'software_banner',
+    'settings' => 'software_banner1_subtitle',
+  )));
+
+  $wp_customize->add_setting('software_banner1_image');
+  
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner1_image_control', array (
+    'description' => 'Image',
+    'section' => 'software_banner',
+    'settings' => 'software_banner1_image'
+  )));
+
+ 
 
 } 
 add_action('customize_register','theme_customize_register');
