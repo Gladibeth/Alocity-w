@@ -353,7 +353,17 @@ function theme_customize_register($wp_customize){
     'panel' => 'panel1'
   ));
 
- $wp_customize->add_setting('testimonials_background_type', array(
+  $wp_customize->add_setting('testimonials_title', array(
+    'default' => ''
+  ));  
+
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'testimonials_title_control', array (
+    'label' => 'Title',
+    'section' => 'testimonials',
+    'settings' => 'testimonials_title',
+  )));
+
+  $wp_customize->add_setting('testimonials_background_type', array(
     'default' => ''
   ));  
 
@@ -381,20 +391,11 @@ function theme_customize_register($wp_customize){
   $wp_customize->add_setting('testimonials_image');
  
   $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'testimonials_image_control', array (
-    'label' => 'Background Image',
+    'description' => 'Background Image',
     'section' => 'testimonials',
     'settings' => 'testimonials_image'
   )));  
 
-  $wp_customize->add_setting('testimonials_title', array(
-    'default' => ''
-  ));  
-
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'testimonials_title_control', array (
-    'label' => 'Title',
-    'section' => 'testimonials',
-    'settings' => 'testimonials_title',
-  )));
 
 
 
