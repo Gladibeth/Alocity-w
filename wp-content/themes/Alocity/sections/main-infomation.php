@@ -18,7 +18,7 @@
               <a class="btn_custom btn--medium btn--filled--white" href="<?php echo get_theme_mod('information_urlbutton'); ?>"><?php echo get_theme_mod('information_button'); ?></a>
             </div>
             <div class="main-information__description">
-              <p>Hereeeeeeeeeeee</p>
+              <p>Speak to us <?php echo get_theme_mod('phone'); ?></p>
             </div>
           </div>
         </div>

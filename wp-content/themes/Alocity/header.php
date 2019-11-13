@@ -57,7 +57,7 @@
               <a class="btn_custom btn--small btn--filled--yellow" href="" data-target="#get_quate" data-toggle="modal">GET QUOTE</a>
             </li>
             <li class="nav-item nav-item--phone">
-              <a class="nav-link nav-link--light" href="tel:888-512-2115">888-512-2115</a>
+              <a class="nav-link nav-link--light" href="tel:<?php echo get_theme_mod('phone'); ?>"><?php echo get_theme_mod('phone'); ?></a>
             </li>
           </ul>
         </div>
