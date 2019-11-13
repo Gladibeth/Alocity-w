@@ -1,37 +1,36 @@
-  <div class="main-testimonials" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/princing/image-bg.png)">
+  <?php 
+  if (get_theme_mod('testimonials_background_type') == 'color') {
+     $style='background:'.get_theme_mod('background_testimonials').'';
+   } 
+   if (get_theme_mod('testimonials_background_type') == 'image') {
+      $style='background-image:url('.get_theme_mod('testimonials_image').'';
+    } ?>
+
+  <div class="main-testimonials" style="<?php echo $style; ?>">
     <div class="container">
       <div class="main-title__general main-title__general--white">
-        <h2>What clients say?</h2>
+        <h2><?php echo get_theme_mod('testimonials_title');?> </h2>
       </div>
       <div class="main-testimonials__content">
+      <?php $args = array( 'post_type' => 'testimonials', 'posts_per_page' => 6 ); ?>
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post();?>       
         <div class="main-testimonials__box">
           <div class="main-testimonials__item">
             <div class="main-testimonials__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/princing/image_2.png">
+              <img src="<?php the_post_thumbnail_url('full');?>">
             </div>
             <div class="main-testimonials__description">
-              <p>“Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500”</p>
+              <p><?php the_excerpt();?></p>
             </div>
             <div class="main-testimonials__name">
-              <p>- Steve Jordan</p>
+              <p><?php the_title(); ?></p>
               <p>Redblue Company</p>
             </div>
           </div>
         </div>
-        <div class="main-testimonials__box">
-          <div class="main-testimonials__item">
-            <div class="main-testimonials__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/princing/image_2.png">
-            </div>
-            <div class="main-testimonials__description">
-              <p>“Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500”</p>
-            </div>
-            <div class="main-testimonials__name">
-              <p>- Steve Jordan</p>
-              <p>Redblue Company</p>
-            </div>
-          </div>
-        </div>
+      <?php endwhile; ?>   
+        
       </div>
     </div>
   </div>
