@@ -48,10 +48,10 @@
               <a class="nav-link" href="<?php echo get_home_url() ?>/index.php/company">Company</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link--light" href="<?php echo get_home_url() ?>/index.php/contact">Support</a>
+              <a class="nav-link nav-link--light" href="https://support.alo.city">Support</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link--light" href="#Login">Login</a>
+              <a class="nav-link nav-link--light" href="https://portal.alo.city">Login</a>
             </li>
             <li class="nav-item nav-item--btn">
               <a class="btn_custom btn--small btn--filled--yellow" href="" data-target="#get_quate" data-toggle="modal">GET QUOTE</a>
