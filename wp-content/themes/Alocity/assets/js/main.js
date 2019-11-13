@@ -8,15 +8,15 @@ $(function () {
 
 
 $('.nav-pills .nav-link').click(function () {
-  // $(this).addClass('active');
   $('.main-access__boxcheck').removeClass('active');
-  $(this).find('.main-access__boxcheck').addClass('active')
-  if (!$(this).find('.colors').hasClass("active")) {
-    $(this).find('.name-white').addClass('d-none')
-    $(this).find('.name-white').removeClass('active')
-  } else {
-    alert('qque')
-  }
+  $(this).find('.main-access__boxcheck').addClass('active');
+  // $(this).find('.main-access__boxcheck').addClass('active')
+  // if (!$(this).find('.colors').hasClass("active")) {
+  //   $(this).find('.name-white').addClass('d-none')
+  //   $(this).find('.name-white').removeClass('active')
+  // } else {
+  //   alert('qque')
+  // }
   // $(this).find('.name-white').addClass('d-none')
   // $(this).find('colors.active').removeClass('d-none')
 
@@ -43,17 +43,6 @@ $(window).scroll(function () {
 
   }
 });
-
-// //menu drop
-// $(document).ready(function () {
-//   $('.navbar .dropdown').hover(function () {
-//     $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
-//   }, function () {
-//     $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
-//   });
-// });
-
-
 
 
 // menu hambuger

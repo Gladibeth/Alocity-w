@@ -2793,6 +2793,13 @@ footer {
   bottom: 0;
 }
 
+
+.main-access__namecolor {
+  position: absolute;
+  bottom: -110px;
+  left: 60px;
+}
+
 .main-access__box--small {
   border: 2px solid #25c0dd;
   display: flex;
@@ -3283,9 +3290,16 @@ textarea::placeholder {
     margin-top: 40px;
   }
 
+  .nav-pills .nav-item {
+    border-bottom: 1px solid transparent;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .nav-pills .nav-item {
+    border-bottom: 1px solid transparent;
+  }
 
   .main-check__content {
     text-align: center;
@@ -3483,4 +3497,12 @@ textarea::placeholder {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   background-color: #fff;
+}
+
+.nav-pills .nav-item {
+  padding: 0;
+}
+
+.nav-pills .nav-link {
+  padding: 5px;
 }
