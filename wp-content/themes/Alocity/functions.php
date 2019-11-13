@@ -17,7 +17,7 @@ function meta_value( $meta_key, $post_id ){
 
 /******************Excerp*****************/
 function custom_excerpt_length( $length ) {
-  return 15;
+  return 100;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
@@ -397,7 +397,43 @@ function theme_customize_register($wp_customize){
   )));  
 
 
+////Client
 
+  $wp_customize->add_section('client', array (
+    'title' => 'Main Clients',
+    'panel' => 'panel1'
+  ));
+
+  $wp_customize->add_setting('background_client', array(
+    'default' => '',
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'background_client_control', array (
+    'label' => 'Background Color',
+    'section' => 'client',
+    'settings' => 'background_client',
+  )));
+
+  $wp_customize->add_setting('client_title', array(
+    'default' => ''
+  ));  
+
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'client_title_control', array (
+    'label' => 'Title',
+    'section' => 'client',
+    'settings' => 'client_title',
+  )));
+
+  $wp_customize->add_setting('client_subtitle', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'client_subtitle_control', array (
+    'label' => 'Subtitle',
+    'section' => 'client',
+    'settings' => 'client_subtitle',
+    'type' => 'textarea'
+  )));
 
   
   
@@ -441,7 +477,7 @@ function custom_post_type_testimonials() {
     'label'                 => __( 'Testimonial', 'text_domain' ),
     'description'           => __( 'Testimonial image', 'text_domain' ),
     'labels'                => $labels,
-    'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields' ),
+    'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
     'taxonomies'            => array( '' ),
     'hierarchical'          => false,
     'public'                => true,
@@ -461,6 +497,62 @@ function custom_post_type_testimonials() {
 
 }
 add_action( 'init', 'custom_post_type_testimonials', 0 );
+
+/*********** CLIENTS ***********/ 
+function custom_post_type_client() {
+
+  $labels = array(
+    'name'                  => _x( 'Clients', 'Post Type General Name', 'text_domain' ),
+    'singular_name'         => _x( 'Clients', 'Post Type Singular Name', 'text_domain' ),
+    'menu_name'             => __( 'Clients', 'text_domain' ),
+    'name_admin_bar'        => __( 'Clients', 'text_domain' ),
+    'archives'              => __( 'Archives', 'text_domain' ),
+    'attributes'            => __( 'Attributes', 'text_domain' ),
+    'parent_item_colon'     => __( 'Main Items', 'text_domain' ),
+    'all_items'             => __( 'All Clients', 'text_domain' ),
+    'add_new_item'          => __( 'Add New Items', 'text_domain' ),
+    'add_new'               => __( 'Add New', 'text_domain' ),
+    'new_item'              => __( 'New Item', 'text_domain' ),
+    'edit_item'             => __( 'Edit Item', 'text_domain' ),
+    'update_item'           => __( 'Update Item', 'text_domain' ),
+    'view_items'            => __( 'See Items', 'text_domain' ),
+    'search_items'          => __( 'Search Items', 'text_domain' ),
+    'not_found'             => __( 'Not found', 'text_domain' ),
+    'not_found_in_trash'    => __( 'It is not in the trash', 'text_domain' ),
+    'featured_image'        => __( 'Featured Image', 'text_domain' ),
+    'set_featured_image'    => __( 'Set Featured Image', 'text_domain' ),
+    'remove_featured_image' => __( 'Remove Featured Image', 'text_domain' ),
+    'use_featured_image'    => __( 'Use Featured Image', 'text_domain' ),
+    'insert_into_item'      => __( 'Insert Into Item', 'text_domain' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+    'items_list'            => __( 'items List', 'text_domain' ),
+    'items_list_navigation' => __( 'items List Navigation', 'text_domain' ),
+    'filter_items_list'     => __( 'filter Items List', 'text_domain' ),
+  );
+  $args = array(
+    'label'                 => __( 'Clients', 'text_domain' ),
+    'description'           => __( 'Clients image', 'text_domain' ),
+    'labels'                => $labels,
+    'supports'              => array( 'title', 'thumbnail' ),
+    'taxonomies'            => array( '' ),
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => true,
+    'menu_position'         => 5,
+    'menu_icon'             => '' . get_stylesheet_directory_uri() . '/assets/img/company/ico.png',
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => true,
+    'can_export'            => true,
+    'has_archive'           => true,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'capability_type'       => 'page', 
+  );
+  register_post_type( 'client', $args );
+
+}
+add_action( 'init', 'custom_post_type_client', 0 );
 
 
 ?>

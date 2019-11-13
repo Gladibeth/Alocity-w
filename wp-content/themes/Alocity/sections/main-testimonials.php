@@ -25,7 +25,7 @@
             </div>
             <div class="main-testimonials__name">
               <p><?php the_title(); ?></p>
-              <p>Redblue Company</p>
+              <p><?php the_field('company_testimonials');?></p>
             </div>
           </div>
         </div>
