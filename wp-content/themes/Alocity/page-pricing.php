@@ -5,7 +5,7 @@
         <div class="main-banner__img">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/bg.png">
         </div>
-        <div class="main-banner__container">
+        <div class="main-banner__container main-banner__container--prin">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-12">
               <div class="main-banner__boxtext main-banner__boxtext--princing">
@@ -19,7 +19,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-12">
               <div class="main-banner__imags">
-                <div class="main-banner__imags--two">
+                <div class="main-banner__imags--two main-banner__imags--two--top">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/princing/image@3x.png">
                 </div>
               </div>

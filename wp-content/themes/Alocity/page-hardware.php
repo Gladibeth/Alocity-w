@@ -5,7 +5,7 @@
         <div class="main-banner__img main-banner__img--hard">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_7.png">
         </div>
-        <div class="main-banner__container">
+        <div class="main-banner__container main-banner__container--prin">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-12  col-hard">
               <div class="main-banner__boxtext main-banner__boxtext--princing">
@@ -1226,18 +1226,20 @@
           <div class="main-access__boximg">
             <div class="main-access__img">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
             </div>
           </div>
           <div class="main-access__check">
             <div class="main-access__boxcheck active">
               <div class="main-access__smallcheck"></div>
             </div>
-            <div class="main-access__boxcheck">
+            <div class="main-access__boxcheck two">
               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
             </div>
           </div>
           <div class="main-access__namecolor">
-            <p> White</p>
+            <p class="name-white"> White</p>
+            <p class="name-black p-opacity"> black</p>
           </div>
         </div>
         <div class="main-access__item main-access__item--center ">

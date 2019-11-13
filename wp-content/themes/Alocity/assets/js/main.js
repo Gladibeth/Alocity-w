@@ -7,6 +7,18 @@ $(function () {
 })
 
 
+$('.main-access__boxcheck.two').click(function () {
+  // $(this).addClass('active');
+  $('.main-access__boxcheck').removeClass('active');
+  $(this).addClass('active')
+  $(this).find('.main-access__item .main-access__namecolor .name-white').addClass('p-opacity')
+  $(this).find('.main-access__namecolor .name-black').removeClass('p-opacity')
+  // $(this).find('.main-access__namecolor .name-black').addClass('d-flex')
+  // if (!$(this).hasClass("active")) {
+  // }
+})
+
+
 
 
 // Menú fixed
