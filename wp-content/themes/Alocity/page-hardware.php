@@ -317,7 +317,7 @@
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
               <div class="main-access__boximg">
                 <div class="main-access__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_1.png">
                 </div>
                 <div class="main-access__namecolor">
                   <p> White</p>
@@ -1375,7 +1375,7 @@
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
               <div class="main-access__boximg">
                 <div class="main-access__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_1.png">
                 </div>
                 <div class="main-access__namecolor">
                   <p> White</p>
