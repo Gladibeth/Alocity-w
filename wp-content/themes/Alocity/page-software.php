@@ -21,201 +21,37 @@
       
     </div>
   </div>
-  <section class="main-users">
+  <section class="main-users" style="background:<?php echo get_theme_mod('background_software_users'); ?>;">
     <div class="container">
       <div class="main-title__general">
-        <h2>built for today´s moderb users</h2>
+        <h2><?php echo get_theme_mod('software_users_title'); ?></h2>
       </div>
       <div class="row main-content">
+      <?php for ($i=1; $i <=9 ; $i++) { 
+        if(get_theme_mod('software_users'.$i.'_title')!=NULL){?>      
         <div class="col-lg-4 col-sm-6">
           <div class="main-users__content">
             <div class="main-users__item">
               <div class="main-users__boximg">
                 <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/tap2.png">
+                  <img src="<?php echo get_theme_mod('software_users'.$i.'_icon'); ?>">
                 </div>
               </div>
             </div>
             <div class="main-users__item">
               <div class="main-users__boxtext">
                 <div class="main-users__title">
-                  <p>Easy To Implement</p>
+                  <p><?php echo get_theme_mod('software_users'.$i.'_title'); ?></p>
                 </div>
                 <div class="main-general__description">
-                  <p>No software to install or maintain, Setup is done in minutes.</p>
+                  <p><?php echo get_theme_mod('software_users'.$i.'_content'); ?></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/expand.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Scalable</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Manage one or hundreds of sites and doors.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/padlock.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Vaul like Security</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Desinged with the most advanced cloud security encrytion strategies.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/clock.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>See Everything in Real Time</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Get instant visibility on users activity, door states, and critical events.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/turn-off.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Powerful Reporting</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Easilly gather real-time events data from yours system with a single click.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/intersection.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Integrations</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Buelt-in integrations with G-Suite, Microsoft. Okta, Slack and more.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/icon.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Automation</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Set event-based automation rules.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/key-2.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Intuitive Access Schedule</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Easilly add schedules based on who, is allowed where, and when.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/network.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Access Groups</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Easilly set access levels for users by groups.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+       <?php }} ?>  
+        
       </div>
     </div>
   </section>
