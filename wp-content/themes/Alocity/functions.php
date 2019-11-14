@@ -30,12 +30,12 @@ function theme_customize_register($wp_customize){
             'priority' => 1,
             )
         );
-    require_once trailingslashit( get_template_directory() ) . 'inc/customizer_banner.php';
-    require_once trailingslashit( get_template_directory() ) . 'inc/customizer_check.php';
-    require_once trailingslashit( get_template_directory() ) . 'inc/customizer_users.php';
-    require_once trailingslashit( get_template_directory() ) . 'inc/customizer_readers.php';
-    require_once trailingslashit( get_template_directory() ) . 'inc/customizer_testimonials.php';
-    require_once trailingslashit( get_template_directory() ) . 'inc/customizer_clients.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_banner.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_check.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_users.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_readers.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_testimonials.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_clients.php';
   
 
   /********** Contact information  ***************/  
@@ -46,7 +46,9 @@ function theme_customize_register($wp_customize){
             )
         );
  
-    require_once trailingslashit( get_template_directory() ) . 'inc/customizer_contact.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_contact.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_social_networks.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_form_contact.php';
  
 /********** Software  ***************/ 
 
@@ -57,43 +59,8 @@ function theme_customize_register($wp_customize){
             )
         );
 
-
-  /////Software Banner
-  /*****************banner1 ******************/
-  $wp_customize->add_section('software_banner', array (
-    'title' => 'Software Banner',
-    'panel' => 'panel3'
-  ));
-
-  $wp_customize->add_setting('software_banner1_title', array(
-    'default' => ''
-  ));
+    require_once trailingslashit( get_template_directory() ) . 'inc/software/customizer_banner.php';
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'software_banner1_title_control', array (
-    'label' => 'Banner 1',
-    'description' => 'Title',
-    'section' => 'software_banner',
-    'settings' => 'software_banner1_title',
-  )));
-
-  $wp_customize->add_setting('software_banner1_subtitle', array(
-    'default' => ''
-  ));
-  
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'software_banner1_subtitle_control', array (
-    'description' => 'Subtitle',
-    'section' => 'software_banner',
-    'settings' => 'software_banner1_subtitle',
-  )));
-
-  $wp_customize->add_setting('software_banner1_image');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner1_image_control', array (
-    'description' => 'Image',
-    'section' => 'software_banner',
-    'settings' => 'software_banner1_image'
-  )));
-
  
 
 } 
