@@ -29,218 +29,32 @@
       </div>
     </div>
   </div>
-  <div class="main-princing">
+  <div class="main-princing" style="background:<?php echo get_theme_mod('background_pricing'); ?>;">
     <div class="container">
       <div class="main-princing__content">
+      <?php $posts=get_theme_mod('pricing_posts'); ?>
+      <?php $args = array( 'post_type' => 'pricing', 'posts_per_page' => $posts ); ?>
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post();?> 
         <div class="main-princing__item">
           <div class="main-princing__box">
             <div class="main-princing__text">
               <div class="main-princing__title">
-                <p>Free</p>
-                <span>$0</span>
-              </div>
-            </div>
-            <div class="main-princing__list">
-              <ul>
-                <li>
-                  Number of Users
-                  <span>100</span>
-                </li>
-                <li>
-                  Portal Administrators
-                  <span>1</span>
-                </li>
-                <li>
-                  Access Schedules
-                  <span>3</span>
-                </li>
-                <li>
-                  Biometric Credentials
-                  <span>Unlimited</span>
-                </li>
-                <li>
-                  Events Storage
-                  <span>10 Days</span>
-                </li>
-                <li>
-                  Reports
-                  <span>1</span>
-                </li>
-                <li>
-                  Number of Sites
-                  <span>1</span>
-                </li>
-                <li>
-                  Number of Readers
-                  <span>Unlimited</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="main-princing__item">
-          <div class="main-princing__box">
-            <div class="main-princing__text">
-              <div class="main-princing__title">
-                <p>Basic</p>
-                <span>$10</span>
+                <p><?php the_title(); ?></p>
+                <span><?php the_field('pricing_price'); ?></span>
               </div>
               <div class="main-princing__description">
-                <p>Per door, per month, billed annually.</p>
-                <span>$12 billed monthly</span>
-              </div>
+                <p><?php the_field('pricing_description1'); ?></p>
+                <span><?php the_field('pricing_description2'); ?></span>
+              </div>              
             </div>
             <div class="main-princing__list">
-              <ul>
-                <li>
-                  Number of Users
-                  <span>500</span>
-                </li>
-                <li>
-                  Portal Administrators
-                  <span>5</span>
-                </li>
-                <li>
-                  Access Schedules
-                  <span>5</span>
-                </li>
-                <li>
-                  Mobile Credentials
-                  <span>100</span>
-                </li>
-                <li>
-                  Biometric Credentials
-                  <span>Unlimited</span>
-                </li>
-                <li>
-                  Events Storage
-                  <span>60 Days</span>
-                </li>
-                <li>
-                  Reports
-                  <span>All</span>
-                </li>
-                <li>
-                  Real-Time Notifications
-                  <span>Yes</span>
-                </li>
-                <li>
-                  Remote Unlock
-                  <span>Yes</span>
-                </li>
-                <li>
-                  Lockdown Doors
-                  <span>Yes</span>
-                </li>
-                <li>
-                  Number of Sites
-                  <span>5</span>
-                </li>
-                <li>
-                  Number of Readers
-                  <span>Unlimited</span>
-                </li>
-                <li>
-                  Integrations
-                  <span>Yes</span>
-                </li>
-                <li>
-                  Active Directory User Sync
-                  <span>Yes</span>
-                </li>
-              </ul>
+              <?php the_content(); ?>
             </div>
           </div>
         </div>
-        <div class="main-princing__item">
-          <div class="main-princing__box">
-            <div class="main-princing__text">
-              <div class="main-princing__title">
-                <p>Pro</p>
-                <span>$15</span>
-              </div>
-              <div class="main-princing__description">
-                <p>Per door, per month, billed annually.</p>
-                <span>$18 billed monthly</span>
-              </div>
-            </div>
-            <div class="main-princing__list">
-              <ul>
-                <li>
-                  Number of Users
-                  <span>Unlimited</span>
-                </li>
-                <li>
-                  Portal Administrators
-                  <span>Unlimited</span>
-                </li>
-                <li>
-                  Access Schedules
-                  <span>Unlimited</span>
-                </li>
-                <li>
-                  Mobile Credentials
-                  <span>Unlimited</span>
-                </li>
-                <li>
-                  Biometric Credentials
-                  <span>Unlimited</span>
-                </li>
-                <li>
-                  Events Storage
-                  <span>Unlimited</span>
-                </li>
-                <li>
-                  Reports
-                  <span>All</span>
-                </li>
-                <li>
-                  Real-Time Notifications
-                  <span>Yes</span>
-                </li>
-                <li>
-                  Remote Unlock
-                  <span>Yes</span>
-                </li>
-                <li>
-                  Lockdown Doors
-                  <span>Yes</span>
-                </li>
-                <li>
-                  Number of Sites
-                  <span>Unlimited</span>
-                </li>
-                <li>
-                  Number of Readers Unlimited
-                </li>
-                <li>
-                  Integrations
-                  <span>Yes</span>
-                </li>
-                <li>
-                  Active Directory User Sync
-                  <span>Yes</span>
-                </li>
-                <li>
-                  SAML Based SSO
-                  <span>Yes</span>
-                </li>
-                <li>
-                  Workflow Automation
-                  <span>Yes</span>
-                </li>
-                <li>
-                  API
-                  <span>Yes</span>
-                </li>
-                <li>
-                  Two Factor Authentication
-                  <span>Yes</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <?php endwhile; ?> 
+        
       </div>
     </div>
   </div>

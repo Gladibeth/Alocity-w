@@ -84,6 +84,7 @@ function theme_customize_register($wp_customize){
       );
    
     require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_banner.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_pricing.php';
 
 } 
 add_action('customize_register','theme_customize_register');
@@ -200,6 +201,63 @@ function custom_post_type_client() {
 
 }
 add_action( 'init', 'custom_post_type_client', 0 );
+
+
+/*********** PRICING ***********/ 
+function custom_post_type_pricing() {
+
+  $labels = array(
+    'name'                  => _x( 'Pricing', 'Post Type General Name', 'text_domain' ),
+    'singular_name'         => _x( 'Pricing', 'Post Type Singular Name', 'text_domain' ),
+    'menu_name'             => __( 'Pricing', 'text_domain' ),
+    'name_admin_bar'        => __( 'Pricing', 'text_domain' ),
+    'archives'              => __( 'Archives', 'text_domain' ),
+    'attributes'            => __( 'Attributes', 'text_domain' ),
+    'parent_item_colon'     => __( 'Main Items', 'text_domain' ),
+    'all_items'             => __( 'All Clients', 'text_domain' ),
+    'add_new_item'          => __( 'Add New Items', 'text_domain' ),
+    'add_new'               => __( 'Add New', 'text_domain' ),
+    'new_item'              => __( 'New Item', 'text_domain' ),
+    'edit_item'             => __( 'Edit Item', 'text_domain' ),
+    'update_item'           => __( 'Update Item', 'text_domain' ),
+    'view_items'            => __( 'See Items', 'text_domain' ),
+    'search_items'          => __( 'Search Items', 'text_domain' ),
+    'not_found'             => __( 'Not found', 'text_domain' ),
+    'not_found_in_trash'    => __( 'It is not in the trash', 'text_domain' ),
+    'featured_image'        => __( 'Featured Image', 'text_domain' ),
+    'set_featured_image'    => __( 'Set Featured Image', 'text_domain' ),
+    'remove_featured_image' => __( 'Remove Featured Image', 'text_domain' ),
+    'use_featured_image'    => __( 'Use Featured Image', 'text_domain' ),
+    'insert_into_item'      => __( 'Insert Into Item', 'text_domain' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+    'items_list'            => __( 'items List', 'text_domain' ),
+    'items_list_navigation' => __( 'items List Navigation', 'text_domain' ),
+    'filter_items_list'     => __( 'filter Items List', 'text_domain' ),
+  );
+  $args = array(
+    'label'                 => __( 'Pricing', 'text_domain' ),
+    'description'           => __( 'Pricing image', 'text_domain' ),
+    'labels'                => $labels,
+    'supports'              => array( 'title', 'editor', 'custom-fields' ),
+    'taxonomies'            => array( '' ),
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => true,
+    'menu_position'         => 5,
+    'menu_icon'             => '' . get_stylesheet_directory_uri() . '/assets/img/company/ico.png',
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => true,
+    'can_export'            => true,
+    'has_archive'           => true,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'capability_type'       => 'page', 
+  );
+  register_post_type( 'pricing', $args );
+
+}
+add_action( 'init', 'custom_post_type_pricing', 0 );
 
 
 ?>
