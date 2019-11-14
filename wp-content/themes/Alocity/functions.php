@@ -61,6 +61,7 @@ function theme_customize_register($wp_customize){
 
     require_once trailingslashit( get_template_directory() ) . 'inc/software/customizer_banner.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/software/customizer_users.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/software/customizer_dashboard.php';
  
 
 } 

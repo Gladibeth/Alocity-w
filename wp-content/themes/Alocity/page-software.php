@@ -55,72 +55,34 @@
       </div>
     </div>
   </section>
-  <div class="main-dashboard">
+  <div class="main-dashboard" style="background:<?php echo get_theme_mod('background_software_dashboard'); ?>;">
     <div class="container">
       <div class="row main-dashboard__content">
+      <?php for ($i=1; $i <=3 ; $i++) { 
+        if(get_theme_mod('software_dashboard'.$i.'_title')!=NULL){?>       
         <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
           <div class="main-dashboard__cards" >
             <div class="main-dashboard__boximg">
               <a class="main-dashboard__img" href="" data-target="#three-modal" data-toggle="modal">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image_6.png">
+                <img src="<?php echo get_theme_mod('software_dashboard'.$i.'_image'); ?>">
                 <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
-</a>
+              </a>
               <div class="main-dashboard__img--two">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
               </div>
             </div>
             <div class="main-dashboard__text">
               <div class="main-dashboard__title">
-                <p>User Management</p>
+                <p><?php echo get_theme_mod('softaware_dashboard'.$i.'_title'); ?></p>
               </div>
               <div class="main-general__description">
-                <p>Easily add users with access levels and sync their biometric, mobile, card, and pin credentials instantly to the door readers.</p>
+                <p><?php echo get_theme_mod('software_dashboard'.$i.'_content'); ?></p>
               </div>
             </div>
-</div>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
-          <div class="main-dashboard__cards active" >
-            <div class="main-dashboard__boximg">
-              <a class="main-dashboard__img" href="" data-target="#one-modal" data-toggle="modal">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image_3.png">
-                <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
-</a>
-              <div class="main-dashboard__img--two">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
-              </div>
-            </div>
-            <div class="main-dashboard__text">
-              <div class="main-dashboard__title">
-                <p>Real Time Dashboard</p>
-              </div>
-              <div class="main-general__description">
-                <p>Our modern dashboard gives you instant visibility on user activity, door states, and critical events.</p>
-              </div>
-            </div>
-</div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
-          <div class="main-dashboard__cards" href="" data-target="#two-modal" data-toggle="modal">
-            <div class="main-dashboard__boximg">
-              <a class="main-dashboard__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image_8.png">
-                <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
-</a>
-              <div class="main-dashboard__img--two">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
-              </div>
-            </div>
-            <div class="main-dashboard__text">
-              <div class="main-dashboard__title">
-                <p>Cloud Reader Management</p>
-              </div>
-              <div class="main-general__description">
-                <p>Configure and manage alocity smart door readers instantly from the cloud.</p>
-              </div>
-            </div>
-</div>
-        </div>
+      <?php }} ?>          
+        
       </div>
     </div>
   </div>
