@@ -73,7 +73,7 @@
             </div>
             <div class="main-dashboard__text">
               <div class="main-dashboard__title">
-                <p><?php echo get_theme_mod('softaware_dashboard'.$i.'_title'); ?></p>
+                <p><?php echo get_theme_mod('software_dashboard'.$i.'_title'); ?></p>
               </div>
               <div class="main-general__description">
                 <p><?php echo get_theme_mod('software_dashboard'.$i.'_content'); ?></p>
@@ -90,75 +90,34 @@
     <div class="row">
       <div class="col-lg-6 col-12 p-0">
         <div class="main-control__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image_4.png">
+          <img src="<?php echo get_theme_mod('software_control_image'); ?>">
         </div>
       </div>
       <div class="col-lg-6 col-12 p-0">
-        <div class="main-control__box main-control__box--bg">
+        <div class="main-control__box main-control__box--bg" style="background:<?php echo get_theme_mod('background_software_control'); ?>;">
           <div class="main-title__general main-title__general--left">
-            <h2>Total control from anywhere</h2>
+            <h2><?php echo get_theme_mod('software_control_title'); ?></h2>
           </div>
           <div class="row main-content">
+          <?php for ($i=1; $i <=4 ; $i++) { 
+            if(get_theme_mod('software_control'.$i.'_title')!=NULL){?>           
             <div class="col-lg-6 col-sm-6">
               <div class="main-control__subbox">
                 <div class="main-control__text">
                   <div class="main-control__icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/calendar-2.png">
+                    <img src="<?php echo get_theme_mod('software_control'.$i.'_icon'); ?>">
                   </div>
                   <div class="main-users__title">
-                    <p>Easily Schedule Users</p>
+                    <p><?php echo get_theme_mod('software_control'.$i.'_title'); ?></p>
                   </div>
                 </div>
                 <div class="main-general__description">
-                  <p>Create schedules for complete door control of who can enter, at what time, and on which door.</p>
+                  <p><?php echo get_theme_mod('software_control'.$i.'_content'); ?></p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-sm-6">
-              <div class="main-control__subbox">
-                <div class="main-control__text">
-                  <div class="main-control__icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/notification.png">
-                  </div>
-                  <div class="main-users__title">
-                    <p>Instant Alerts</p>
-                  </div>
-                </div>
-                <div class="main-general__description">
-                  <p>Create schedules for complete door control of who can enter, at what time, and on which door.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-6">
-              <div class="main-control__subbox">
-                <div class="main-control__text">
-                  <div class="main-control__icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/user-3.png">
-                  </div>
-                  <div class="main-users__title">
-                    <p>Manage User Credentials</p>
-                  </div>
-                </div>
-                <div class="main-general__description">
-                  <p>Instantly assign/revoke user credentials. (biometric, mobile, cloud-keys, pin or card).</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-6">
-              <div class="main-control__subbox">
-                <div class="main-control__text">
-                  <div class="main-control__icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/exit.png">
-                  </div>
-                  <div class="main-users__title">
-                    <p>Door Control</p>
-                  </div>
-                </div>
-                <div class="main-general__description">
-                  <p>Total control to unlock or lockdown doors from anywhere, and see door states in real-time.</p>
-                </div>
-              </div>
-            </div>
+          <?php }} ?>
+            
           </div>
         </div>
       </div>
