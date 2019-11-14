@@ -66,6 +66,24 @@ function theme_customize_register($wp_customize){
     require_once trailingslashit( get_template_directory() ) . 'inc/software/customizer_check.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/software/customizer_sections.php';
  
+/********** Hardware  ***************/ 
+
+  $wp_customize->add_panel('panel4',
+        array(
+            'title' => 'Page Hardware',
+            'priority' => 4,
+            )
+        );
+/********** Pricing  ***************/ 
+
+  $wp_customize->add_panel('panel5',
+        array(
+            'title' => 'Page Pricing',
+            'priority' => 5,
+            )
+      );
+   
+    require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_banner.php';
 
 } 
 add_action('customize_register','theme_customize_register');

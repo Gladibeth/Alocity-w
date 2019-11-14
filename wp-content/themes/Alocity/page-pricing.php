@@ -11,8 +11,8 @@
               <div class="main-banner__boxtext main-banner__boxtext--princing">
                 <div class="main-banner__text">
                   <div class="main-banner__title">
-                    <h1>Simply Smart Security!</h1>
-                    <p>Transparent pricing</p>
+                    <h1><?php echo get_theme_mod('pricing_banner_title'); ?></h1>
+                    <p><?php echo get_theme_mod('pricing_banner_subtitle'); ?></p>
                   </div>
                 </div>
               </div>
@@ -20,7 +20,7 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="main-banner__imags">
                 <div class="main-banner__imags--two main-banner__imags--two--top">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/princing/image@3x.png">
+                  <img src="<?php echo get_theme_mod('pricing_banner_image'); ?>">
                 </div>
               </div>
             </div>
