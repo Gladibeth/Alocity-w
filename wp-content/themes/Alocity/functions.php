@@ -85,6 +85,7 @@ function theme_customize_register($wp_customize){
    
     require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_banner.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_pricing.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_sections.php';
 
 } 
 add_action('customize_register','theme_customize_register');

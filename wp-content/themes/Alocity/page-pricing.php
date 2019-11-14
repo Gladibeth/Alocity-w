@@ -58,8 +58,23 @@
       </div>
     </div>
   </div>
-  <?php  get_template_part('sections/main-testimonials'); ?>
-  <?php  get_template_part('sections/main-client'); ?>
-  <?php  get_template_part('sections/main-infomation'); ?>  
+  <?php if (get_theme_mod('pricing_sections_check') == 1) {?>
+     <?php  get_template_part('sections/main-check'); ?>
+  <?php } ?> 
+  <?php if (get_theme_mod('pricing_sections_users') == 1) {?>
+     <?php  get_template_part('sections/main-users'); ?>
+  <?php } ?>   
+  <?php if (get_theme_mod('pricing_sections_readers') == 1) {?>
+     <?php  get_template_part('sections/main-readers'); ?>
+  <?php } ?> 
+  <?php if (get_theme_mod('pricing_sections_testimonials') == 1) {?>
+     <?php  get_template_part('sections/main-testimonials'); ?>
+  <?php } ?>
+  <?php if (get_theme_mod('pricing_sections_clients') == 1) {?>
+     <?php  get_template_part('sections/main-client'); ?>
+  <?php } ?> 
+  <?php if (get_theme_mod('pricing_sections_information') == 1) {?>
+     <?php  get_template_part('sections/main-infomation'); ?>
+  <?php } ?> 
  
 <?php get_footer(); ?>

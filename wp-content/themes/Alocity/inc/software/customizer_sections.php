@@ -2,6 +2,7 @@
   ///// Software Sections
   $wp_customize->add_section('software_sections', array (
     'title' => 'Software Sections',
+    'description' => 'Select the sections of the home you want to be displayed on this page.',  
     'panel' => 'panel3'
   ));
 
