@@ -1,34 +1,24 @@
 <?php get_header(); ?>
   <div class="main-banner">
     <div class="main-banner__content">
+    <?php for ($i=1; $i <= 3; $i++) { ?>
+     <?php if (get_theme_mod('software_banner'.$i.'_title')!= NULL ) { ?>
       <div class="main-banner__item">
         <div class="mask mask--white">
           <div class="main-banner__text">
             <div class="main-banner__title">
-              <h1>Simply Smart Segurity</h1>
-              <span>Cloud Access Control Software</span>
-              <p>Manage Alocity anytime, from anywhere</p>
+              <h1><?php echo get_theme_mod('software_banner'.$i.'_title'); ?></h1>
+              <span><?php echo get_theme_mod('software_banner'.$i.'_subtitle'); ?></span>
+              <p><?php echo get_theme_mod('software_banner'.$i.'_content'); ?></p>
             </div>
           </div>
         </div>
         <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-banner.png">
+          <img src="<?php echo get_theme_mod('software_banner'.$i.'_image'); ?>">
         </div>
       </div>
-      <div class="main-banner__item">
-        <div class="mask mask--white">
-          <div class="main-banner__text">
-            <div class="main-banner__title">
-              <h1>Simply Smart Segurity</h1>
-              <span>Cloud Access Control Software</span>
-              <p>Manage Alocity anytime, from anywhere</p>
-            </div>
-          </div>
-        </div>
-        <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-banner.png">
-        </div>
-      </div>
+    <?php }} ?>   
+      
     </div>
   </div>
   <section class="main-users">

@@ -8,16 +8,16 @@
           </button>
           <div class="row">
             <div class="col-lg-6 col-md-6 p-0 d-sm-flex d-none">
-              <div class="main-modal__boximg">
+              <div class="main-modal__boximg" style="background:<?php echo get_theme_mod('background_contact_form'); ?> !important;">
                 <div class="main-modal__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/phone-modal.png">
+                  <img src="<?php echo get_theme_mod('contact_form_image'); ?>">
                 </div>
               </div>
             </div>
             <div class="col-lg-6 col-md-6 p-0">
               <div class="main-modal__form">
                 <div class="main-modal__title">
-                  <h2>Get In Touch</h2>
+                  <h2><?php echo get_theme_mod('contact_form_title'); ?></h2>
                 </div>
                 <form>
                   <div class="form-group">
