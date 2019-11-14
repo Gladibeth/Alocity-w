@@ -58,12 +58,12 @@
   <div class="main-dashboard" style="background:<?php echo get_theme_mod('background_software_dashboard'); ?>;">
     <div class="container">
       <div class="row main-dashboard__content">
-      <?php for ($i=1; $i <=3 ; $i++) { 
+      <?php for ($i=1; $i <=3 ; $i++) { if($i==1){$target="one-modal";}if($i==2){$target="two-modal";}if($i==3){$target="three-modal";}
         if(get_theme_mod('software_dashboard'.$i.'_title')!=NULL){?>       
         <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
           <div class="main-dashboard__cards" >
             <div class="main-dashboard__boximg">
-              <a class="main-dashboard__img" href="" data-target="#three-modal" data-toggle="modal">
+              <a class="main-dashboard__img" href="" data-target="#<?php echo $target; ?>" data-toggle="modal">
                 <img src="<?php echo get_theme_mod('software_dashboard'.$i.'_image'); ?>">
                 <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
               </a>

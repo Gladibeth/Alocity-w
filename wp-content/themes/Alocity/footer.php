@@ -63,7 +63,7 @@
           </button>
           <div class="main-modal__boxerimg">
             <div class="main-modal__img main-modal__softwareimg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-1.png">
+              <img src="<?php echo get_theme_mod('software_dashboard1_image'); ?>">
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@
           </button>
           <div class="main-modal__boxerimg">
             <div class="main-modal__img main-modal__softwareimg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-2.png">
+              <img src="<?php echo get_theme_mod('software_dashboard2_image'); ?>">
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
           </button>
           <div class="main-modal__boxerimg">
             <div class="main-modal__img main-modal__softwareimg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-3.png">
+              <img src="<?php echo get_theme_mod('software_dashboard3_image'); ?>">
             </div>
           </div>
         </div>
