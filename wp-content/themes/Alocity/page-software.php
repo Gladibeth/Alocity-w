@@ -123,26 +123,26 @@
       </div>
     </div>
   </div>
-  <div class="main-check">
+  <div class="main-check" style="background:<?php echo get_theme_mod('background_software_check'); ?>;">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 col-sm-12">
           <div class="main-check__content">
             <div class="main-title__general main-title__general--width">
-              <h2>Integrated with the tools you use</h2>
+              <h2><?php echo get_theme_mod('software_check_title'); ?></h2>
             </div>
             <div class="main-general__description main-general__description--color main-general__description--soft">
-              <p>Alocity® is fully integrated with your favorite apps, so you can spend less time juggling tabs and more time focusing on meaningful work.</p>
+              <p><?php echo get_theme_mod('software_check_content'); ?></p>
             </div>
             <div class="main-check__btn">
-              <a class="btn_custom btn--small btn--filled" href="">Check out the integrations</a>
+              <a class="btn_custom btn--small btn--filled" href="<?php echo get_theme_mod('software_check_urlbutton'); ?>"><?php echo get_theme_mod('software_check_button'); ?></a>
             </div>
           </div>
         </div>
         <div class="col-lg-7 col-sm-12 p-0">
           <div class="main-check__box">
             <div class="main-control__img main-control__img--two">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/check.png">
+              <img src="<?php echo get_theme_mod('software_check_image'); ?>">
             </div>
           </div>
         </div>
