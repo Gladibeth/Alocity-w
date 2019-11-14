@@ -310,44 +310,123 @@
 
 
       <div class="main-access__content">
+        
         <div class="main-access__item main-access__item--center ">
-          <div class="main-access__boximg">
-            <div class="main-access__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
+        
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_1.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p> White</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_1-1.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p>Black</p>
+                </div>
+              </div>
+              
             </div>
           </div>
-          <div class="main-access__check">
-            <div class="main-access__boxcheck active">
-              <div class="main-access__smallcheck"></div>
-            </div>
-            <div class="main-access__boxcheck">
-              <div class="main-access__smallcheck main-access__smallcheck--black"></div>
-            </div>
-          </div>
-          <div class="main-access__namecolor">
-            <p> White</p>
-          </div>
+        
+        
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck active">
+                    <div class="main-access__smallcheck"></div>
+                  </div>
+        
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck">
+                    <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+         
+          </ul>
         </div>
+  
+        
+        
         <div class="main-access__item main-access__item--center ">
-          
-          <div class="main-access__boximg">
-            <div class="main-access__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_2.png">
+        
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home1-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_2.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p> White</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile1-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_2-2.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p>Black</p>
+                </div>
+              </div>
+              
             </div>
           </div>
-          <div class="main-access__check">
-            <div class="main-access__boxcheck active">
-              <div class="main-access__smallcheck"></div>
-            </div>
-            <div class="main-access__boxcheck">
-              <div class="main-access__smallcheck main-access__smallcheck--black"></div>
-            </div>
-          </div>
-          <div class="main-access__namecolor">
-            <p> White</p>
-          </div>
+        
+        
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home1-tab" data-toggle="pill" href="#pills-home1" role="tab" aria-controls="pills-home" aria-selected="true">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck active">
+                    <div class="main-access__smallcheck"></div>
+                  </div>
+        
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile1-tab" data-toggle="pill" href="#pills-profile1" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck">
+                    <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+         
+          </ul>
         </div>
+
       </div>
+
+
+
+
+
+
+
+
+
+        
+
 
       <div class="main-access__boxcontent">
         <div class="main-access__general">
@@ -748,7 +827,6 @@
 
 
 
-      //// 2
 
       <div class="main-access__nav">
         <div class="main-access__box">
@@ -769,45 +847,114 @@
 
       <div class="main-access__content">   
         <div class="main-access__item main-access__item--center ">
-          
-          <div class="main-access__boximg">
-            <div class="main-access__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_3.png">
+        
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home2-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_3.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p> Black</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="main-access__check">
-            <div class="main-access__boxcheck active">
-               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+            <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_3-3.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p>White</p>
+                </div>
+              </div>
               
             </div>
-            <div class="main-access__boxcheck">
-             <div class="main-access__smallcheck"></div>
-            </div>
           </div>
-          <div class="main-access__namecolor">
-            <p> Black</p>
-          </div>
+
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home2-tab" data-toggle="pill" href="#pills-home2" role="tab" aria-controls="pills-home" aria-selected="true">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck active">
+                    <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+                    
+                  </div>
+                  
+
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile2-tab" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck">
+                    <div class="main-access__smallcheck"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+         
+          </ul>
         </div>
+
+
+
+
         <div class="main-access__item main-access__item--center ">
-          
-          <div class="main-access__boximg">
-            <div class="main-access__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_4.png">
+        
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home3" role="tabpanel" aria-labelledby="pills-home3-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_4.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p> Black</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="main-access__check">
-            <div class="main-access__boxcheck active">
-               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+            <div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile3-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_4-4.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p>White</p>
+                </div>
+              </div>
               
             </div>
-            <div class="main-access__boxcheck">
-             <div class="main-access__smallcheck"></div>
-            </div>
           </div>
-          <div class="main-access__namecolor">
-            <p> Black</p>
-          </div>
+
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home3-tab" data-toggle="pill" href="#pills-home3" role="tab" aria-controls="pills-home" aria-selected="true">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck active">
+                    <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+                    
+                  </div>
+                  
+
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile3-tab" data-toggle="pill" href="#pills-profile3" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck">
+                    <div class="main-access__smallcheck"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+         
+          </ul>
         </div>
+      
       </div>
       <div class="main-access__boxcontent">
         <div class="main-access__general">
@@ -1223,83 +1370,221 @@
 
       <div class="main-access__content">
         <div class="main-access__item main-access__item--center ">
-          <div class="main-access__boximg">
-            <div class="main-access__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image.png">
+        
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_1.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p> White</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="main-access__check">
-            <div class="main-access__boxcheck active">
-              <div class="main-access__smallcheck"></div>
-            </div>
-            <div class="main-access__boxcheck two">
-              <div class="main-access__smallcheck main-access__smallcheck--black"></div>
-            </div>
-          </div>
-          <div class="main-access__namecolor">
-            <p class="name-white"> White</p>
-            <p class="name-black p-opacity"> black</p>
-          </div>
-        </div>
-        <div class="main-access__item main-access__item--center ">
-          
-          <div class="main-access__boximg">
-            <div class="main-access__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_2.png">
-            </div>
-          </div>
-          <div class="main-access__check">
-            <div class="main-access__boxcheck active">
-              <div class="main-access__smallcheck"></div>
-            </div>
-            <div class="main-access__boxcheck">
-              <div class="main-access__smallcheck main-access__smallcheck--black"></div>
-            </div>
-          </div>
-          <div class="main-access__namecolor">
-            <p> White</p>
-          </div>
-        </div>
-        <div class="main-access__item main-access__item--center ">
-          
-          <div class="main-access__boximg">
-            <div class="main-access__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_3.png">
-            </div>
-          </div>
-          <div class="main-access__check">
-            <div class="main-access__boxcheck active">
-               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_1-1.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p>Black</p>
+                </div>
+              </div>
               
             </div>
-            <div class="main-access__boxcheck">
-             <div class="main-access__smallcheck"></div>
-            </div>
           </div>
-          <div class="main-access__namecolor">
-            <p> Black</p>
-          </div>
+
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck active">
+                    <div class="main-access__smallcheck"></div>
+                  </div>
+
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck">
+                    <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+         
+          </ul>
         </div>
+
+
+
+
+
         <div class="main-access__item main-access__item--center ">
-          
-          <div class="main-access__boximg">
-            <div class="main-access__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_4.png">
+        
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home1-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_2.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p> White</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="main-access__check">
-            <div class="main-access__boxcheck active">
-               <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+            <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile1-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_2-2.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p>Black</p>
+                </div>
+              </div>
               
             </div>
-            <div class="main-access__boxcheck">
-             <div class="main-access__smallcheck"></div>
+          </div>
+
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home1-tab" data-toggle="pill" href="#pills-home1" role="tab" aria-controls="pills-home" aria-selected="true">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck active">
+                    <div class="main-access__smallcheck"></div>
+                  </div>
+
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile1-tab" data-toggle="pill" href="#pills-profile1" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck">
+                    <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+         
+          </ul>
+        </div>
+
+
+
+
+        <div class="main-access__item main-access__item--center ">
+        
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home2-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_3.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p> Black</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile2-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_3-3.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p>White</p>
+                </div>
+              </div>
+              
             </div>
           </div>
-          <div class="main-access__namecolor">
-            <p> Black</p>
+
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home2-tab" data-toggle="pill" href="#pills-home2" role="tab" aria-controls="pills-home" aria-selected="true">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck active">
+                    <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+                    
+                  </div>
+                  
+
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile2-tab" data-toggle="pill" href="#pills-profile2" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck">
+                    <div class="main-access__smallcheck"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+         
+          </ul>
+        </div>
+
+
+
+
+        <div class="main-access__item main-access__item--center ">
+        
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home3" role="tabpanel" aria-labelledby="pills-home3-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_4.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p> Black</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile3-tab">
+              <div class="main-access__boximg">
+                <div class="main-access__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_4-4.png">
+                </div>
+                <div class="main-access__namecolor">
+                  <p>White</p>
+                </div>
+              </div>
+              
+            </div>
           </div>
+
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home3-tab" data-toggle="pill" href="#pills-home3" role="tab" aria-controls="pills-home" aria-selected="true">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck active">
+                    <div class="main-access__smallcheck main-access__smallcheck--black"></div>
+                    
+                  </div>
+                  
+
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile3-tab" data-toggle="pill" href="#pills-profile3" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <div class="main-access__check">
+                  <div class="main-access__boxcheck">
+                    <div class="main-access__smallcheck"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+         
+          </ul>
         </div>
       </div>
 

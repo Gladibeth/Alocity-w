@@ -2227,7 +2227,7 @@ textarea::placeholder {
 
 .main-banner__imags--two {
   width: 490px;
-  height: 500px;
+  height: 470px;
   position: absolute;
   right: 140px;
   top: 70px;
@@ -2793,6 +2793,13 @@ footer {
   bottom: 0;
 }
 
+
+.main-access__namecolor {
+  position: absolute;
+  bottom: -110px;
+  left: 60px;
+}
+
 .main-access__box--small {
   border: 2px solid #25c0dd;
   display: flex;
@@ -3283,9 +3290,16 @@ textarea::placeholder {
     margin-top: 40px;
   }
 
+  .nav-pills .nav-item {
+    border-bottom: 1px solid transparent;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .nav-pills .nav-item {
+    border-bottom: 1px solid transparent;
+  }
 
   .main-check__content {
     text-align: center;
@@ -3439,6 +3453,29 @@ textarea::placeholder {
   }
 }
 
+@media (min-width: 1440px) and (max-height: 900px) {
+  .main-banner__imags--two {
+    width: 490px;
+    height: 750px;
+    position: absolute;
+    right: 140px;
+    top: 80px;
+  }
+
+  .main-banner__imags--one {
+    width: 211px;
+    height: 600px;
+  }
+
+  .main-banner__container {
+    position: absolute;
+    top: 160px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
 @media (min-width: 1601px) and (max-width: 2048px) {
   .main-banner .main-banner__img {
     height: 50vh;
@@ -3451,4 +3488,21 @@ textarea::placeholder {
 
 .p-opacity {
   opacity: 0;
+}
+
+.nav-pills .nav-link {
+  text-transform: capitalize;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: #fff;
+}
+
+.nav-pills .nav-item {
+  padding: 0;
+}
+
+.nav-pills .nav-link {
+  padding: 5px;
 }
