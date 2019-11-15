@@ -102,21 +102,21 @@
       </div>
     </div>
   </div>
-  <div class="main-infomation main-information--height">
+  <div class="main-infomation main-information--height" style="background:<?php echo get_theme_mod('background_hardware_information'); ?> !important;">
     <div class="container">
       <div class="row">
         <div class="main-infomation__img main-information__img--hard">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_5.png">
+          <img src="<?php echo get_theme_mod('hardware_information_image'); ?>">
         </div>
         <div class="col-lg-6 col-xs-12 col-sm-6">
         </div>
         <div class="col-lg-6 col-xs-12 col-sm-6">
           <div class="main-information__content  main-information__content--height">
             <div class="main-information__title main-information__title--left">
-              <p>Waterproof IP67</p>
+              <p><?php echo get_theme_mod('hardware_information_title'); ?></p>
             </div>
             <div class="main-information__description main-information__description--left">
-              <p>The AW series was designed with an IP-67 rated housing ideal for extreme outdoor environments, working even under water, snow, dust, and humid conditions without compromising it’s efficiency and reliability.</p>
+              <p><?php echo get_theme_mod('hardware_information_content'); ?></p>
             </div>
           </div>
         </div>

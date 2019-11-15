@@ -36,6 +36,7 @@ function theme_customize_register($wp_customize){
     require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_readers.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_testimonials.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_clients.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_information.php';
   
 
 
@@ -67,6 +68,8 @@ function theme_customize_register($wp_customize){
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_banner.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_users.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_control.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_information.php';
+
 /********** Pricing  ***************/ 
 
   $wp_customize->add_panel('panel5',
