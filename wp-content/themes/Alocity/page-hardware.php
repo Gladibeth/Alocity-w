@@ -3,7 +3,7 @@
     <div class="main-banner__content">
       <div class="main-banner__item">
         <div class="main-banner__img main-banner__img--hard">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_7.png">
+          <img src="<?php echo get_theme_mod('hardware_banner_image'); ?>">
         </div>
         <div class="main-banner__container main-banner__container--prin">
           <div class="row">
@@ -11,9 +11,9 @@
               <div class="main-banner__boxtext main-banner__boxtext--princing">
                 <div class="main-banner__text">
                   <div class="main-banner__title">
-                    <h1>Simply Smart Security!</h1>
-                    <p>All-in-one</p>
-                    <span>Smart Access Control Readers</span>
+                    <h1><?php echo get_theme_mod('hardware_banner_title'); ?></h1>
+                    <p><?php echo get_theme_mod('hardware_banner_subtitle'); ?></p>
+                    <span><?php echo get_theme_mod('hardware_banner_content'); ?></span>
                   </div>
                 </div>
               </div>

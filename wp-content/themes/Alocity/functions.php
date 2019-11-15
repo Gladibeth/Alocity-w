@@ -38,24 +38,13 @@ function theme_customize_register($wp_customize){
     require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer_clients.php';
   
 
-  /********** Contact information  ***************/  
-  $wp_customize->add_panel('panel6',
-        array(
-            'title' => 'Contact information',
-            'priority' => 6,
-            )
-        );
- 
-    require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_contact.php';
-    require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_social_networks.php';
-    require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_form_contact.php';
- 
+
 /********** Software  ***************/ 
 
   $wp_customize->add_panel('panel3',
         array(
             'title' => 'Page Software',
-            'priority' => 3,
+            'priority' => 2,
             )
         );
 
@@ -71,21 +60,37 @@ function theme_customize_register($wp_customize){
   $wp_customize->add_panel('panel4',
         array(
             'title' => 'Page Hardware',
-            'priority' => 4,
+            'priority' => 3,
             )
         );
+
+    require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_banner.php';
 /********** Pricing  ***************/ 
 
   $wp_customize->add_panel('panel5',
         array(
             'title' => 'Page Pricing',
-            'priority' => 5,
+            'priority' => 4,
             )
       );
    
     require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_banner.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_pricing.php';
     require_once trailingslashit( get_template_directory() ) . 'inc/pricing/customizer_sections.php';
+
+  /********** Contact information  ***************/ 
+
+  $wp_customize->add_panel('panel6',
+        array(
+            'title' => 'Contact information',
+            'priority' => 5,
+            )
+        );
+ 
+    require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_contact.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_social_networks.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer_form_contact.php';
+
 
 } 
 add_action('customize_register','theme_customize_register');
