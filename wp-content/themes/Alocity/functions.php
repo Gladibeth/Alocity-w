@@ -65,6 +65,7 @@ function theme_customize_register($wp_customize){
         );
 
     require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_banner.php';
+    require_once trailingslashit( get_template_directory() ) . 'inc/hardware/customizer_users.php';
 /********** Pricing  ***************/ 
 
   $wp_customize->add_panel('panel5',

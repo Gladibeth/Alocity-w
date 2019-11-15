@@ -23,135 +23,34 @@
       </div>
     </div>
   </div>
-  <section class="main-users">
+  <section class="main-users" style="background:<?php echo get_theme_mod('background_hardware_users'); ?>;">
     <div class="container">
       <div class="row main-content">
+      <?php for ($i=1; $i <=9 ; $i++) { 
+        if(get_theme_mod('hardware_users'.$i.'_title')!=NULL){?>      
         <div class="col-lg-4 col-sm-6">
           <div class="main-users__content">
             <div class="main-users__item">
               <div class="main-users__boximg">
                 <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/index/settings.png">
+                  <img src="<?php echo get_theme_mod('hardware_users'.$i.'_icon'); ?>">
                 </div>
               </div>
             </div>
             <div class="main-users__item">
               <div class="main-users__boxtext">
                 <div class="main-users__title">
-                  <p>Installs in Minutes</p>
+                  <p><?php echo get_theme_mod('hardware_users'.$i.'_title'); ?></p>
                 </div>
                 <div class="main-general__description">
-                  <p>No configuration or cumbersome wiring required. Syncs with cloud software in seconds.</p>
+                  <p><?php echo get_theme_mod('hardware_users'.$i.'_content'); ?></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/volume-control.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>No Controller Panels Required</p>
-                </div>
-                <div class="main-general__description">
-                  <p>All-in-one smart readers eliminate the need to connect to clunky and costly access controller panels.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/locked.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Secure & Encrypted</p>
-                </div>
-                <div class="main-general__description">
-                  <p>All communication and data transfer/storage is encrypted and uses the latest TLS 2.0, SSL certificate standards.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/turn-off.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Not to Worry - It Works Offline</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Alocity® readers function even when the internet goes down.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/settings_2.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Simple to Configure</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Easily configure the Alocity® readers directly from the cloud software.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/cloud-computing.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Syncs Instantly with Cloud</p>
-                </div>
-                <div class="main-general__description">
-                  <p>No configuration required, all data from reader to software happens seamlessly in real-time.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <?php }} ?> 
+
       </div>
     </div>
   </section>
