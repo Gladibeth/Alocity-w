@@ -54,107 +54,48 @@
       </div>
     </div>
   </section>
-  <div class="main-control main-control--hard" style="background-image:url(assets/img/hardware/bg.png)">
+  <div class="main-control main-control--hard" style="background:<?php echo get_theme_mod('background_hardware_control'); ?>;">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-12 p-0">
           <div class="main-control__box">
             <div class="main-title__general main-title__general--fullwidth">
-              <h2>World’s #1 Fingerprint Technology</h2>
-              <p>works with anyone, anytime, anywhere!</p>
+              <h2><?php echo get_theme_mod('hardware_control_title'); ?></h2>
+              <p><?php echo get_theme_mod('hardware_control_subtitle'); ?></p>
             </div>
             <div class="row main-content">
+            <?php for ($i=1; $i <=4 ; $i++) { 
+              if(get_theme_mod('hardware_control'.$i.'_title')!=NULL){?>             
               <div class="col-lg-6 col-sm-6">
                 <div class="main-users__content main-users__content--hard">
                   <div class="main-users__item">
                     <div class="main-users__boximg active">
                       <div class="main-users__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/light-bulb-1.png">
+                        <img src="<?php echo get_theme_mod('hardware_control'.$i.'_icon'); ?>">
                       </div>
                     </div>
                   </div>
                   <div class="main-users__item">
                     <div class="main-users__boxtext">
                       <div class="main-users__title">
-                        <p>Multi-Spectral Technology</p>
+                        <p><?php echo get_theme_mod('hardware_control'.$i.'_title'); ?></p>
                       </div>
                       <div class="main-general__description main-general__description--hard">
-                        <p>Reads the inner layer fingerprint, resulting in superior images and results.</p>
+                        <p><?php echo get_theme_mod('hardware_control'.$i.'_content'); ?></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="main-users__content main-users__content--hard">
-                  <div class="main-users__item">
-                    <div class="main-users__boximg active">
-                      <div class="main-users__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/balaclava.png">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="main-users__item">
-                    <div class="main-users__boxtext">
-                      <div class="main-users__title">
-                        <p>Liveness Detection</p>
-                      </div>
-                      <div class="main-general__description main-general__description--hard">
-                        <p>Uses the best liveness detection technology to protect against fake and spoof fingerprints.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="main-users__content main-users__content--hard">
-                  <div class="main-users__item">
-                    <div class="main-users__boximg active">
-                      <div class="main-users__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/collaboration.png">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="main-users__item">
-                    <div class="main-users__boxtext">
-                      <div class="main-users__title">
-                        <p>Works on All People</p>
-                      </div>
-                      <div class="main-general__description main-general__description--hard">
-                        <p>Our readers work on ALL people - including that 2-5% of the population with “problem fingerprints”  that fail to enroll on conventional sensors.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="main-users__content main-users__content--hard">
-                  <div class="main-users__item">
-                    <div class="main-users__boximg active">
-                      <div class="main-users__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/drizzle.png">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="main-users__item">
-                    <div class="main-users__boxtext">
-                      <div class="main-users__title">
-                        <p>Works in All Conditions</p>
-                      </div>
-                      <div class="main-general__description main-general__description--hard">
-                        <p>Maintains superior performance even in rain, cold, dry and hot environments.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             <?php }} ?> 
+              
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-12 p-0">
           <div class="content-control__img">
             <div class="main-control__img main-control__img--hard">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_6.png">
+              <img src="<?php echo get_theme_mod('hardware_control_image'); ?>">
             </div>
           </div>
         </div>
