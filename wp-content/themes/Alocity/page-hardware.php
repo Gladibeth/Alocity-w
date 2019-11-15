@@ -123,13 +123,12 @@
       </div>
     </div>
   </div>
-  <div class="main-access">
+  <div class="main-access" style="background:<?php echo get_theme_mod('background_hardware_access'); ?>;">
     <div class="container">
       <div class="main-title__general">
-        <h2>Access Control Readers Specifications</h2>
+        <h2><?php echo get_theme_mod('hardware_access_title'); ?></h2>
       </div>
       <?php if(wp_is_mobile()): ?>
-
 
       <div id="main-access__nav" class="main-access__nav">
         <div class="main-access__item main-access__item--center ">
@@ -188,6 +187,7 @@
           </div>
         </div>
       </div>
+
 
       <div class="main-access__boxcontent">
         <div class="main-access__general">
@@ -1028,6 +1028,7 @@
         </div>
       </div>
 <?php else:?>
+
 <div id="main-access__nav" class="main-access__nav">
         <div class="main-access__item main-access__item--center ">
           <div class="main-access__box">
