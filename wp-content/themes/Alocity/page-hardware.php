@@ -3,7 +3,7 @@
     <div class="main-banner__content">
       <div class="main-banner__item">
         <div class="main-banner__img main-banner__img--hard">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_7.png">
+          <img src="<?php echo get_theme_mod('hardware_banner_image'); ?>">
         </div>
         <div class="main-banner__container main-banner__container--prin">
           <div class="row">
@@ -11,9 +11,9 @@
               <div class="main-banner__boxtext main-banner__boxtext--princing">
                 <div class="main-banner__text">
                   <div class="main-banner__title">
-                    <h1>Simply Smart Security!</h1>
-                    <p>All-in-one</p>
-                    <span>Smart Access Control Readers</span>
+                    <h1><?php echo get_theme_mod('hardware_banner_title'); ?></h1>
+                    <p><?php echo get_theme_mod('hardware_banner_subtitle'); ?></p>
+                    <span><?php echo get_theme_mod('hardware_banner_content'); ?></span>
                   </div>
                 </div>
               </div>
@@ -23,260 +23,100 @@
       </div>
     </div>
   </div>
-  <section class="main-users">
+  <section class="main-users" style="background:<?php echo get_theme_mod('background_hardware_users'); ?>;">
     <div class="container">
       <div class="row main-content">
+      <?php for ($i=1; $i <=9 ; $i++) { 
+        if(get_theme_mod('hardware_users'.$i.'_title')!=NULL){?>      
         <div class="col-lg-4 col-sm-6">
           <div class="main-users__content">
             <div class="main-users__item">
               <div class="main-users__boximg">
                 <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/index/settings.png">
+                  <img src="<?php echo get_theme_mod('hardware_users'.$i.'_icon'); ?>">
                 </div>
               </div>
             </div>
             <div class="main-users__item">
               <div class="main-users__boxtext">
                 <div class="main-users__title">
-                  <p>Installs in Minutes</p>
+                  <p><?php echo get_theme_mod('hardware_users'.$i.'_title'); ?></p>
                 </div>
                 <div class="main-general__description">
-                  <p>No configuration or cumbersome wiring required. Syncs with cloud software in seconds.</p>
+                  <p><?php echo get_theme_mod('hardware_users'.$i.'_content'); ?></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/volume-control.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>No Controller Panels Required</p>
-                </div>
-                <div class="main-general__description">
-                  <p>All-in-one smart readers eliminate the need to connect to clunky and costly access controller panels.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/locked.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Secure & Encrypted</p>
-                </div>
-                <div class="main-general__description">
-                  <p>All communication and data transfer/storage is encrypted and uses the latest TLS 2.0, SSL certificate standards.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/turn-off.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Not to Worry - It Works Offline</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Alocity® readers function even when the internet goes down.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/settings_2.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Simple to Configure</p>
-                </div>
-                <div class="main-general__description">
-                  <p>Easily configure the Alocity® readers directly from the cloud software.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="main-users__content">
-            <div class="main-users__item">
-              <div class="main-users__boximg">
-                <div class="main-users__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/cloud-computing.png">
-                </div>
-              </div>
-            </div>
-            <div class="main-users__item">
-              <div class="main-users__boxtext">
-                <div class="main-users__title">
-                  <p>Syncs Instantly with Cloud</p>
-                </div>
-                <div class="main-general__description">
-                  <p>No configuration required, all data from reader to software happens seamlessly in real-time.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <?php }} ?> 
+
       </div>
     </div>
   </section>
-  <div class="main-control main-control--hard" style="background-image:url(assets/img/hardware/bg.png)">
+  <div class="main-control main-control--hard" style="background:<?php echo get_theme_mod('background_hardware_control'); ?>;">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-12 p-0">
           <div class="main-control__box">
             <div class="main-title__general main-title__general--fullwidth">
-              <h2>World’s #1 Fingerprint Technology</h2>
-              <p>works with anyone, anytime, anywhere!</p>
+              <h2><?php echo get_theme_mod('hardware_control_title'); ?></h2>
+              <p><?php echo get_theme_mod('hardware_control_subtitle'); ?></p>
             </div>
             <div class="row main-content">
+            <?php for ($i=1; $i <=4 ; $i++) { 
+              if(get_theme_mod('hardware_control'.$i.'_title')!=NULL){?>             
               <div class="col-lg-6 col-sm-6">
                 <div class="main-users__content main-users__content--hard">
                   <div class="main-users__item">
                     <div class="main-users__boximg active">
                       <div class="main-users__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/light-bulb-1.png">
+                        <img src="<?php echo get_theme_mod('hardware_control'.$i.'_icon'); ?>">
                       </div>
                     </div>
                   </div>
                   <div class="main-users__item">
                     <div class="main-users__boxtext">
                       <div class="main-users__title">
-                        <p>Multi-Spectral Technology</p>
+                        <p><?php echo get_theme_mod('hardware_control'.$i.'_title'); ?></p>
                       </div>
                       <div class="main-general__description main-general__description--hard">
-                        <p>Reads the inner layer fingerprint, resulting in superior images and results.</p>
+                        <p><?php echo get_theme_mod('hardware_control'.$i.'_content'); ?></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="main-users__content main-users__content--hard">
-                  <div class="main-users__item">
-                    <div class="main-users__boximg active">
-                      <div class="main-users__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/balaclava.png">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="main-users__item">
-                    <div class="main-users__boxtext">
-                      <div class="main-users__title">
-                        <p>Liveness Detection</p>
-                      </div>
-                      <div class="main-general__description main-general__description--hard">
-                        <p>Uses the best liveness detection technology to protect against fake and spoof fingerprints.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="main-users__content main-users__content--hard">
-                  <div class="main-users__item">
-                    <div class="main-users__boximg active">
-                      <div class="main-users__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/collaboration.png">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="main-users__item">
-                    <div class="main-users__boxtext">
-                      <div class="main-users__title">
-                        <p>Works on All People</p>
-                      </div>
-                      <div class="main-general__description main-general__description--hard">
-                        <p>Our readers work on ALL people - including that 2-5% of the population with “problem fingerprints”  that fail to enroll on conventional sensors.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                <div class="main-users__content main-users__content--hard">
-                  <div class="main-users__item">
-                    <div class="main-users__boximg active">
-                      <div class="main-users__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/drizzle.png">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="main-users__item">
-                    <div class="main-users__boxtext">
-                      <div class="main-users__title">
-                        <p>Works in All Conditions</p>
-                      </div>
-                      <div class="main-general__description main-general__description--hard">
-                        <p>Maintains superior performance even in rain, cold, dry and hot environments.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             <?php }} ?> 
+              
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-12 p-0">
           <div class="content-control__img">
             <div class="main-control__img main-control__img--hard">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_6.png">
+              <img src="<?php echo get_theme_mod('hardware_control_image'); ?>">
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="main-infomation main-information--height">
+  <div class="main-infomation main-information--height" style="background:<?php echo get_theme_mod('background_hardware_information'); ?> !important;">
     <div class="container">
       <div class="row">
         <div class="main-infomation__img main-information__img--hard">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/image_5.png">
+          <img src="<?php echo get_theme_mod('hardware_information_image'); ?>">
         </div>
         <div class="col-lg-6 col-xs-12 col-sm-6">
         </div>
         <div class="col-lg-6 col-xs-12 col-sm-6">
           <div class="main-information__content  main-information__content--height">
             <div class="main-information__title main-information__title--left">
-              <p>Waterproof IP67</p>
+              <p><?php echo get_theme_mod('hardware_information_title'); ?></p>
             </div>
             <div class="main-information__description main-information__description--left">
-              <p>The AW series was designed with an IP-67 rated housing ideal for extreme outdoor environments, working even under water, snow, dust, and humid conditions without compromising it’s efficiency and reliability.</p>
+              <p><?php echo get_theme_mod('hardware_information_content'); ?></p>
             </div>
           </div>
         </div>
