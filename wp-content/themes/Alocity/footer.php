@@ -19,32 +19,7 @@
                 <div class="main-modal__title">
                   <h2><?php echo get_theme_mod('contact_form_title'); ?></h2>
                 </div>
-                <form>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput" placeholder="First Name*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput" placeholder="Last Name*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput" placeholder="Company" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="Email*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="Phone*" type="phone">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="Country*" type="text">
-                  </div>
-                  <div class="form-group">
-                    <textarea placeholder="Comments" rows="8"></textarea>
-                  </div>
-                  <div class="main-check__btn">
-                    <a class="btn_custom btn--large btn--filled--yellowgradient" href="">send message</a>
-                  </div>
-                </form>
+                <?php echo do_shortcode('[hubspot type=form portal=6327731 id=bf0aae01-e08e-41ca-adae-c7c67c377546]'); ?>
               </div>
             </div>
           </div>
