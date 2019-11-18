@@ -100,6 +100,33 @@
   border: 1px solid #f5ac1b;
 }
 
+.bt-custon-two input[type="submit"] {
+  color: #1a2033;
+  background: #25c0dd !important;
+
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  min-width: 105px;
+  font-size: 16px;
+  border-radius: 30.5px;
+  font-size: 14px;
+  line-height: 1.5em;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+
+.bt-custon-two input[type="submit"]:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #25c0dd !important;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #25c0dd !important;
+}
+
 
 input[type="submit"] {
   color: #1a2033;
@@ -663,7 +690,7 @@ section {
 }
 
 .nav-item {
-  padding: 0 12px;
+  padding: 0 0px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
