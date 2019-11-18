@@ -20,20 +20,20 @@
       <div class="container">
         <div class="main-brand">
           <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/logo@3x.png">
-            </a>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/logo@3x.png">
+          </a>
           <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
         <div class="navbar-collapse offcanvas-collapse">
           <ul class="navbar-nav mr-autos">
-          <li class="dropdown nav-item">
+            <li class="dropdown nav-item">
               <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-              Products
-                </a>
+                Products
+              </a>
               <ul class="dropdown-menu">
                 <li class=" nav-ite  nav-ite-dropm">
                   <a class="nav-link nav-link--line" href="<?php echo get_home_url() ?>/index.php/software">Software</a>
@@ -48,6 +48,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo get_home_url() ?>/index.php/company">Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo get_home_url() ?>/index.php/contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link--light" href="https://support.alo.city">Support</a>
