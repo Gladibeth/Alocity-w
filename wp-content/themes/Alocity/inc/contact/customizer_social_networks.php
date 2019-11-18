@@ -16,14 +16,7 @@
     'settings' => 'facebook'
   )));
   
-  $wp_customize->add_setting('facebook_image');
  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'facebook_image_control', array (
-    'description' => 'Icon',
-    'section' => 'social',
-    'settings' => 'facebook_image'
-  )));
-
   $wp_customize->add_setting('linkedin', array(
     'default' => ''
   ));
@@ -35,14 +28,7 @@
     'settings' => 'linkedin'
   )));
 
-  $wp_customize->add_setting('linkedin_image');
  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'linkedin_image_control', array (
-    'description' => 'Icon',
-    'section' => 'social',
-    'settings' => 'linkedin_image'
-  )));  
-
   $wp_customize->add_setting('instagram', array(
     'default' => ''
   ));
@@ -53,32 +39,7 @@
     'section' => 'social',
     'settings' => 'instagram'
   )));  
-
-  $wp_customize->add_setting('instagram_image');
  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'instagram_image_control', array (
-    'description' => 'Icon',
-    'section' => 'social',
-    'settings' => 'instagram_image'
-  )));
-
-  $wp_customize->add_setting('twitter', array(
-    'default' => ''
-  ));
-  
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'twitter_control', array (
-    'label' => 'Twitter',
-    'description' => 'Url',
-    'section' => 'social',
-    'settings' => 'twitter'
-  )));
-    
-  $wp_customize->add_setting('twitter_image');
  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'twitter_image_control', array (
-    'description' => 'Icon',
-    'section' => 'social',
-    'settings' => 'twitter_image'
-  )));
 
 ?>

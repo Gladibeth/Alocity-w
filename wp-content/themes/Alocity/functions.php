@@ -284,18 +284,18 @@ function custom_post_type_pricing() {
 add_action( 'init', 'custom_post_type_pricing', 0 );
 
 
-/*********** ACCESS ***********/ 
+/*********** HARDWARE ACCESS ***********/ 
 function custom_post_type_access() {
 
   $labels = array(
-    'name'                  => _x( 'Access', 'Post Type General Name', 'text_domain' ),
-    'singular_name'         => _x( 'Access', 'Post Type Singular Name', 'text_domain' ),
-    'menu_name'             => __( 'Access', 'text_domain' ),
-    'name_admin_bar'        => __( 'Access', 'text_domain' ),
+    'name'                  => _x( 'Hardware', 'Post Type General Name', 'text_domain' ),
+    'singular_name'         => _x( 'Hardware', 'Post Type Singular Name', 'text_domain' ),
+    'menu_name'             => __( 'Hardware', 'text_domain' ),
+    'name_admin_bar'        => __( 'Hardware', 'text_domain' ),
     'archives'              => __( 'Archives', 'text_domain' ),
     'attributes'            => __( 'Attributes', 'text_domain' ),
     'parent_item_colon'     => __( 'Main Items', 'text_domain' ),
-    'all_items'             => __( 'All Access', 'text_domain' ),
+    'all_items'             => __( 'All Hardware', 'text_domain' ),
     'add_new_item'          => __( 'Add New Items', 'text_domain' ),
     'add_new'               => __( 'Add New', 'text_domain' ),
     'new_item'              => __( 'New Item', 'text_domain' ),
@@ -316,8 +316,8 @@ function custom_post_type_access() {
     'filter_items_list'     => __( 'filter Items List', 'text_domain' ),
   );
   $args = array(
-    'label'                 => __( 'Access', 'text_domain' ),
-    'description'           => __( 'Access image', 'text_domain' ),
+    'label'                 => __( 'Hardware', 'text_domain' ),
+    'description'           => __( 'Hardware image', 'text_domain' ),
     'labels'                => $labels,
     'supports'              => array( 'title', 'custom-fields'),
     'taxonomies'            => array( '' ),
@@ -339,6 +339,8 @@ function custom_post_type_access() {
 
 }
 add_action( 'init', 'custom_post_type_access', 0 );
+
+/********** Access Field **************/
 
 function access($position,$field){
       global $wpdb;  

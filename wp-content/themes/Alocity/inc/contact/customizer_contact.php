@@ -25,14 +25,14 @@
     'settings' => 'phone'
   )));  
 
-  $wp_customize->add_setting('direction', array(
+  $wp_customize->add_setting('address', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'direction_control', array (
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address_control', array (
     'label' => 'Address',
     'section' => 'contact',
-    'settings' => 'direction',
+    'settings' => 'address',
     'type' => 'textarea'
   )));    
 

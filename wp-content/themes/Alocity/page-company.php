@@ -68,7 +68,7 @@
           </div>
           <div class="main-company__imgs">
             <div class="main-company__imgs--one">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/image.png">
+              <img src="<?php echo get_theme_mod('company_box1_image'); ?>">
             </div>
           </div>            
         </div>

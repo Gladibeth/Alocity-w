@@ -103,25 +103,24 @@
              <?php if (get_theme_mod('instagram')!=NULL) {?> 
               <a href="<?php echo get_theme_mod('instagram'); ?>">
                 <div class="main-footer__img">
-                  <img src="<?php echo get_theme_mod('instagram_image'); ?>">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/instagram.png">
                 </div>
               </a>
              <?php } ?>   
+             <?php if (get_theme_mod('facebook')!=NULL) {?> 
               <a href="<?php echo get_theme_mod('facebook'); ?>">
                 <div class="main-footer__img">
-                  <img src="<?php echo get_theme_mod('facebook_image'); ?>">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/facebook.png">
                 </div>
               </a>
+             <?php } ?>   
+             <?php if (get_theme_mod('linkedin')!=NULL) {?>              
               <a href="<?php echo get_theme_mod('linkedin'); ?>">
                 <div class="main-footer__img">
-                  <img src="<?php echo get_theme_mod('linkedin_image'); ?>">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/linkein.png">
                 </div>
               </a>
-              <a href="<?php echo get_theme_mod('twitter'); ?>">
-                <div class="main-footer__img">
-                  <img src="<?php echo get_theme_mod('twitter_image'); ?>">
-                </div>
-              </a>              
+             <?php } ?>              
             </div>
           </div>
           <div class="main-footer__boxubications">
@@ -136,7 +135,7 @@
               </a>
               <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/map-marker.png">
-                <?php echo get_theme_mod('direction'); ?>
+                <?php echo get_theme_mod('address'); ?>
               </a>
             </div>
           </div>

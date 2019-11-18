@@ -7,9 +7,8 @@
             <p>How can we help?</p>
             <span>We can’t wait to hear from you</span>
           </div>
-          <form class="input-group" id="search-input">
-            <input name="utf8" type="hidden" value="✓">
-            <input class="form-control form-search" name="" placeholder="Search" type="text">
+          <form class="input-group" id="search searchform"  method="get"  action="<?php echo get_home_url() ?>">
+            <input class="form-control form-search" type="text" name="s" id="s">
             <span class="input-group-btn">
                 <button class="btn btn-default btn-search" type="submit">
                   Search
@@ -63,7 +62,7 @@
               </div>
               <div class="main-form__boxtitle">
                 <p>Email</p>
-                <span>marveltorres@alocity.com</span>
+                <span><?php echo get_theme_mod('email'); ?></span>
               </div>
             </div>
             <div class="main-form__boxitem">
@@ -74,7 +73,7 @@
               </div>
               <div class="main-form__boxtitle">
                 <p>Telephone</p>
-                <span>888-512-2115</span>
+                <span><?php echo get_theme_mod('phone'); ?></span>
               </div>
             </div>
             <div class="main-form__boxitem">
@@ -85,7 +84,7 @@
               </div>
               <div class="main-form__boxtitle">
                 <p>Local</p>
-                <span>Calle 23 Green Tower, Street Balsos</span>
+                <span><?php echo get_theme_mod('address'); ?></span>
               </div>
             </div>
             <div class="main-form__boxitem">
@@ -97,21 +96,27 @@
               <div class="main-form__boxtitle">
                 <p>Social media</p>
                 <div class="main-footer__redes main-form__redes">
-                  <a href="">
+                <?php if (get_theme_mod('instagram')!=NULL) {?>                 
+                  <a href="<?php echo get_theme_mod('instagram'); ?>">
                     <div class="main-footer__img">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/instagram.png">
                     </div>
                   </a>
-                  <a href="">
+                <?php } ?>   
+                <?php if (get_theme_mod('facebook')!=NULL) {?>                   
+                  <a href="<?php echo get_theme_mod('facebook'); ?>">
                     <div class="main-footer__img">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/facebook.png">
                     </div>
                   </a>
-                  <a href="">
+                <?php } ?>   
+                <?php if (get_theme_mod('linkedin')!=NULL) {?>                  
+                  <a href="<?php echo get_theme_mod('linkedin'); ?>">
                     <div class="main-footer__img">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/linkein.png">
                     </div>
                   </a>
+                <?php } ?>
                 </div>
               </div>
             </div>
