@@ -291,7 +291,7 @@
       <?php if(wp_is_mobile()): ?>
 
 
-      <div id="main-access__nav" class="main-access__nav">
+      <div id="main-access__first" class="main-access__nav">
         <div class="main-access__item main-access__item--center ">
           <div class="main-access__box">
             <div class="main-access__box--small">
@@ -416,17 +416,6 @@
         </div>
 
       </div>
-
-
-
-
-
-
-
-
-
-        
-
 
       <div class="main-access__boxcontent">
         <div class="main-access__general">
@@ -603,7 +592,6 @@
         </div>
       </div>
 
-
       <div class="main-access__boxcontent">
         <div class="main-access__general">
           <p>Door Control</p>
@@ -717,8 +705,6 @@
         </div>
       </div>
 
-
-
       <div class="main-access__boxcontent">
         <div class="main-access__general">
           <p>Size & Dimensions</p>
@@ -824,9 +810,6 @@
         
         </div>
       </div>
-
-
-
 
       <div class="main-access__nav">
         <div class="main-access__box">
@@ -1718,9 +1701,6 @@
           </div>
         </div>
       </div>
-
-
-
       <div class="main-access__boxcontent">
         <div class="main-access__general">
           <p>Works Outdoors</p>
@@ -2207,13 +2187,13 @@
           </div>
         </div>
       </div>
-      <div class="main-access__boxcontent">
+      <div class="main-access__boxcontent ">
         <div class="main-access__general">
           <p>Power</p>
         </div>
         <hr>
         <div class="main-access__content">
-          <div class="main-access__item">
+          <div class="main-access__item last-section">
             <div class="main-access__boxmethod">
               <div class="main-access__methodtitle main-access__methodtitle--left">
                 <p class="title__bold">

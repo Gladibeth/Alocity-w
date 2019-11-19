@@ -163,6 +163,7 @@
     </div>
   </footer>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slick.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/assets/js/setting-slick.js"></script>

@@ -7,19 +7,48 @@ $(function () {
 })
 
 
+var div_top = $('#main-access__nav').offset().top;
+var div_tes = $('.last-section').offset().top;
+var div_first = $('#main-access__first').offset().top;
+
+$(window).scroll(function () {
+  var window_top = $(window).scrollTop() - 0;
+  if (window_top > div_top) {
+    if (!$('#main-access__nav').is('.sticky')) {
+      $('#main-access__nav').addClass('sticky');
+      // $('#main-access__nav').addClass('container');
+    }
+  } else {
+    $('#main-access__nav').removeClass('sticky');
+    // $('#main-access__nav').removeClass('container');
+  }
+  if (window_top >= div_tes) {
+    $('#main-access__nav').addClass('opacity');
+  } else {
+    $('#main-access__nav').removeClass('opacity');
+  }
+
+  if (window_top > div_first) {
+    if (!$('#main-access__nav').is('.sticky')) {
+      $('#main-access__nav').addClass('sticky');
+      // $('#main-access__nav').addClass('container');
+    }
+  } else {
+    $('#main-access__nav').removeClass('sticky');
+    // $('#main-access__nav').removeClass('container');
+  }
+});
+
+var div_top = $('#main-access__fisrt').offset().top;
+var div_tes = $('.last-section').offset().top;
+
+
+
+
+
 $('.nav-pills .nav-link').click(function () {
   $('.main-access__boxcheck').removeClass('active');
   $(this).find('.main-access__boxcheck').addClass('active');
-  // $(this).find('.main-access__boxcheck').addClass('active')
-  // if (!$(this).find('.colors').hasClass("active")) {
-  //   $(this).find('.name-white').addClass('d-none')
-  //   $(this).find('.name-white').removeClass('active')
-  // } else {
-  //   alert('qque')
-  // }
-  // $(this).find('.name-white').addClass('d-none')
-  // $(this).find('colors.active').removeClass('d-none')
-
 })
 
 
@@ -83,13 +112,3 @@ $(document).ready(function () {
     s.parentNode.insertBefore(wf, s);
   })();
 });
-
-
-// $(window).scroll(function (event) {
-//   var scroll = $(window).scrollTop();
-//   var position = $('#main-access__nav').scrollTop()
-
-//   if (scroll >= 1000) {
-//     $('.main-access__nav').addClass('fixed--two');
-//   }
-// });

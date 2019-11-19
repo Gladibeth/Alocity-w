@@ -2721,6 +2721,7 @@ footer {
   }
 }
 
+
 .main-footer__boxubications .main-footer__ubications a:hover {
   text-decoration: none;
 }
@@ -2736,16 +2737,54 @@ footer {
   margin-top: 50px;
 }
 
-.main-access__nav.fixed--two {
-  position: fixed;
-  top: 35px;
-  right: 0;
-  left: 160px;
-  height: 100px;
-  background-color: #fff;
-  z-index: 99999;
-  padding: 30px;
+
+
+#main-access__nav {
+  width: 100%;
+  z-index: 99;
+  position: static;
+  transition: 0.3s ease-in-out;
 }
+
+#main-access__nav {
+  padding: 0;
+  margin: 50px 0 0 0px;
+  font-size: 1.5em;
+  background-color: #fff;
+}
+
+#main-access__nav.sticky {
+  position: fixed;
+  top: 30px;
+  max-width: 1140px;
+  /* width: 100%; */
+  padding: 15px 0;
+  transition: 0.3s ease-in-out;
+}
+
+#main-access__nav.sticky .main-access__item.main-access__item--center {
+  align-items: center;
+}
+
+.last-section {
+  transition: 0.3s ease-in-out;
+}
+
+#main-access__nav.sticky.opacity {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+/*** Movil first**/
+
+
+
+
+
 
 @media (min-width: 768px) and (max-width: 991px) {
   .main-access {
@@ -3169,6 +3208,10 @@ textarea::placeholder {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .main-access__nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .main-general__description.main-general__description--readers p {
     width: 100%;
   }
@@ -3294,9 +3337,55 @@ textarea::placeholder {
     border-bottom: 1px solid transparent;
   }
 
+
+
+
+
+
+
+  #main-access__first {
+    width: 100%;
+    z-index: 99;
+    position: static;
+    transition: 0.3s ease-in-out;
+  }
+
+  #main-access__first {
+    padding: 0;
+    margin: 50px 0 0 0px;
+    font-size: 1.5em;
+    background-color: #fff;
+  }
+
+  #main-access__first.sticky {
+    position: fixed;
+    top: 30px;
+    /* width: 100%; */
+    padding: 15px 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  #main-access__first.sticky .main-access__item.main-access__item--center {
+    align-items: center;
+  }
+
+  .last-section {
+    transition: 0.3s ease-in-out;
+  }
+
+  #main-access__first.sticky.opacity {
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .main-access__nav {
+    max-width: 760px;
+  }
+
   .nav-pills .nav-item {
     border-bottom: 1px solid transparent;
   }
