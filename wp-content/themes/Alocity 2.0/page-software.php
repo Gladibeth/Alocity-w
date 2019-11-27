@@ -1,0 +1,449 @@
+<?php get_header(); ?>
+  <div class="main-banner">
+    <div class="main-banner__content">
+      <div class="main-banner__item">
+        <div class="mask mask--white">
+          <div class="main-banner__text">
+            <div class="main-banner__title">
+              <h1>Simply Smart Security</h1>
+              <span>Cloud Access Control Software</span>
+              <p>Manage Alocity anytime, from anywhere</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-banner__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-1.png">
+        </div>
+      </div>
+      <div class="main-banner__item">
+        <div class="mask mask--white">
+          <div class="main-banner__text">
+            <div class="main-banner__title">
+              <h1>Simply Smart Segurity</h1>
+              <span>Cloud Access Control Software</span>
+              <p>Manage Alocity anytime, from anywhere</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-banner__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-banner.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="main-users">
+    <div class="container">
+      <div class="main-title__general">
+        <h2>built for today's modern users</h2>
+      </div>
+      <div class="row main-content">
+        <div class="col-lg-4 col-sm-6">
+          <div class="main-users__content">
+            <div class="main-users__item">
+              <div class="main-users__boximg">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/tap2.png">
+                </div>
+              </div>
+            </div>
+            <div class="main-users__item">
+              <div class="main-users__boxtext">
+                <div class="main-users__title">
+                  <p>Easy to Implement</p>
+                </div>
+                <div class="main-general__description">
+                  <p>No software to install or maintain, setup is done in minutes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="main-users__content">
+            <div class="main-users__item">
+              <div class="main-users__boximg">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/expand.png">
+                </div>
+              </div>
+            </div>
+            <div class="main-users__item">
+              <div class="main-users__boxtext">
+                <div class="main-users__title">
+                  <p>Scalable</p>
+                </div>
+                <div class="main-general__description">
+                  <p>Manage one or hundreds of sites and doors.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="main-users__content">
+            <div class="main-users__item">
+              <div class="main-users__boximg">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/padlock.png">
+                </div>
+              </div>
+            </div>
+            <div class="main-users__item">
+              <div class="main-users__boxtext">
+                <div class="main-users__title">
+                  <p>Vault Like Security</p>
+                </div>
+                <div class="main-general__description">
+                  <p>Designed with the most advanced cloud security encryption strategies.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="main-users__content">
+            <div class="main-users__item">
+              <div class="main-users__boximg">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/clock.png">
+                </div>
+              </div>
+            </div>
+            <div class="main-users__item">
+              <div class="main-users__boxtext">
+                <div class="main-users__title">
+                  <p>See Everything in Real Time</p>
+                </div>
+                <div class="main-general__description">
+                  <p>Get instant visibility on users activity, door states, and critical events.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="main-users__content">
+            <div class="main-users__item">
+              <div class="main-users__boximg">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/turn-off.png">
+                </div>
+              </div>
+            </div>
+            <div class="main-users__item">
+              <div class="main-users__boxtext">
+                <div class="main-users__title">
+                  <p>Powerful Reporting</p>
+                </div>
+                <div class="main-general__description">
+                  <p>Easily gather real-time events data from your system with a single click.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="main-users__content">
+            <div class="main-users__item">
+              <div class="main-users__boximg">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/intersection.png">
+                </div>
+              </div>
+            </div>
+            <div class="main-users__item">
+              <div class="main-users__boxtext">
+                <div class="main-users__title">
+                  <p>Integrations</p>
+                </div>
+                <div class="main-general__description">
+                  <p>Built-in integrations with G-Suite, Microsoft, Okta, Slack and more.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="main-users__content">
+            <div class="main-users__item">
+              <div class="main-users__boximg">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/icon.png">
+                </div>
+              </div>
+            </div>
+            <div class="main-users__item">
+              <div class="main-users__boxtext">
+                <div class="main-users__title">
+                  <p>Automation</p>
+                </div>
+                <div class="main-general__description">
+                  <p>Set event-based automation rules.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="main-users__content">
+            <div class="main-users__item">
+              <div class="main-users__boximg">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/key-2.png">
+                </div>
+              </div>
+            </div>
+            <div class="main-users__item">
+              <div class="main-users__boxtext">
+                <div class="main-users__title">
+                  <p>Intuitive Access Schedule</p>
+                </div>
+                <div class="main-general__description">
+                  <p>Easily add schedules based on who is allowed to enter,where and when.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="main-users__content">
+            <div class="main-users__item">
+              <div class="main-users__boximg">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/network.png">
+                </div>
+              </div>
+            </div>
+            <div class="main-users__item">
+              <div class="main-users__boxtext">
+                <div class="main-users__title">
+                  <p>Access Groups</p>
+                </div>
+                <div class="main-general__description">
+                  <p>Easily set access levels for users by groups.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	<div class="main-dashboard">
+    <div class="container">
+      <div class="row main-dashboard__content">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
+          <div class="main-dashboard__cards">
+            <div class="main-dashboard__boximg">
+              <div class="main-dashboard__img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-4.png">
+                <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
+              </div>
+              <div class="main-dashboard__img--two">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
+              </div>
+            </div>
+            <div class="main-dashboard__text">
+              <div class="main-dashboard__title">
+                <p>User Management</p>
+              </div>
+              <div class="main-general__description">
+                <p>Easily add users with access levels and sync their biometric, mobile, card, and pin credentials instantly to the door readers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
+          <div class="main-dashboard__cards active">
+            <div class="main-dashboard__boximg">
+              <div class="main-dashboard__img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-3.png">
+                <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
+              </div>
+              <div class="main-dashboard__img--two">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
+              </div>
+            </div>
+            <div class="main-dashboard__text">
+              <div class="main-dashboard__title">
+                <p>Real Time Dashboard</p>
+              </div>
+              <div class="main-general__description">
+                <p>Our modern dashboard gives you instant visibility on user activity, door states, and critical events.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 p-0">
+          <div class="main-dashboard__cards">
+            <div class="main-dashboard__boximg">
+              <div class="main-dashboard__img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-2.png">
+                <img class="img__two" src="<?php echo get_template_directory_uri(); ?>/assets/img/software/plus.png">
+              </div>
+              <div class="main-dashboard__img--two">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
+              </div>
+            </div>
+            <div class="main-dashboard__text">
+              <div class="main-dashboard__title">
+                <p>Cloud Reader Management</p>
+              </div>
+              <div class="main-general__description">
+                <p>Configure and manage alocity smart door readers instantly from the cloud.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div class="main-control">
+    <div class="row">
+      <div class="col-lg-6 col-12 p-0">
+        <div class="main-control__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image_4.png">
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 p-0">
+        <div class="main-control__box main-control__box--bg">
+          <div class="main-title__general main-title__general--left">
+            <h2>Total control from anywhere</h2>
+          </div>
+          <div class="row main-content">
+            <div class="col-lg-6 col-sm-6">
+              <div class="main-control__subbox">
+                <div class="main-control__text">
+                  <div class="main-control__icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/calendar-2.png">
+                  </div>
+                  <div class="main-users__title">
+                    <p>Easily Schedule Users</p>
+                  </div>
+                </div>
+                <div class="main-general__description">
+                  <p>Create schedules for complete door control of who can enter, at what time, and on which door.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="main-control__subbox">
+                <div class="main-control__text">
+                  <div class="main-control__icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/notification.png">
+                  </div>
+                  <div class="main-users__title">
+                    <p>Instant Alerts</p>
+                  </div>
+                </div>
+                <div class="main-general__description">
+                  <p>Receive an alert notifiying you about any incovenience or critical event.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="main-control__subbox">
+                <div class="main-control__text">
+                  <div class="main-control__icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/user-3.png">
+                  </div>
+                  <div class="main-users__title">
+                    <p>Manage User Credentials</p>
+                  </div>
+                </div>
+                <div class="main-general__description">
+                  <p>Instantly assign/revoke user credentials. (biometric, mobile, cloud-keys, pin or card).</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="main-control__subbox">
+                <div class="main-control__text">
+                  <div class="main-control__icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/exit.png">
+                  </div>
+                  <div class="main-users__title">
+                    <p>Door Control</p>
+                  </div>
+                </div>
+                <div class="main-general__description">
+                  <p>Total control to unlock or lockdown doors from anywhere, and see door states in real-time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-check">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-sm-12">
+          <div class="main-check__content">
+            <div class="main-title__general main-title__general--width">
+              <h2>Integrated with the tools you use</h2>
+            </div>
+            <div class="main-general__description main-general__description--color main-general__description--soft">
+              <p>Alocity® is fully integrated with your favorite apps, so you can spend less time juggling tabs and more time focusing on meaningful work.</p>
+            </div>
+            <div class="main-check__btn">
+              <!--<a class="btn_custom btn--small btn--filled" href="">Check out the integrations</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-sm-12 p-0">
+          <div class="main-check__box">
+            <div class="main-control__img main-control__img--two">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <?php  get_template_part('sections/main-testimonials'); ?>
+  <?php  get_template_part('sections/main-client'); ?>
+  <div class="main-infomation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 col-sm-6">
+          <div class="main-infomation__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/phone.png">
+          </div>
+        </div>
+        <div class="col-lg-6 col-xs-12 col-sm-6">
+          <div class="main-information__content">
+            <div class="main-information__title">
+              <p>Need more information?</p>
+            </div>
+            <div class="main-information__description">
+              <p>Let one of our specialist show you around</p>
+            </div>
+            <div class="main-information__btn">
+              <a class="btn_custom btn--medium btn--filled--white" href="">get quote</a>
+            </div>
+            <div class="main-information__description">
+              <p>Speak to us 888-512-2115</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<?php get_footer(); ?>

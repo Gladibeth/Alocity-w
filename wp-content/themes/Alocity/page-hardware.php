@@ -130,7 +130,8 @@
       </div>
       <?php if(wp_is_mobile()): ?>
 
-      <div id="main-access__nav" class="main-access__nav">
+
+      <div id="main-access__first" class="main-access__nav">
         <div class="main-access__item main-access__item--center ">
           <div class="main-access__box">
             <div class="main-access__box--small">
@@ -1212,7 +1213,10 @@
          <?php } ?> 
         </div>
       </div>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 17fbb545b47add363451e9561a5b5c4c4ae43a71
       <div class="main-access__boxcontent">
         <div class="main-access__general">
           <p>Works Outdoors</p>
@@ -1337,14 +1341,18 @@
          <?php } ?> 
         </div>
       </div>
-      <div class="main-access__boxcontent">
+      <div class="main-access__boxcontent ">
         <div class="main-access__general">
           <p>Power</p>
         </div>
         <hr>
         <div class="main-access__content">
+<<<<<<< HEAD
+          <div class="main-access__item last-section">
+=======
          <?php for ($i=0; $i <=3; $i++) { ?> 
           <div class="main-access__item">
+>>>>>>> 17fbb545b47add363451e9561a5b5c4c4ae43a71
             <div class="main-access__boxmethod">
               <div class="main-access__methodtitle main-access__methodtitle--left">
                 <p class="title__bold">
