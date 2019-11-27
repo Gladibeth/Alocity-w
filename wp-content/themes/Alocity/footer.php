@@ -8,16 +8,16 @@
           </button>
           <div class="row">
             <div class="col-lg-6 col-md-6 p-0 d-sm-flex d-none">
-              <div class="main-modal__boximg">
+              <div class="main-modal__boximg" style="background:<?php echo get_theme_mod('background_contact_form'); ?> !important;">
                 <div class="main-modal__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/phone-modal.png">
+                  <img src="<?php echo get_theme_mod('contact_form_image'); ?>">
                 </div>
               </div>
             </div>
             <div class="col-lg-6 col-md-6 p-0">
               <div class="main-modal__form">
                 <div class="main-modal__title">
-                  <h2>Get In Touch</h2>
+                  <h2><?php echo get_theme_mod('contact_form_title'); ?></h2>
                 </div>
                 <?php echo do_shortcode('[hubspot type=form portal=6327731 id=bf0aae01-e08e-41ca-adae-c7c67c377546]'); ?>
               </div>
@@ -38,7 +38,7 @@
           </button>
           <div class="main-modal__boxerimg">
             <div class="main-modal__img main-modal__softwareimg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-1.png">
+              <img src="<?php echo get_theme_mod('software_dashboard1_image'); ?>">
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@
           </button>
           <div class="main-modal__boxerimg">
             <div class="main-modal__img main-modal__softwareimg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-2.png">
+              <img src="<?php echo get_theme_mod('software_dashboard2_image'); ?>">
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
           </button>
           <div class="main-modal__boxerimg">
             <div class="main-modal__img main-modal__softwareimg">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image-3.png">
+              <img src="<?php echo get_theme_mod('software_dashboard3_image'); ?>">
             </div>
           </div>
         </div>
@@ -100,36 +100,42 @@
         <div class="main-footer__item">
           <div class="main-footer__boxredes">
             <div class="main-footer__redes">
-              <a href="">
+             <?php if (get_theme_mod('instagram')!=NULL) {?> 
+              <a href="<?php echo get_theme_mod('instagram'); ?>">
                 <div class="main-footer__img">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/instagram.png">
                 </div>
               </a>
-              <a href="">
+             <?php } ?>   
+             <?php if (get_theme_mod('facebook')!=NULL) {?> 
+              <a href="<?php echo get_theme_mod('facebook'); ?>">
                 <div class="main-footer__img">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/facebook.png">
                 </div>
               </a>
-              <a href="">
+             <?php } ?>   
+             <?php if (get_theme_mod('linkedin')!=NULL) {?>              
+              <a href="<?php echo get_theme_mod('linkedin'); ?>">
                 <div class="main-footer__img">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/linkein.png">
                 </div>
               </a>
+             <?php } ?>              
             </div>
           </div>
           <div class="main-footer__boxubications">
             <div class="main-footer__ubications">
               <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/paper-plane.png">
-                marveltorres@alocity.com -
+                <?php echo get_theme_mod('email'); ?> -
               </a>
               <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/telephone-handle-silhouette.png">
-                888-512-2115 -
+                <?php echo get_theme_mod('phone'); ?> -
               </a>
               <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/map-marker.png">
-                Calle 23 Green Tower, Street Balsos
+                <?php echo get_theme_mod('address'); ?>
               </a>
             </div>
           </div>

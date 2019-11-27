@@ -12,6 +12,8 @@
   <link href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.css" rel="stylesheet">
    <!-- Favicons -->
   <link href="<?php echo get_template_directory_uri(); ?>/assets/img/index/favicon-32x32.png" rel="shortcut icon">
+	
+	  <?php wp_head(); ?> 
 </head>
 
 <body>
@@ -62,11 +64,11 @@
               <a class="btn_custom btn--small btn--filled--yellow" href="" data-target="#get_quate" data-toggle="modal">GET QUOTE</a>
             </li>
             <li class="nav-item nav-item--phone">
-              <a class="nav-link nav-link--light" href="tel:888-512-2115">888-512-2115</a>
+              <a class="nav-link nav-link--light" href="tel:<?php echo get_theme_mod('phone'); ?>"><?php echo get_theme_mod('phone'); ?></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <?php wp_head(); ?> 
+
   </header>

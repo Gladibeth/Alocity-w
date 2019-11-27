@@ -32,63 +32,72 @@
           <p>Our information</p>
         </div>
         <div class="main-form__box">
-          <div class="main-form__boxitem">
-            <div class="main-users__boximg active">
-              <div class="main-users__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/paper-plane.png">
+          <div class="main-form__box">
+            <div class="main-form__boxitem">
+              <div class="main-users__boximg active">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/paper-plane.png">
+                </div>
+              </div>
+              <div class="main-form__boxtitle">
+                <p>Email</p>
+                <span><?php echo get_theme_mod('email'); ?></span>
               </div>
             </div>
-            <div class="main-form__boxtitle">
-              <p>Email</p>
-              <span>marveltorres@alocity.com</span>
-            </div>
-          </div>
-          <div class="main-form__boxitem">
-            <div class="main-users__boximg active">
-              <div class="main-users__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/telephone-handle-silhouette.png">
+            <div class="main-form__boxitem">
+              <div class="main-users__boximg active">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/telephone-handle-silhouette.png">
+                </div>
+              </div>
+              <div class="main-form__boxtitle">
+                <p>Telephone</p>
+                <span><?php echo get_theme_mod('phone'); ?></span>
               </div>
             </div>
-            <div class="main-form__boxtitle">
-              <p>Telephone</p>
-              <span>888-512-2115</span>
-            </div>
-          </div>
-          <div class="main-form__boxitem">
-            <div class="main-users__boximg active">
-              <div class="main-users__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/map-marker.png">
+            <div class="main-form__boxitem">
+              <div class="main-users__boximg active">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/map-marker.png">
+                </div>
+              </div>
+              <div class="main-form__boxtitle">
+                <p>Local</p>
+                <span><?php echo get_theme_mod('address'); ?></span>
               </div>
             </div>
-            <div class="main-form__boxtitle">
-              <p>Local</p>
-              <span>Calle 23 Green Tower, Street Balsos</span>
-            </div>
-          </div>
-          <div class="main-form__boxitem">
-            <div class="main-users__boximg active">
-              <div class="main-users__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/comments.png">
+            <div class="main-form__boxitem">
+              <div class="main-users__boximg active">
+                <div class="main-users__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/comments.png">
+                </div>
               </div>
-            </div>
-            <div class="main-form__boxtitle">
-              <p>Social media</p>
-              <div class="main-footer__redes main-form__redes">
-                <a href="">
-                  <div class="main-footer__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/instagram.png">
-                  </div>
-                </a>
-                <a href="">
-                  <div class="main-footer__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/facebook.png">
-                  </div>
-                </a>
-                <a href="">
-                  <div class="main-footer__img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/linkein.png">
-                  </div>
-                </a>
+              <div class="main-form__boxtitle">
+                <p>Social media</p>
+                <div class="main-footer__redes main-form__redes">
+                  <?php if (get_theme_mod('instagram')!=NULL) {?>                 
+                    <a href="<?php echo get_theme_mod('instagram'); ?>">
+                      <div class="main-footer__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/instagram.png">
+                      </div>
+                    </a>
+                  <?php } ?>   
+                  <?php if (get_theme_mod('facebook')!=NULL) {?>                   
+                    <a href="<?php echo get_theme_mod('facebook'); ?>">
+                      <div class="main-footer__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/facebook.png">
+                      </div>
+                    </a>
+                  <?php } ?>   
+                  <?php if (get_theme_mod('linkedin')!=NULL) {?>                  
+                    <a href="<?php echo get_theme_mod('linkedin'); ?>">
+                      <div class="main-footer__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hardware/linkein.png">
+                      </div>
+                    </a>
+                  <?php } ?>
+                </div>
+                
               </div>
             </div>
           </div>

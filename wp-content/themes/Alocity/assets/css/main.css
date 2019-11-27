@@ -3433,13 +3433,30 @@ textarea::placeholder {
     width: 100%;
   }
 
-  .col-hard {
-    flex: 0 0 100%;
-    max-width: 100%;
+  .main-access__item.main-access__item--top:nth-child(2n+1) {
+    /* margin-top: 100px;*/
   }
 
-  .main-banner__img--hard img {
-    object-position: left;
+  .main-access__item_Fingerprint {
+    margin-top: 75px;
+  }
+
+  .main-access__item_Card {
+    margin-top: 64px;
+  }
+
+  .main-access__item_Mobile {
+    margin-top: 90px;
+  }
+
+  .main-access__item_Cloud-Key {
+    margin-top: 50px;
+  }
+
+  .main-access__boximg {
+    min-height: 360px;
+    position: relative;
+    margin-top: 20px;
   }
 
   .main-control.main-control--hard {
