@@ -316,7 +316,7 @@
     <div class="row">
       <div class="col-lg-6 col-12 p-0">
         <div class="main-control__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/FotoJet.png">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image_4.png">
         </div>
       </div>
       <div class="col-lg-6 col-12 p-0">
@@ -409,7 +409,7 @@
         <div class="col-lg-7 col-sm-12 p-0">
           <div class="main-check__box">
             <div class="main-control__img main-control__img--two">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image (1).png">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/software/image.png">
             </div>
           </div>
         </div>
