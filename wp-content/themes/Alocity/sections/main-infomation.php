@@ -15,7 +15,7 @@
               <p>Let one of our specialist show you around</p>
             </div>
             <div class="main-information__btn">
-              <a class="btn_custom btn--medium btn--filled--white" href="">get quote</a>
+              <a class="btn_custom btn--medium btn--filled--white" href="" data-target="#get_quate" data-toggle="modal">get quote</a>
             </div>
             <div class="main-information__description">
               <p>Speak to us 888-512-2115</p>
